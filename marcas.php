@@ -21,8 +21,7 @@
   </div>
 
   <header>
-
-    <div class="container section-nosotros">
+    <div class="container mt-5 mb-3">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-12">
           <h2 class="mitr">MARCAS</h2>
@@ -30,19 +29,21 @@
         </div>
       </div>
     </div>
-
-
   </header>
 
   <section>
-    <div class="container  mt-5 mb-3">
-      <div class="justify-content-center align-items-center">
+    <div class="container-fluid  mt-5 mb-3">
+      <!-- Carusel/slider marcas -->
+
+
+
+
+    
 
 
 
 
 
-      </div>
     </div>
   </section>
 

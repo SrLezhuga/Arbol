@@ -22,18 +22,18 @@
 <!-- Nav Mid -->
 <nav class="navbar-portal text-center">
 
-    <div class="container-fluid">
-        <div class="row justify-content-md-center align-items-center ">
-            <div class="col-lg-auto col-md-4 col-sm-12 text-center">
-                <a class="btn btn-outline-danger btn-portal mitr" href="#" role="button"><i class="fas fa-shopping-cart"></i> <br> COMPRA <br> EN LÍNEA</a>
+    <div class="container-fluid p-0 m-0">
+        <div class="row g-0 justify-content-md-center align-items-center ">
+            <div class="col text-end">
+                <a class="btn shadow-lg btn-outline-danger btn-portal mitr" href="#" role="button"><i class="fas fa-shopping-cart"></i> <br> COMPRA <br> EN LÍNEA</a>
             </div>
-            <div class="col-lg-auto col-md-4 col-sm-12 text-center" style="padding-top: 10px;">
+            <div class="col text-center" style="padding-top: 10px;">
                 <a href="index">
-                    <img src="assets/media/img/LogoRojo.png" alt="Refaccionaria Arboledas" width="100px" height="!00%" onContextMenu='return false;' draggable='false'>
+                    <img class="img-arbol-menu" src="assets/media/img/LogoRojo.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
                 </a>
             </div>
-            <div class="col-lg-auto col-md-4 col-sm-12 text-center">
-                <a class="btn btn-outline-danger btn-portal mitr" href="#" role="button"><i class="fas fa-shield-alt"></i> <br> ESCUDERIA <br> ARBOLEDAS</a>
+            <div class="col text-start">
+                <a class="btn shadow-lg btn-outline-danger btn-portal mitr" href="#" role="button"><i class="fas fa-shield-alt"></i> <br> ESCUDERIA <br> ARBOLEDAS</a>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
 
 <!-- Nav Bottom -->
 <nav class="navbar navbar-expand-lg sticky-top-2 mitr" id="header">
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="color-black"><i class="fas fa-chevron-down"></i></span>
         </button>

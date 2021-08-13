@@ -22,7 +22,7 @@
 
   <header>
 
-    <div class="container section-nosotros">
+    <div class="container mt-5 mb-3">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-12">
           <h2 class="mitr">CONTACTO</h2>
@@ -36,65 +36,52 @@
 
   <section>
     <div class="container  mt-5 mb-3">
-      <div class="row justify-content-center align-items-center">
 
-
-        <div class="col-lg-4 col-sm-12 col-md-4">
-          <div class="card shadow-lg p-3 mb-3 text-center rounded">
-            <div class="image">
-              <h1 class="display-4"> <i class="fas fa-map-marker-alt"></i></h1>
-              <h6 class="mitr"><span>MARCAS RECONOCIDAS</span></h6>
-              <div class="separator-top"></div>
-            </div>
-            <div class="details">
-              <div class="center rounded align-items-center justify-content-center">
-                <div class="separator-bottom"></div>
-                <figcaption class="text-small">
-                  <br>
-                  <p>Contamos con las mejores marcas para ofrecer a tus clientes la mejor calidad en cada uno de los sistemas automotrices.</p>
-                </figcaption>
-                <div class="separator-top"></div>
+      <div class="row">
+        <!-- card item-->
+        <div class="col">
+          <div class="box">
+            <div class="our-services settings">
+              <div class="icon">
+                <div class="sub-box">
+                  <h1 class="display-3"> <i class="fas fa-map-marker-alt"></i></h1>
+                </div>
               </div>
+              <h4>MATRIZ</h4>
+              <div class="separator-top"></div>
+              <p>Altos Hornos #2755 Col. El Álamo Parque industrial C.P. 45560, Tlaquepaque, Jalisco, México.</p>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-sm-12 col-md-4">
-          <div class="card shadow-lg p-3 mb-3 text-center rounded">
-            <div class="image">
-              <h1 class="display-4"> <i class="fas fa-phone-alt"></i></h1>
-              <h6 class="mitr"><span>MARCAS RECONOCIDAS</span></h6>
-              <div class="separator-top"></div>
-            </div>
-            <div class="details">
-              <div class="center rounded align-items-center justify-content-center">
-                <div class="separator-bottom"></div>
-                <figcaption class="text-small">
-                  <br>
-                  <p>Contamos con las mejores marcas para ofrecer a tus clientes la mejor calidad en cada uno de los sistemas automotrices.</p>
-                </figcaption>
-                <div class="separator-top"></div>
+        <!-- card item-->
+        <div class="col">
+          <div class="box">
+            <div class="our-services settings">
+              <div class="icon">
+                <div class="sub-box">
+                  <h1 class="display-3"> <i class="fas fa-phone-alt"></i></h1>
+                </div>
               </div>
+              <h4>TELÉFONO</h4>
+              <div class="separator-top"></div>
+              <p>Info: 3338371280
+                <br> Ventas: 3338371285
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-sm-12 col-md-4">
-          <div class="card shadow-lg p-3 mb-3 text-center rounded">
-            <div class="image">
-              <h1 class="display-4"> <i class="far fa-envelope"></i></h1>
-              <h6 class="mitr"><span>MARCAS RECONOCIDAS</span></h6>
-              <div class="separator-top"></div>
-            </div>
-            <div class="details">
-              <div class="center rounded align-items-center justify-content-center">
-                <div class="separator-bottom"></div>
-                <figcaption class="text-small">
-                  <br>
-                  <p>Contamos con las mejores marcas para ofrecer a tus clientes la mejor calidad en cada uno de los sistemas automotrices.</p>
-                </figcaption>
-                <div class="separator-top"></div>
+        <!-- card item-->
+        <div class="col">
+          <div class="box">
+            <div class="our-services settings">
+              <div class="icon">
+                <div class="sub-box">
+                  <h1 class="display-3"> <i class="far fa-envelope"></i></h1>
+                </div>
               </div>
+              <h4>EMAIL</h4>
+              <div class="separator-top"></div>
+              <p>hola@refaccionariaarboledas.com.mx</p>
             </div>
           </div>
         </div>
@@ -102,6 +89,7 @@
 
 
       </div>
+
     </div>
   </section>
 
@@ -112,7 +100,7 @@
     <div class="container mt-5 mb-5">
       <div class="row justify-content-center align-items-center">
         <!-- from -->
-        <div class="col-lg-8 col-md-8 col-sm-12 bg-white rounded shadow">
+        <div class="col-lg-8 col-md-8 col-sm-12 bg-white rounded shadow-lg">
           <div class="row">
             <!-- campo nombre -->
             <div class="col-lg-12">

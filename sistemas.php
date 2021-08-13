@@ -22,7 +22,7 @@
 
   <header>
 
-    <div class="container section-nosotros">
+    <div class="container mt-5 mb-3">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-12">
           <h2 class="mitr">SISTEMAS</h2>
@@ -36,103 +36,57 @@
 
   <section>
     <div class="container  mt-5 mb-3">
-      <div class="row justify-content-center align-items-center">
+      <div class="row justify-content-center align-items-center text-center">
 
-        <!-- .card  EMBRAGUE Y CARDÁN-->
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>EMBRAGUE Y CARDÁN</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>ENCENDIDO</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>ENFRIAMIENTO</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>FRENOS</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>GASOLINA</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>MISCELÁNEOS</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>MOTOR</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>QUÍMICOS</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>SUSPENSIÓN Y DIRECCIÓN</p>
+        </div>
+        <div class="col-1 btn-box rounded">
+          <i class="fas fa-car-alt"></i>
+          <p>TRANSMISIÓN Y EJES</p>
+        </div>
 
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-        </article>
-        <!-- .card  ENCENDIDO-->
 
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
 
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
 
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
 
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
-        <article class="col rounded">
-          <div class="card-content">
-            <a href="#"><img class="spectrum1" src="https://image.freepik.com/free-vector/science-elements-with-test-tubes-and-molecules_23-2147491185.jpg" alt="meow">
-            </a>
-          </div>
-          <!-- .card-content -->
-          </a>
-        </article>
-        <!-- .card -->
+
+
+
+
 
 
       </div>

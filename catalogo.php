@@ -35,14 +35,25 @@
   </header>
 
   <section>
-    <div class="container  mt-5 mb-3">
+    <div class="container  mb-3">
+
+      <!-- campo nombre -->
+      <div class="col-lg-12">
+        <div class="mb-3">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="floatingSelect"><i class="fas fa-search"></i> Buscar catalogo:</label>
+          </div>
+        </div>
+      </div>
+
       <div class="justify-content-center align-items-center">
 
         <div class="cards-deck">
 
           <div class="cards rounded  align-items-center text-center align-self-center">
-            <img src="assets/media/files/Fram_Autolite - Filtros y Bujias 2019.png" alt="">
-            <div class="cards-desc">
+            <img class="rounded" src="assets/media/files/Fram_Autolite - Filtros y Bujias 2019.png" alt="">
+            <div class="cards-desc rounded">
               <div class="cards-div">
                 <h3 class="mitr">
                   Fram Autolite
@@ -177,11 +188,11 @@
 
     </div>
   </div>
-   <!-- correo -->
+  <!-- correo -->
   <div class="col-12">
 
   </div>
-   <!-- mapa -->
+  <!-- mapa -->
   <div class="col-12">
 
   </div>
