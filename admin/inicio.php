@@ -21,13 +21,6 @@
   <!-- Nav Menu-->
   <?php require('controller/common/nav_menu.php'); ?>
 
-  <header>
-
-    
-  
-
-  </header>
-
   <section>
     <div class="container mb-3 mitr">
      

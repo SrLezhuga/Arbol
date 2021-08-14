@@ -23,9 +23,9 @@
   <section>
     <div class="container">
       <div class="row justify-content-center vh-100 align-items-center" id="contenedor">
-        <div class="border rounded shadow-lg col-3">
+        <div class="border rounded shadow-lg col-3 bg-white">
 
-          <div class="card login-content shadow-lg border-0">
+          <div class="card login-content border-0">
             <div class="card-body">
               <div class="text-center">
                 <img class="logo" src="assets/media/img/LogoRojo.png">
@@ -33,16 +33,23 @@
               <h3 class="text-logo">Registrate:</h3>
               <br>
               <form class="text-center">
-                <input class="form-control border-0" type="" name="" placeholder="Type Your Username">
-                <br>
-                <input class="form-control border-0" type="" name="" placeholder="Type Your Password">
-                <br>
-                <button class="btn btn-primary btn-sm border-0" type="submit" name="submit">Sign In</button>
-                <p class="forgot"><a href="">Forgot Password?</a></p>
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="floatingSelect"><i class="fas fa-user-circle"></i> Usuario:</label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="floatingSelect"><i class="fas fa-key"></i> Contraseña:</label>
+                  </div>
+                </div>
+             
+                  <a href="inicio" class="btn btn-primary border-0" type="submit" name="submit">Ingresar</a>
+                
               </form>
-            </div>
-            <div class="nomember">
-              <p class="text-center">Not a member? <a href="">Create an Account</a></p>
             </div>
           </div>
         </div>

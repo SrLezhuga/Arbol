@@ -11,34 +11,3 @@ try {
 } catch (Exception $e) {
      echo "Ocurrió un error con la base de datos: " . $e->getMessage();
 }
-
-$sentencia = $base_de_datos->query("select * from usuarios");
-$mascotas = $sentencia->fetchAll(PDO::FETCH_OBJ);
-
-?>
-
-<table class="table table-bordered">
-     <thead class="thead-dark">
-          <tr>
-               <th>ID</th>
-               <th>Nombre</th>
-               <th>Apellido</th>
-               <th>Editar</th>
-               <th>Eliminar</th>
-          </tr>
-     </thead>
-     <tbody>
-          <!--
-     Atención aquí, sólo esto cambiará
-     Pd: no ignores las llaves de inicio y cierre {}
-     -->
-          <?php foreach ($mascotas as $mascota) { ?>
-               <tr>
-                    <td><?php echo $mascota->idusuario ?></td>
-                    <td><?php echo $mascota->nombre ?></td>
-                    <td><?php echo $mascota->apellidos ?></td>
-               </tr>
-          <?php } ?>
-     </tbody>
-
-</table>

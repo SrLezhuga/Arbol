@@ -1172,6 +1172,11 @@ div a:hover {
 
 /*-----------------------------------------*/
 
+.form-control {
+    color: #7b7b7b;
+    background-color: #e5e5e5;
+}
+
 .btn-portal {
     width: 85px;
     line-height: 1rem;
@@ -1231,3 +1236,6 @@ div a:hover {
     background-color: #0d6efd;
     border: 1px red;
 }
+
+
+/*------------------------------------------*/

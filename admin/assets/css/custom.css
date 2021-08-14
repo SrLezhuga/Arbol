@@ -996,7 +996,7 @@ div a:hover {
 }
 
 .shadow-lg {
-    box-shadow: 0 1rem 3rem rgb(0 0 0 / 30%) !important;
+    box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%) !important;
 }
 
 .rounded {
