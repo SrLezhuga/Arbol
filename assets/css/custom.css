@@ -1249,8 +1249,12 @@ div a:hover {
     font-size: 0.8em;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .card_marcas {
-    background: rgb(0 0 0 / 75%);
+    background: rgb(211 22 53 / 75%);
     position: absolute;
     top: -170px;
     color: white;

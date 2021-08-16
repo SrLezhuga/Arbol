@@ -45,7 +45,7 @@
           <div class="card h-100 over rounded shadow-lg">
             <img src="assets/media/img/marcas/WAGNER.png" class="card-img-top imagen" alt="...">
             <div class="card-body h-100 card_marcas">
-              <h5 class="card-title mitr">WAGNER</h5>
+              <h5 class="card-title mitr text-center">WAGNER</h5>
               <p class="card-text text_small">Deje que Wagner lo mantenga seguro en el camino con frenos de alta calidad. Wagner continúa entregando piezas de rendimiento superior durante más de 125 años.</p>
             </div>
           </div>
@@ -55,8 +55,8 @@
           <div class="card h-100 over rounded shadow-lg">
             <img src="assets/media/img/marcas/LUK.png" class="card-img-top imagen" alt="...">
             <div class="card-body h-100 card_marcas">
-              <h5 class="card-title mitr">LUK</h5>
-              <p class="card-text text_small">Su completa oferta de embragues abarca tanto componentes hidráulicos para la reparación en el entorno del embrague como bombas de servodirección.</p>
+              <h5 class="card-title mitr text-center">LUK</h5>
+              <p class="card-text text_small text-center">Su completa oferta de embragues abarca tanto componentes hidráulicos para la reparación en el entorno del embrague como bombas de servodirección.</p>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
             <img src="assets/media/img/marcas/GMB.png" class="card-img-top imagen" alt="...">
             <div class="card-body h-100 card_marcas">
               <h5 class="card-title mitr">GMB</h5>
-              <p class="card-text text_small">Cada línea de producto incluye una extensa cobertura en aplicaciones americanas, asiáticas, domésticas y europeas, las cuales igualan o superan los estándares de equipo original (OE).</p>
+              <p class="card-text text_small text-justify">Cada línea de producto incluye una extensa cobertura en aplicaciones americanas, asiáticas, domésticas y europeas, las cuales igualan o superan los estándares de equipo original (OE).</p>
             </div>
           </div>
         </div>
@@ -75,8 +75,8 @@
           <div class="card h-100 over rounded shadow-lg">
             <img src="assets/media/img/marcas/PERFECTION.png" class="card-img-top imagen" alt="...">
             <div class="card-body h-100 card_marcas">
-              <h5 class="card-title mitr">PERFECTION</h5>
-              <p class="card-text text_small">Línea de Clutch con características superiores al equipo original, desarrollando mejoras requeridas por los usuarios finales del producto de acuerdo al uso y costumbres mexicanas.</p>
+              <h5 class="card-title mitr text-center">PERFECTION</h5>
+              <p class="card-text text_small text-justify">Línea de Clutch con características superiores al equipo original, desarrollando mejoras requeridas por los usuarios finales del producto de acuerdo al uso y costumbres mexicanas.</p>
             </div>
           </div>
         </div>
