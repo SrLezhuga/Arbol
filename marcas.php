@@ -36,53 +36,72 @@
       <!-- Carusel/slider marcas -->
 
 
-      <div class="row g-4">
+      <div class="row row-cols-4 g-4 justify-content-center align-items-center">
+
+
+
+        <!-- -->
         <div class="col">
-
-
-
-          <a data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-
-
-
-
-            <div class="card h-100 bg-white rounded shadow-lg">
-              <img src="assets/media/img/marcas/WAGNER.png" class="card-img-top" alt="...">
-              <div class="card-body" style="border-top: 3px solid #d41636; background-color: #d41636;">
-                <h5 class="card-title text-white mitr">WAGNER</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <p class="card-text">This is a short card.</p>
-
-              <img src="..." class="card-img-top" alt="...">
-
-              <h5 class="card-title">Card title</h5>
+          <div class="card h-100 over rounded shadow-lg">
+            <img src="assets/media/img/marcas/WAGNER.png" class="card-img-top imagen" alt="...">
+            <div class="card-body h-100 card_marcas">
+              <h5 class="card-title mitr">WAGNER</h5>
+              <p class="card-text text_small">Deje que Wagner lo mantenga seguro en el camino con frenos de alta calidad. Wagner continúa entregando piezas de rendimiento superior durante más de 125 años.</p>
             </div>
           </div>
         </div>
+        <!-- -->
         <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <div class="card h-100 over rounded shadow-lg">
+            <img src="assets/media/img/marcas/LUK.png" class="card-img-top imagen" alt="...">
+            <div class="card-body h-100 card_marcas">
+              <h5 class="card-title mitr">LUK</h5>
+              <p class="card-text text_small">Su completa oferta de embragues abarca tanto componentes hidráulicos para la reparación en el entorno del embrague como bombas de servodirección.</p>
             </div>
           </div>
         </div>
+        <!-- -->
         <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="card h-100 over rounded shadow-lg">
+            <img src="assets/media/img/marcas/GMB.png" class="card-img-top imagen" alt="...">
+            <div class="card-body h-100 card_marcas">
+              <h5 class="card-title mitr">GMB</h5>
+              <p class="card-text text_small">Cada línea de producto incluye una extensa cobertura en aplicaciones americanas, asiáticas, domésticas y europeas, las cuales igualan o superan los estándares de equipo original (OE).</p>
             </div>
           </div>
         </div>
+        <!-- -->
+        <div class="col">
+          <div class="card h-100 over rounded shadow-lg">
+            <img src="assets/media/img/marcas/PERFECTION.png" class="card-img-top imagen" alt="...">
+            <div class="card-body h-100 card_marcas">
+              <h5 class="card-title mitr">PERFECTION</h5>
+              <p class="card-text text_small">Línea de Clutch con características superiores al equipo original, desarrollando mejoras requeridas por los usuarios finales del producto de acuerdo al uso y costumbres mexicanas.</p>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="col">
+          <div class="card h-100 over rounded shadow-lg">
+            <img src="assets/media/img/marcas/RUVILLE.png" class="card-img-top imagen" alt="...">
+            <div class="card-body h-100 card_marcas">
+              <h5 class="card-title mitr">RUVILLE</h5>
+              <p class="card-text text_small">Ofrece productos, soluciones de reparación y kits ajustados a la demanda y preparados para satisfacer las necesidades del mercado.</p>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="col">
+          <div class="card h-100 over rounded shadow-lg">
+            <img src="assets/media/img/marcas/SAKURA.png" class="card-img-top imagen" alt="...">
+            <div class="card-body h-100 card_marcas">
+              <h5 class="card-title mitr">SAKURA</h5>
+              <p class="card-text text_small">Sakura Filtros tiene más de 45 años de experiencia en el negocio de la filtración, ofrece la gama más amplia de aplicaciones de más de 7,000 números de pieza. Cubre automotriz, comercial, equipo pesado, marino e industrial para aplicaciones americanas, europeas y asiáticas.</p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
 
@@ -91,27 +110,6 @@
 
 
 
-    </div>
-
-
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">WAGNER</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Deje que Wagner lo mantenga seguro en el camino con frenos de alta calidad. Wagner continúa entregando piezas de rendimiento superior durante más de 125 años.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Cerrar</button>
-          </div>
-        </div>
-      </div>
     </div>
 
 
