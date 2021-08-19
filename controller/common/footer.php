@@ -13,7 +13,7 @@
  </center>
 
  <!-- Footer -->
- <footer class="text-center text-lg-start text-white" style="background-color: rgb(13 45 105 / 70%);  border-top: 3px solid #d41636;">
+ <footer id="footer" class="text-center text-lg-start text-white small" style="background-color: rgb(13 45 105 / 70%);  border-top: 3px solid #d41636;">
 
      <!-- Section: Links  -->
      <section class="">
@@ -23,15 +23,15 @@
                  <!-- Grid column -->
                  <div class="col-md-3 col-lg-2 mx-auto mb-4">
                      <!-- Content -->
-                     <img src="assets/media/img/LogoBlanco.png" alt="Refaccionaria Arboledas" width="100%" height="!00%" onContextMenu='return false;' draggable='false'>
+                     <img class="img-footer" src="assets/media/img/LogoBlanco.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
                  </div>
                  <!-- Grid column -->
 
                  <!-- Grid column -->
                  <div class="col-md-2 col-lg-5 mx-auto mb-4">
                      <!-- Links -->
-                     <h6 class="text-uppercase fw-bold">Refaccionaria Arboledas</h6>
-                     <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: rgba(0, 0, 0, 0.8); height: 3px" />
+                     <h6 class="text-uppercase fw-bold mitr">Refaccionaria Arboledas</h6>
+
                      <p>
                          Es una empresa mexicana dedicada a la distribución de refacciones automotrices. Con más de 30 años en el mercado tenemos el propósito de ser corresponsables con el desarrollo de nuestros socios de negocios.
                      </p>
@@ -41,8 +41,7 @@
                  <!-- Grid column -->
                  <div class="col-md-4 col-lg-5 mx-auto mb-md-0 mb-4">
                      <!-- Links -->
-                     <h6 class="text-uppercase fw-bold">Contacto</h6>
-                     <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: rgba(0, 0, 0, 0.8); height: 3px" />
+                     <h6 class="text-uppercase fw-bold mitr">Contacto</h6>
                      <p>
                          <a class="color-white no-link" href="https://www.google.com/maps/place/Refaccionaria+Arboledas+SA+de+CV/@20.6241852,-103.328707,20z/data=!4m5!3m4!1s0x8428b25924c5075f:0x10f56039859b589b!8m2!3d20.6242434!4d-103.328454" target="_blank"><i class="fas fa-location-arrow"></i>
 
@@ -71,7 +70,9 @@
      <!-- Copyright -->
      <div class="text-center p-3 border-top" style="background-color: #212529">
          © <?php echo date("Y"); ?> Copyright:
-         <a class="text-white" href="www.refaccionariaarboledas.com.mx">Refaccionaria Arboledas</a>
+         <a class="text-white small" href="www.refaccionariaarboledas.com.mx">Refaccionaria Arboledas</a> <br>
+         <a class="text-white small" href="politicas">Aviso de Privacidad </a>|
+         <a class="text-white small" href="cookies">Pólitica de Cookies</a>
      </div>
      <!-- Copyright -->
  </footer>

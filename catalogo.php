@@ -11,191 +11,136 @@
   <title>Refaccionaria Arboledas | Catálogo</title>
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
+  <div id="wrapper">
 
-  <!-- Nav Menu-->
-  <?php require('controller/common/nav_menu.php'); ?>
-  <!-- titulo -->
-  <div class="container menus rounded">
-    <h2 class="mitr">CATÁLOGO</h2>
+    <!-- Nav Menu-->
+    <?php require('controller/common/nav_menu.php'); ?>
+    <!-- titulo -->
+    <div class="container menus rounded">
+      <h2 class="mitr">CATÁLOGO</h2>
+    </div>
+
+    <section>
+      <div class="container mt-5 mb-3">
+
+
+        <!-- Buscar -->
+
+
+        <div class="row mb-3 g-0">
+          <div class="col-sm-12 col-lg-11 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="txtBuscar" placeholder="Buscar catalogo:" onchange="getBusqueda()">
+              <label for="floatingSelect"><i class="fas fa-search"></i> Buscar catalogo:</label>
+            </div>
+          </div>
+          
+          <div class="d-grid gap-2 col-lg-1 col-sm-12 mb-3">
+            <button type="button" class="btn btn-lg btn-danger" onclick="getBusqueda()"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+
+        <div class="justify-content-center align-items-center" style="min-height: 70vh;">
+          <!-- Cards -->
+          <div class="cards-deck" id="item_catalogo"></div>
+          <!-- /Cards -->
+        </div>
+      </div>
+    </section>
   </div>
-
-  <header>
-
-    <div class="container section-nosotros">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-12">
-          <h2 class="mitr">CATÁLOGO</h2>
-          <div class="separator-top"></div>
-        </div>
-      </div>
-    </div>
-
-
-  </header>
-
-  <section>
-    <div class="container  mb-3">
-
-      <!-- campo nombre -->
-      <div class="col-lg-12">
-        <div class="mb-3">
-          <div class="form-floating">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            <label for="floatingSelect"><i class="fas fa-search"></i> Buscar catalogo:</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="justify-content-center align-items-center">
-
-        <div class="cards-deck">
-
-          <div class="cards rounded  align-items-center text-center align-self-center">
-            <img class="rounded" src="assets/media/files/Fram_Autolite - Filtros y Bujias 2019.png" alt="">
-            <div class="cards-desc rounded">
-              <div class="cards-div">
-                <h3 class="mitr">
-                  Fram Autolite
-                </h3>
-                <h6 class="glacial">
-                  Filtros y Bujias 2017
-                </h6>
-                <div class="d-grid gap-2">
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="far fa-eye"></i> Ver online</a>
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="fas fa-file-download"></i> Descargar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Item card -->
-          <div class="cards rounded  align-items-center text-center align-self-center">
-            <img src="assets/media/files/Fram_Autolite - Filtros y Bujias 2019.png" alt="">
-            <div class="cards-desc">
-              <div class="cards-div">
-                <h3 class="mitr">
-                  Fram Autolite
-                </h3>
-                <h6 class="glacial">
-                  Filtros y Bujias 2017
-                </h6>
-                <div class="d-grid gap-2">
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="far fa-eye"></i> Ver online</a>
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="fas fa-file-download"></i> Descargar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Item card -->
-          <div class="cards rounded  align-items-center text-center align-self-center">
-            <img src="assets/media/files/Fram_Autolite - Filtros y Bujias 2019.png" alt="">
-            <div class="cards-desc">
-              <div class="cards-div">
-                <h3 class="mitr">
-                  Fram Autolite
-                </h3>
-                <h6 class="glacial">
-                  Filtros y Bujias 2017
-                </h6>
-                <div class="d-grid gap-2">
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="far fa-eye"></i> Ver online</a>
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="fas fa-file-download"></i> Descargar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Item card -->
-          <div class="cards rounded  align-items-center text-center align-self-center">
-            <img src="assets/media/files/Fram_Autolite - Filtros y Bujias 2019.png" alt="">
-            <div class="cards-desc">
-              <div class="cards-div">
-                <h3 class="mitr">
-                  Fram Autolite
-                </h3>
-                <h6 class="glacial">
-                  Filtros y Bujias 2017
-                </h6>
-                <div class="d-grid gap-2">
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="far fa-eye"></i> Ver online</a>
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="fas fa-file-download"></i> Descargar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Item card -->
-          <div class="cards rounded  align-items-center text-center align-self-center">
-            <img src="assets/media/files/Fram_Autolite - Filtros y Bujias 2019.png" alt="">
-            <div class="cards-desc">
-              <div class="cards-div">
-                <h3 class="mitr">
-                  Fram Autolite
-                </h3>
-                <h6 class="glacial">
-                  Filtros y Bujias 2017
-                </h6>
-                <div class="d-grid gap-2">
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="far fa-eye"></i> Ver online</a>
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="fas fa-file-download"></i> Descargar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Item card -->
-          <div class="cards rounded  align-items-center text-center align-self-center">
-            <img src="assets/media/files/Fram_Autolite - Filtros y Bujias 2019.png" alt="">
-            <div class="cards-desc">
-              <div class="cards-div">
-                <h3 class="mitr">
-                  Fram Autolite
-                </h3>
-                <h6 class="glacial">
-                  Filtros y Bujias 2017
-                </h6>
-                <div class="d-grid gap-2">
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="far fa-eye"></i> Ver online</a>
-                  <a class="btn btn-sm btn-outline-danger" href="#" role="button"><i class="fas fa-file-download"></i> Descargar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Item card -->
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
 
   <?php require('controller/common/footer.php'); ?>
 
 </body>
 
-<div class="row">
-  <!-- contacto -->
-  <div class="col-12">
-    <div class="4">
-
-
-    </div>
-    <div class="4">
-
-
-    </div>
-    <div class="4">
-
-
-    </div>
-  </div>
-  <!-- correo -->
-  <div class="col-12">
-
-  </div>
-  <!-- mapa -->
-  <div class="col-12">
-
-  </div>
-</div>
-
 </html>
+
+<script>
+  $(document).ready(function() {
+    getBusqueda();
+  });
+
+  function getBusqueda() {
+    var busqueda = $("#txtBuscar").val();
+
+    Swal.fire({
+      title: 'Cargando datos',
+      allowEscapeKey: false,
+      allowOutsideClick: false,
+      timer: 50000,
+      showConfirmButton: false,
+      willOpen: () => {
+        swal.showLoading();
+      }
+    });
+
+    $.ajax({
+      url: "controller/catalogo/precarga.php",
+      type: "post",
+      data: {
+        Rs: busqueda
+      },
+      beforeSend: function() {
+        //imagen de carga
+        $("#item_catalogo").html("<img src='assets/media/img/loader/loader.gif'>");
+      },
+      error: function() {
+        alert("error petición ajax");
+      },
+      success: function(data) {
+        $("#item_catalogo").empty();
+        $("#item_catalogo").append(data);
+        swal.close();
+      }
+    });
+  }
+
+  function guardarDatos() {
+    var sucursal = $("#formTiendaSuc").val();
+    var dir = $("#direccion").val();
+    var col = $("#colonia").val();
+    var cp = $("#codigo_postal").val();
+    var mun = $("#municipio").val();
+    var cor = $("#correo").val();
+    var tel = $("#telefono").val();
+    var ho1 = $("#horario1").val();
+    var ho2 = $("#horario2").val();
+    var mpg = $("#mapgoogle").val();
+    var mpc = $("#mapcel").val();
+
+    $.ajax({
+      url: "assets/controler/directorio/carga.php",
+      type: "post",
+      data: {
+        Suc: sucursal,
+        Dir: dir,
+        Col: col,
+        Cp: cp,
+        Mun: mun,
+        Cor: cor,
+        Tel: tel,
+        Ho1: ho1,
+        Ho2: ho2,
+        Mpg: mpg,
+        Mpc: mpc
+      },
+      success: function(data) {
+        if (data == 0) {
+          Swal.fire(
+            "Mensaje de confirmación",
+            "Se actualizaron los datos de la sucursal.",
+            "success"
+          );
+        } else {
+          Swal.fire(
+            "Mensaje de confirmación",
+            "Error:" + data,
+            "error"
+          );
+        }
+      }
+    });
+  }
+</script>

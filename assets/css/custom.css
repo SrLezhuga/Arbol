@@ -1,5 +1,10 @@
 body {
     background-image: url('../media/img/PageBackground.jpg');
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 #error {
@@ -14,17 +19,27 @@ body {
 
 .navbar-top {
     background-color: #323232;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 3px solid #d41636;
 }
 
-.navbar-top a {
-    font-size: 15px;
+.navbar-portal a {
+    font-size: 1.75rem;
+}
+
+.navbar-portal .img-arbol-menu {
+    width: 75px;
+    padding-top: 5px;
 }
 
 .navbar-portal {
-    padding: 5px 0px;
+    padding: 1px 1px;
+}
+
+.navber-menu {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
 .color-white {
@@ -65,6 +80,10 @@ body {
     left: 50%;
     transform: translatex(-50%);
     top: -5px;
+}
+
+.nav-link {
+    color: black;
 }
 
 .cool-link {
@@ -151,7 +170,6 @@ body {
     left: 0px;
     width: 85px;
     height: 89px;
-    background: url(../images/car-focus.png) no-repeat 0 0;
 }
 
 .no-link {
@@ -159,10 +177,14 @@ body {
 }
 
 .sticky-top-2 {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 60px;
-    z-index: 1000;
+    background-color: white;
+    transition: all .5s ease-in-out;
+}
+
+.sticky-top-3 {
+    background-color: rgb(255, 255, 255);
+    transition: all .5s ease-in-out;
+    box-shadow: -1px 10px 10px -10px #2f2b2b;
 }
 
 
@@ -254,6 +276,10 @@ span {
 
 .white-bg {
     background: #ffffff;
+}
+
+.grey-bg {
+    background: #f3f3f3 !important;
 }
 
 
@@ -362,17 +388,6 @@ span {
 
 .quick-links .link a .entregas {
     background-image: url('../media/img/iconos/ServicioDomicilio_negro.png');
-}
-
-.logoOnOff {
-    opacity: 0;
-    height: 0;
-    transition: all .5s ease-in-out
-}
-
-.bgcolor {
-    background-color: rgb(255, 255, 255);
-    transition: all .5s ease-in-out
 }
 
 
@@ -672,6 +687,10 @@ span {
     color: #6c757d;
 }
 
+.smaller {
+    font-size: 0.8em;
+}
+
 
 /* █████████████████████████████████ */
 
@@ -853,8 +872,8 @@ span {
 }
 
 .cards img {
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 275px;
     object-fit: cover;
     display: block;
     position: relative;
@@ -863,7 +882,6 @@ span {
 .cards-desc {
     overflow: hidden;
     display: block;
-    font-size: 1.2rem;
     position: absolute;
     height: 0;
     width: 100%;
@@ -886,6 +904,7 @@ span {
     bottom: 50%;
     transform: translate(-50%, 50%);
     left: 50%;
+    width: 80%;
 }
 
 .form-control:focus {
@@ -1074,58 +1093,6 @@ div a:hover {
 
 /*----------------------------------------------------*/
 
-.btn-box {
-    height: 120px;
-    width: 120px;
-    background: transparent;
-    cursor: pointer;
-    transition: all .3s;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-box i {
-    font-size: 100px;
-    opacity: .5;
-    transition: all .3s;
-}
-
-.btn-box p {
-    position: absolute;
-    font-size: initial;
-    transition: all .3s;
-    top: 100px;
-    opacity: 0;
-}
-
-.btn-box:hover {
-    transform: scale(1.1);
-    background: #db2d2e;
-}
-
-.btn-box:hover i {
-    opacity: .3;
-}
-
-.btn-box:hover p {
-    top: 40px;
-    opacity: 1;
-    font-size: 90%;
-    width: 100%;
-    color: #ffffff;
-}
-
-@media screen and (max-width: 660px) {
-    .btn-box {
-        margin-bottom: 20px;
-    }
-}
-
-
-/*---------------------------------*/
-
 .box {
     position: relative;
     width: 100%;
@@ -1180,7 +1147,7 @@ div a:hover {
 .btn-portal {
     width: 85px;
     line-height: 1rem;
-    font-size: .75rem;
+    font-size: 2.5rem;
 }
 
 .img-arbol-menu {
@@ -1191,7 +1158,7 @@ div a:hover {
 @media (min-width: 576px) {
     .btn-portal {
         width: 120px;
-        line-height: 1rem;
+        font-size: 2.5rem;
     }
     .img-arbol-menu {
         width: 100px;
@@ -1213,7 +1180,7 @@ div a:hover {
 @media (min-width: 992px) {
     .btn-portal {
         width: 120px;
-        line-height: 1rem;
+        font-size: 2.5rem;
     }
     .img-arbol-menu {
         width: 100px;
@@ -1254,9 +1221,9 @@ div a:hover {
 }
 
 .card_marcas {
-    background: rgb(211 22 53 / 75%);
+    background: rgb(211 22 53 / 80%);
     position: absolute;
-    top: -170px;
+    top: -280px;
     color: white;
 }
 
@@ -1271,3 +1238,25 @@ div a:hover {
     transform: scale(1.3);
     transition: all .5s ease-in-out;
 }
+
+.img-footer {
+    width: fit-content;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.no-shadow:focus {
+    box-shadow: none;
+}
+
+
+/*----------- -------------------*/

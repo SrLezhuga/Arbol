@@ -11,192 +11,179 @@
   <title>Refaccionaria Arboledas | Contacto</title>
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
+  <div id="wrapper">
 
-  <!-- Nav Menu-->
-  <?php require('controller/common/nav_menu.php'); ?>
-  <!-- titulo -->
-  <div class="container menus rounded">
-    <h2 class="mitr">CONTACTO</h2>
+    <!-- Nav Menu-->
+    <?php require('controller/common/nav_menu.php'); ?>
+    <!-- titulo -->
+    <div class="container menus rounded">
+      <h2 class="mitr">CONTACTO</h2>
+    </div>
+
+    <section>
+      <div class="container mt-5 mb-3">
+
+        <div class="row">
+          <!-- card item-->
+          <div class="col">
+            <div class="box">
+              <div class="our-services settings">
+                <div class="icon">
+                  <div class="sub-box">
+                    <h1 class="display-3"> <i class="fas fa-map-marker-alt"></i></h1>
+                  </div>
+                </div>
+                <h4>MATRIZ</h4>
+                <div class="separator-top"></div>
+                <p>Altos Hornos #2755 Col. El Álamo Parque industrial C.P. 45560, Tlaquepaque, Jalisco, México.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card item-->
+          <div class="col">
+            <div class="box">
+              <div class="our-services settings">
+                <div class="icon">
+                  <div class="sub-box">
+                    <h1 class="display-3"> <i class="fas fa-phone-alt"></i></h1>
+                  </div>
+                </div>
+                <h4>TELÉFONO</h4>
+                <div class="separator-top"></div>
+                <p>Info: 3338371280
+                  <br> Ventas: 3338371285
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card item-->
+          <div class="col">
+            <div class="box">
+              <div class="our-services settings">
+                <div class="icon">
+                  <div class="sub-box">
+                    <h1 class="display-3"> <i class="far fa-envelope"></i></h1>
+                  </div>
+                </div>
+                <h4>EMAIL</h4>
+                <div class="separator-top"></div>
+                <p>hola@refaccionariaarboledas.com.mx</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center align-items-center">
+          <!-- from -->
+          <div class="col-lg-8 col-md-8 col-sm-12 bg-white rounded shadow-lg">
+            <div class="row">
+              <!-- campo nombre -->
+              <div class="col-lg-12">
+                <div class="mb-3 mt-3">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="floatingSelect"><i class="fas fa-user"></i> Nombre:</label>
+                  </div>
+                </div>
+              </div>
+              <!-- campo correo -->
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="floatingSelect"><i class="fas fa-at"></i> Correo:</label>
+                  </div>
+                </div>
+              </div>
+              <!-- campo telefono -->
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="floatingSelect"><i class="fas fa-phone-alt"></i> Teléfono:</label>
+                  </div>
+                </div>
+              </div>
+              <!-- campo estado -->
+              <div class="col-12">
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input class="form-control dt" list="datalistOptions" id="floatingSelect" placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                      <option value="Aguascalientes">
+                      <option value="Baja California">
+                      <option value="Baja California Sur">
+                      <option value="Campeche">
+                      <option value="Coahuila">
+                      <option value="Colima">
+                      <option value="Chiapas">
+                      <option value="Chihuahua">
+                      <option value="Durango">
+                      <option value="Distrito Federal">
+                      <option value="Guanajuato">
+                      <option value="Guerrero">
+                      <option value="Hidalgo">
+                      <option value="Jalisco">
+                      <option value="México">
+                      <option value="Michoacán">
+                      <option value="Morelos">
+                      <option value="Nayarit">
+                      <option value="Nuevo León">
+                      <option value="Oaxaca">
+                      <option value="Puebla">
+                      <option value="Querétaro">
+                      <option value="Quintana Roo">
+                      <option value="San Luis Potosí">
+                      <option value="Sinaloa">
+                      <option value="Sonora">
+                      <option value="Tabasco">
+                      <option value="Tamaulipas">
+                      <option value="Tlaxcala">
+                      <option value="Veracruz">
+                      <option value="Yucatán">
+                      <option value="Zacatecas">
+                    </datalist>
+                    <label for="floatingSelect"><i class="fas fa-location-arrow"></i> Estado:</label>
+                  </div>
+                </div>
+              </div>
+              <!-- campo mensaje -->
+              <div class="col-12">
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <textarea class="form-control" rows="5" placeholder="Mensaje" id="floatingTextarea" style="height: auto;"></textarea>
+                    <label for="floatingTextarea"><i class="fas fa-comment-dots"></i> Mensaje:</label>
+                  </div>
+                </div>
+              </div>
+              <!-- btn enviar -->
+              <div class="col-12">
+                <div class="mb-3 d-grid gap-2">
+                  <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-paper-plane"></i> Enviar</button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
   </div>
-
-  <header>
-
-    <div class="container mt-5 mb-3">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-12">
-          <h2 class="mitr">CONTACTO</h2>
-          <div class="separator-top"></div>
-        </div>
-      </div>
-    </div>
-
-
-  </header>
-
-  <section>
-    <div class="container  mt-5 mb-3">
-
-      <div class="row">
-        <!-- card item-->
-        <div class="col">
-          <div class="box">
-            <div class="our-services settings">
-              <div class="icon">
-                <div class="sub-box">
-                  <h1 class="display-3"> <i class="fas fa-map-marker-alt"></i></h1>
-                </div>
-              </div>
-              <h4>MATRIZ</h4>
-              <div class="separator-top"></div>
-              <p>Altos Hornos #2755 Col. El Álamo Parque industrial C.P. 45560, Tlaquepaque, Jalisco, México.</p>
-            </div>
-          </div>
-        </div>
-        <!-- card item-->
-        <div class="col">
-          <div class="box">
-            <div class="our-services settings">
-              <div class="icon">
-                <div class="sub-box">
-                  <h1 class="display-3"> <i class="fas fa-phone-alt"></i></h1>
-                </div>
-              </div>
-              <h4>TELÉFONO</h4>
-              <div class="separator-top"></div>
-              <p>Info: 3338371280
-                <br> Ventas: 3338371285
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- card item-->
-        <div class="col">
-          <div class="box">
-            <div class="our-services settings">
-              <div class="icon">
-                <div class="sub-box">
-                  <h1 class="display-3"> <i class="far fa-envelope"></i></h1>
-                </div>
-              </div>
-              <h4>EMAIL</h4>
-              <div class="separator-top"></div>
-              <p>hola@refaccionariaarboledas.com.mx</p>
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-  <section>
-    <div class="container mt-5 mb-5">
-      <div class="row justify-content-center align-items-center">
-        <!-- from -->
-        <div class="col-lg-8 col-md-8 col-sm-12 bg-white rounded shadow-lg">
-          <div class="row">
-            <!-- campo nombre -->
-            <div class="col-lg-12">
-              <div class="mb-3 mt-3">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  <label for="floatingSelect"><i class="fas fa-user"></i> Nombre:</label>
-                </div>
-              </div>
-            </div>
-            <!-- campo correo -->
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="mb-3">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  <label for="floatingSelect"><i class="fas fa-at"></i> Correo:</label>
-                </div>
-              </div>
-            </div>
-            <!-- campo telefono -->
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="mb-3">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  <label for="floatingSelect"><i class="fas fa-phone-alt"></i> Teléfono:</label>
-                </div>
-              </div>
-            </div>
-            <!-- campo estado -->
-            <div class="col-12">
-              <div class="mb-3">
-                <div class="form-floating">
-                  <input class="form-control dt" list="datalistOptions" id="floatingSelect" placeholder="Type to search...">
-                  <datalist id="datalistOptions">
-                    <option value="Aguascalientes">
-                    <option value="Baja California">
-                    <option value="Baja California Sur">
-                    <option value="Campeche">
-                    <option value="Coahuila">
-                    <option value="Colima">
-                    <option value="Chiapas">
-                    <option value="Chihuahua">
-                    <option value="Durango">
-                    <option value="Distrito Federal">
-                    <option value="Guanajuato">
-                    <option value="Guerrero">
-                    <option value="Hidalgo">
-                    <option value="Jalisco">
-                    <option value="México">
-                    <option value="Michoacán">
-                    <option value="Morelos">
-                    <option value="Nayarit">
-                    <option value="Nuevo León">
-                    <option value="Oaxaca">
-                    <option value="Puebla">
-                    <option value="Querétaro">
-                    <option value="Quintana Roo">
-                    <option value="San Luis Potosí">
-                    <option value="Sinaloa">
-                    <option value="Sonora">
-                    <option value="Tabasco">
-                    <option value="Tamaulipas">
-                    <option value="Tlaxcala">
-                    <option value="Veracruz">
-                    <option value="Yucatán">
-                    <option value="Zacatecas">
-                  </datalist>
-                  <label for="floatingSelect"><i class="fas fa-location-arrow"></i> Estado:</label>
-                </div>
-              </div>
-            </div>
-            <!-- campo mensaje -->
-            <div class="col-12">
-              <div class="mb-3">
-                <div class="form-floating">
-                  <textarea class="form-control" rows="5" placeholder="Mensaje" id="floatingTextarea" style="height: auto;"></textarea>
-                  <label for="floatingTextarea"><i class="fas fa-comment-dots"></i> Mensaje:</label>
-                </div>
-              </div>
-            </div>
-            <!-- btn enviar -->
-            <div class="col-12">
-              <div class="mb-3 d-grid gap-2">
-                <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-paper-plane"></i> Enviar</button>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-
-
-
-      </div>
-    </div>
-    </div>
   </section>
 
   <section style="background-color: rgba(0, 0, 0, 0.8);">
@@ -272,7 +259,7 @@
 
       </div>
   </section>
-
+  </div>
   <br>
 
   <?php require('controller/common/footer.php'); ?>
