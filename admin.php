@@ -46,9 +46,9 @@
                     <label for="floatingSelect"><i class="fas fa-key"></i> Contraseña:</label>
                   </div>
                 </div>
-             
-                  <a href="control" class="btn btn-primary border-0" type="submit" name="submit">Ingresar</a>
-                
+
+                <a href="control" class="btn btn-primary border-0" type="submit" name="submit">Ingresar</a>
+
               </form>
             </div>
           </div>
@@ -56,7 +56,6 @@
 
       </div>
     </div>
-
 
   </section>
 

@@ -26,7 +26,7 @@
 
         <div class="row">
           <!-- card item-->
-          <div class="col">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="box">
               <div class="our-services settings">
                 <div class="icon">
@@ -41,7 +41,7 @@
             </div>
           </div>
           <!-- card item-->
-          <div class="col">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="box">
               <div class="our-services settings">
                 <div class="icon">
@@ -58,7 +58,7 @@
             </div>
           </div>
           <!-- card item-->
-          <div class="col">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="box">
               <div class="our-services settings">
                 <div class="icon">
@@ -183,83 +183,105 @@
 
         </div>
       </div>
-  </div>
-  </section>
 
-  <section style="background-color: rgba(0, 0, 0, 0.8);">
-    <div class="container-fluid mb-5 mt-5 rounded">
-      <div class="row justify-content-center align-items-center text-center">
+    </section>
 
-        <div class="col-lg-12">
-          <div class="counter-block">
-            <div class="info">
+    <section>
+      <div class="container mb-3">
+        <div class="row justify-content-center align-items-center" id="contenedor">
 
-              <div class="row">
-
-                <div class="col-lg-5 justify-content-center align-items-center">
-                  <h2 class="text-white"><i class="fas fa-industry"></i> MATRIZ GUADALAJARA</h2>
-                  <span class=" text-white"><i class="fas fa-location-arrow"></i> Altos Hornos #2755 Col. El Álamo Parque industrial
-                    <br> C.P. 45560. Tlaquepaque, Jalisco.</span>
-                  <br> <br>
-                  <a href="https://www.google.com/maps/place/Refaccionaria+Arboledas+SA+de+CV/@20.6241852,-103.328707,20z/data=!4m5!3m4!1s0x8428b25924c5075f:0x10f56039859b589b!8m2!3d20.6242434!4d-103.328454" target="_blank" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i> Ver en Google Maps</a>
-                  <br><br>
-                </div>
-
-                <div class="col-lg-7">
-                  <div class="map-responsive rounded">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d933.5282952235284!2d-103.328454!3d20.624243000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10f56039859b589b!2sRefaccionaria%20Arboledas%20SA%20de%20CV!5e0!3m2!1ses-419!2smx!4v1627688785995!5m2!1ses-419!2smx" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div id="flex-container" class="testimonials border rounded shadow-lg">
+            <div id="left-zone">
+              <ul class="list">
+                <!-- Matriz GDL-->
+                <li class="item">
+                  <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
+                  <label class="label_testimonial" for="radio_testimonial-1">Matriz Guadalajara</label>
+                  <div class="content-test content_testimonial">
+                    <span class="picto">
+                      <img src="assets/media/img/iconos/LOGO CEDIS GDL.png" onContextMenu='return false;' draggable='false'>
+                    </span>
+                    <h1 class="mitr">Matriz Guadalajara</h1>
+                    <p>Altos Hornos #2755 Col. El Álamo Parque industrial
+                      <br>C.P. 45560. Tlaquepaque, Jalisco.
+                    </p>
+                    <p class="testimonialFrom">
+                      <a href="https://www.google.com/maps/place/Refaccionaria+Arboledas+SA+de+CV/@20.6241852,-103.328707,20z/data=!4m5!3m4!1s0x8428b25924c5075f:0x10f56039859b589b!8m2!3d20.6242434!4d-103.328454" target="_blank" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i> Ver en Google Maps</a>
+                    </p>
                   </div>
-                </div>
+                </li>
+                <!-- Cedis MTY-->
+                <li class="item">
+                  <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
+                  <label class="label_testimonial" for="radio_testimonial-2">Cedis Monterrey</label>
+                  <div class="content-test content_testimonial">
+                    <span class="picto">
+                      <img src="assets/media/img/iconos/LOGO CEDIS MTY.png" onContextMenu='return false;' draggable='false'>
 
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <br>
-
-  <section style="background-color: rgba(0, 0, 0, 0.8);">
-    <div class="container-fluid mb-5 mt-5 rounded">
-      <div class="row justify-content-center align-items-center text-center">
-
-
-
-        <div class="col-lg-12">
-          <div class="counter-block">
-            <div class="info">
-
-              <div class="row">
-
-                <div class="col-lg-5 justify-content-center align-items-center">
-                  <h2 class="text-white"><i class="fas fa-industry"></i> CEDIS MONTERREY</h2>
-                  <span class=" text-white"><i class="fas fa-location-arrow"></i> Bonifacio Salinas #108 Col. Industrial Las Américas
-                    <br> C.P. 67128. Guadalupe, Nuevo León.</span>
-                  <br> <br>
-                  <a href="https://www.google.com/maps/place/Refaccionaria+Arboledas/@25.7011461,-100.2400004,18.75z/data=!4m13!1m7!3m6!1s0x8662eabf08222bcb:0xef6281387d0e18cd!2sAv+Bonifacio+Salinas+Nte+108,+Antiguo+Nogalar,+67128+Guadalupe,+N.L.!3b1!8m2!3d25.7015881!4d-100.2404084!3m4!1s0x8662eabfa6313af5:0xad03efde29fb5a3c!8m2!3d25.7015775!4d-100.240204" target="_blank" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i> Ver en Google Maps</a>
-                  <br><br>
-                </div>
-
-                <div class="col-lg-7">
-                  <div class="map-responsive rounded">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1068.829326328731!2d-100.2400004280895!3d25.701146129548505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662eabfa6313af5%3A0xad03efde29fb5a3c!2sRefaccionaria%20Arboledas!5e0!3m2!1ses-419!2smx!4v1627084581212!5m2!1ses-419!2smx" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </span>
+                    <h1 class="mitr">Cedis Monterrey</h1>
+                    <p>Bonifacio Salinas #108 Col. Industrial Las Américas
+                      <br>C.P. 67128. Guadalupe, Nuevo León.
+                    </p>
+                    <p class="testimonialFrom">
+                      <a href="https://www.google.com/maps/place/Refaccionaria+Arboledas/@25.7011461,-100.2400004,18.75z/data=!4m13!1m7!3m6!1s0x8662eabf08222bcb:0xef6281387d0e18cd!2sAv+Bonifacio+Salinas+Nte+108,+Antiguo+Nogalar,+67128+Guadalupe,+N.L.!3b1!8m2!3d25.7015881!4d-100.2404084!3m4!1s0x8662eabfa6313af5:0xad03efde29fb5a3c!8m2!3d25.7015775!4d-100.240204" target="_blank" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i> Ver en Google Maps</a>
+                    </p>
+                    <br>
                   </div>
-                </div>
-
-              </div>
-
+                </li>
+              </ul>
             </div>
+            <div id="right-zone"></div>
           </div>
-        </div>
 
+
+        </div>
       </div>
-  </section>
+
+      <script>
+        // Makeshift carousel function that gets invoked with the Index to start it off, then the callback increments the index to recursively invoke the same function. Works even in IE11!
+        var testimonialItems = document.querySelectorAll(".item label");
+        var timer;
+
+        function cycleTestimonials(index) {
+          timer = setTimeout(function() {
+            var evt;
+            if (document.createEvent) {
+              //If browser = IE, then polyfill
+              evt = document.createEvent('MouseEvent');
+              evt.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            } else {
+              //If Browser = modern, then create new MouseEvent
+              evt = new MouseEvent("click", {
+                view: window,
+                bubbles: true,
+                cancelable: true,
+                clientX: 20
+              });
+            }
+            var ele = "." + testimonialItems[index].className;
+            var ele2 = document.querySelector(ele)
+            ele2.dispatchEvent(evt);
+            index++; // Increment the index
+            if (index >= testimonialItems.length) {
+              index = 0; // Set it back to `0` when it reaches `3`
+            }
+            cycleTestimonials(index); // recursively call `cycleTestimonials()`
+            document.querySelector(".testimonials").addEventListener("click", function() {
+              clearTimeout(timer); //stop the carousel when someone clicks on the div
+            });
+          }, 2000); //adjust scroll speed in miliseconds
+        }
+        //run the function
+        cycleTestimonials(0);
+      </script>
+
+
+    </section>
+
+
   </div>
+
   <br>
 
   <?php require('controller/common/footer.php'); ?>

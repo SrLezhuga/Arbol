@@ -16,7 +16,7 @@
 
     <!-- loader -->
     <div class="loader-in" id="loader">
-      <img src="assets/media/img/loader/index.gif" alt="Proveedores de Refacciones Automotrices por mayoreo">
+      <img src="assets/media/img/loader/giphy.webp" alt="Proveedores de Refacciones Automotrices por mayoreo">
     </div>
 
     <!-- Nav Menu-->
@@ -161,9 +161,9 @@
                       <img src="assets/media/img/iconos/Icono_MarcasReconocidas_negro.png" oncontextmenu="return false;" draggable="false">
                     </div>
                   </div>
-                  <h4>MARCAS RECONOCIDAS</h4>
+                  <h6 class="mitr">MARCAS RECONOCIDAS</h6>
                   <div class="separator-top"></div>
-                  <p>Contamos con las mejores marcas para ofrecer a tus clientes la mejor calidad en cada uno de los sistemas automotrices.</p>
+                  <p class="small">Contamos con las mejores marcas para ofrecer a tus clientes la mejor calidad en cada uno de los sistemas automotrices.</p>
                 </div>
               </div>
             </div>
@@ -176,9 +176,9 @@
                       <img src="assets/media/img/iconos/IconoSoporte_negro.png" oncontextmenu="return false;" draggable="false">
                     </div>
                   </div>
-                  <h4>SOPORTE EN LÍNEA</h4>
+                  <h6 class="mitr">SOPORTE EN LÍNEA</h6>
                   <div class="separator-top"></div>
-                  <p>Tenemos personal capacitado para darte la atención y asesoría técnica que requieres.</p>
+                  <p class="small">Tenemos personal capacitado para darte la atención y asesoría técnica que requieres.</p>
                 </div>
               </div>
             </div>
@@ -191,9 +191,9 @@
                       <img src="assets/media/img/iconos/IconoServicio_negro.png" oncontextmenu="return false;" draggable="false">
                     </div>
                   </div>
-                  <h4>SERVICIO</h4>
+                  <h6 class="mitr">SERVICIO</h6>
                   <div class="separator-top"></div>
-                  <p>Buscamos siempre otorgar un trato amable, información oportuna y estar siempre a la altura de nuestros clientes más exigentes.</p>
+                  <p class="small">Buscamos siempre otorgar un trato amable, información oportuna y estar siempre a la altura de nuestros clientes más exigentes.</p>
                 </div>
               </div>
             </div>
@@ -206,9 +206,9 @@
                       <img src="assets/media/img/iconos/IconoEntregaMexico_negro.png" oncontextmenu="return false;" draggable="false">
                     </div>
                   </div>
-                  <h4>ENTREGA A TODO MÉXICO</h4>
+                  <h6 class="mitr">ENTREGA A TODO MÉXICO</h6>
                   <div class="separator-top"></div>
-                  <p>Haz tu pedido en cualquier parte de la República y nosotros nos encargamos de que llegue hasta su destino.</p>
+                  <p class="small">Haz tu pedido en cualquier parte de la República y nosotros nos encargamos de que llegue hasta su destino.</p>
                 </div>
               </div>
             </div>
@@ -221,9 +221,9 @@
                       <img src="assets/media/img/iconos/ServicioDomicilio_negro.png" oncontextmenu="return false;" draggable="false">
                     </div>
                   </div>
-                  <h4>SERVICIO A DOMICILIO</h4>
+                  <h6 class="mitr">SERVICIO A DOMICILIO</h6>
                   <div class="separator-top"></div>
-                  <p>Te entregamos tus refacciones automotrices hasta la puerta de tu negocio, para que te preocupes solo por vender.</p>
+                  <p class="small">Te entregamos tus refacciones automotrices hasta la puerta de tu negocio, para que te preocupes solo por vender.</p>
                 </div>
               </div>
             </div>
@@ -236,9 +236,9 @@
                       <img src="assets/media/img/iconos/IconoStock.png" oncontextmenu="return false;" draggable="false">
                     </div>
                   </div>
-                  <h4>AMPLIO CATÁLOGO DE PRODUCTOS</h4>
+                  <h6 class="mitr">AMPLIO CATÁLOGO DE PRODUCTOS</h6>
                   <div class="separator-top"></div>
-                  <p>Revoluciona tu refaccionaria con nuestro gran catálogo de productos para los diferentes sistemas automotrices.</p>
+                  <p class="small">Revoluciona tu refaccionaria con nuestro gran catálogo de productos para los diferentes sistemas automotrices.</p>
                 </div>
               </div>
             </div>
@@ -250,314 +250,173 @@
     </section>
 
     <section>
-      <div class="container mb-3">
-        <div class="justify-content-center align-items-center text-center">
 
-          <h2 class="mitr">SISTEMAS</h2>
-          <div class="separator-top"></div>
+      <div class="container justify-content-center align-items-center text-center mt-5 mb-3">
 
-          <ul class="nav nav-pills mb-3 nav-justified gap-5" id="pills-tab" role="tablist">
-            <!-- MOTOR -->
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="pills-motor-tab" data-bs-toggle="pill" data-bs-target="#pills-motor" type="button" role="tab" aria-controls="pills-motor" aria-selected="true">
-                <h1>
-                  <img src="assets/media/img/iconos/IconoMotor.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                </h1>
-              </a>
-            </li>
-            <!-- ENCENDIDO -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-encendido-tab" data-bs-toggle="pill" data-bs-target="#pills-encendido" type="button" role="tab" aria-controls="pills-encendido" aria-selected="false">
-                <h1>
-                  <img src="assets/media/img/iconos/IconoEncendido.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                </h1>
-              </button>
-            </li>
-            <!-- SUSPENCION -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-suspension-tab" data-bs-toggle="pill" data-bs-target="#pills-suspension" type="button" role="tab" aria-controls="pills-suspension" aria-selected="false">
-                <h1>
-                  <img src="assets/media/img/iconos/IconoSuspension.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                </h1>
-              </button>
-            </li>
-            <!-- EMBRAGUE -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-embrague-tab" data-bs-toggle="pill" data-bs-target="#pills-embrague" type="button" role="tab" aria-controls="pills-embrague" aria-selected="false">
-                <h1>
-                  <img src="assets/media/img/iconos/IconoEmbrague.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                </h1>
-              </button>
-            </li>
-            <!-- FRENOS -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-frenos-tab" data-bs-toggle="pill" data-bs-target="#pills-frenos" type="button" role="tab" aria-controls="pills-frenos" aria-selected="false">
-                <h1>
-                  <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                </h1>
-              </button>
-            </li>
-            <!-- TRANSMISION -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-transmision-tab" data-bs-toggle="pill" data-bs-target="#pills-transmision" type="button" role="tab" aria-controls="pills-transmision" aria-selected="false">
-                <h1>
-                  <img src="assets/media/img/iconos/IconoTransmision.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                </h1>
-              </button>
-            </li>
-            <!-- GASOLINA -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-gasolina-tab" data-bs-toggle="pill" data-bs-target="#pills-gasolina" type="button" role="tab" aria-controls="pills-gasolina" aria-selected="false">
-                <h1><i class="fas fa-car-alt"></i></h1>
-              </button>
-            </li>
-            <!-- ENFRIAMIENTO -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-enfriamiento-tab" data-bs-toggle="pill" data-bs-target="#pills-enfriamiento" type="button" role="tab" aria-controls="pills-enfriamiento" aria-selected="false">
-                <h1><i class="fas fa-car-alt"></i></h1>
-              </button>
-            </li>
-            <!-- QUIMICOS -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-quimicos-tab" data-bs-toggle="pill" data-bs-target="#pills-quimicos" type="button" role="tab" aria-controls="pills-quimicos" aria-selected="false">
-                <h1><i class="fas fa-car-alt"></i></h1>
-              </button>
-            </li>
-            <!-- MISCELANEOS -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-miscelaneos-tab" data-bs-toggle="pill" data-bs-target="#pills-miscelaneos" type="button" role="tab" aria-controls="pills-miscelaneos" aria-selected="false">
-                <h1><i class="fas fa-car-alt"></i></h1>
-              </button>
-            </li>
-          </ul>
+        <h2 class="mitr">SISTEMAS</h2>
+        <div class="separator-top"></div>
+
+        <div class="row mt-3 mb-3 row-cols-lg-5 row-cols-sm-1 justify-content-center align-items-center">
+
+          <div class="accordion accordion-flush" id="accordionMotor">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingMotor">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMotor" aria-expanded="false" aria-controls="flush-collapseMotor">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">MOTOR</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseMotor" class="accordion-collapse collapse" aria-labelledby="flush-headingMotor" data-bs-parent="#accordionMotor">
+                <div class="accordion-body vh-15 small">
+                  Contamos con accesorios de calidad para un funcionamiento óptimo del motor. </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionEncendido">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingEncendido">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEncendido" aria-expanded="false" aria-controls="flush-collapseEncendido">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">ENCENDIDO</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseEncendido" class="accordion-collapse collapse" aria-labelledby="flush-headingEncendido" data-bs-parent="#accordionEncendido">
+                <div class="accordion-body vh-15 small">
+                  Las mejores marcas de calidad en cables y productos para el sistema de encendido automotriz.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionSuspension">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingSuspension">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSuspension" aria-expanded="false" aria-controls="flush-collapseSuspension">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">SUSPENSIÓN Y DIRECCIÓN</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseSuspension" class="accordion-collapse collapse" aria-labelledby="flush-headingSuspension" data-bs-parent="#accordionSuspension">
+                <div class="accordion-body vh-15 small">
+                  Mantener la estabilidad del vehículo es vital, contamos con la mejor línea de amortiguadores y suspensión.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionEmbrague">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingEmbrague">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEmbrague" aria-expanded="false" aria-controls="flush-collapseEmbrague">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">EMBRAGUE Y CARDÁN</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseEmbrague" class="accordion-collapse collapse" aria-labelledby="flush-headingEmbrague" data-bs-parent="#accordionEmbrague">
+                <div class="accordion-body vh-15 small">
+                  Las marcas más reconocidas en la industria en productos y kits para tu sistema de embrague y cardán. </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFrenos">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingFrenos">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFrenos" aria-expanded="false" aria-controls="flush-collapseFrenos">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">FRENOS</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseFrenos" class="accordion-collapse collapse" aria-labelledby="flush-headingFrenos" data-bs-parent="#accordionFrenos">
+                <div class="accordion-body vh-15 small">
+                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionTransmision">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingTransmision">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTransmision" aria-expanded="false" aria-controls="flush-collapseTransmision">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">TRANSMISIÓN Y EJES</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseTransmision" class="accordion-collapse collapse" aria-labelledby="flush-headingTransmision" data-bs-parent="#accordionTransmision">
+                <div class="accordion-body vh-15 small">
+                  Manejamos kits de transmisiones automáticas y manuales para tu refaccionaria.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionEnfriamiento">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingEnfriamiento">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEnfriamiento" aria-expanded="false" aria-controls="flush-collapseEnfriamiento">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">ENFRIAMIENTO</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseEnfriamiento" class="accordion-collapse collapse" aria-labelledby="flush-headingEnfriamiento" data-bs-parent="#accordionEnfriamiento">
+                <div class="accordion-body vh-15 small">
+                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
+              </div>
+            </div>
+          </div>
 
 
+          <div class="accordion accordion-flush" id="accordionMiscelaneos">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingMiscelaneos">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMiscelaneos" aria-expanded="false" aria-controls="flush-collapseMiscelaneos">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">MISCELÁNEOS</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseMiscelaneos" class="accordion-collapse collapse" aria-labelledby="flush-headingMiscelaneos" data-bs-parent="#accordionMiscelaneos">
+                <div class="accordion-body vh-15 small">
+                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
+              </div>
+            </div>
+          </div>
 
-          <div class="tab-content justify-content-center align-items-center" id="pills-tabContent">
-            <!-- MOTOR -->
-            <div class="tab-pane fade show active" id="pills-motor" role="tabpanel" aria-labelledby="pills-motor-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoMotor.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">MOTOR</h5>
-                      <p class="card-text">Contamos con accesorios de calidad para un funcionamiento óptimo del motor.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoMotor.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ENCENDIDO -->
-            <div class="tab-pane fade" id="pills-encendido" role="tabpanel" aria-labelledby="pills-encendido-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoEncendido.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">ENCENDIDO</h5>
-                      <p class="card-text">Las mejores marcas de calidad en cables y productos para el sistema de encendido automotriz.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoEncendido.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- SUSPENSIÓN -->
-            <div class="tab-pane fade" id="pills-suspension" role="tabpanel" aria-labelledby="pills-suspension-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoSuspension.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">SUSPENSIÓN Y DIRECCIÓN</h5>
-                      <p class="card-text">Mantener la estabilidad del vehículo es vital, contamos con la mejor línea de amortiguadores y suspensión.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoSuspension.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- EMBRAGUE -->
-            <div class="tab-pane fade" id="pills-embrague" role="tabpanel" aria-labelledby="pills-embrague-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoEmbrague.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">EMBRAGUE Y CARDÁN</h5>
-                      <p class="card-text">Las marcas más reconocidas en la industria en productos y kits para tu sistema de embrague y cardán.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoEmbrague.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- FRENOS -->
-            <div class="tab-pane fade" id="pills-frenos" role="tabpanel" aria-labelledby="pills-frenos-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">FRENOS</h5>
-                      <p class="card-text">Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- TRANSMISIÓN -->
-            <div class="tab-pane fade" id="pills-transmision" role="tabpanel" aria-labelledby="pills-transmision-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">TRANSMISIÓN Y EJES</h5>
-                      <p class="card-text">Manejamos kits de transmisiones automáticas y manuales para tu refaccionaria.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- SUSPENSION -->
-            <div class="tab-pane fade" id="pills-suspension" role="tabpanel" aria-labelledby="pills-suspension-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">TRANSMISIÓN Y EJES</h5>
-                      <p class="card-text">Manejamos kits de transmisiones automáticas y manuales para tu refaccionaria.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoTransmision.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ENFRIAMIENTO -->
-            <div class="tab-pane fade" id="pills-enfriamiento" role="tabpanel" aria-labelledby="pills-enfriamiento-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">ENFRIAMIENTO</h5>
-                      <p class="card-text">Falta desc.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- GASOLINA -->
-            <div class="tab-pane fade" id="pills-gasolina" role="tabpanel" aria-labelledby="pills-gasolina-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">GASOLINA</h5>
-                      <p class="card-text">Falta desc.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- QUIMICOS -->
-            <div class="tab-pane fade" id="pills-quimicos" role="tabpanel" aria-labelledby="pills-quimicos-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">QUÍMICOS</h5>
-                      <p class="card-text">Falta desc.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- MICELANEOS -->
-            <div class="tab-pane fade" id="pills-miscelaneos" role="tabpanel" aria-labelledby="pills-miscelaneos-tab">
-              <div class="card card-center bg-white rounded shadow-lg col-lg-6 col-sm-12">
-                <div class="card-body">
-                  <div class="row g-0">
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                    <div class="col-8">
-                      <h5 class="card-title mitr">MICELÁNEOS</h5>
-                      <p class="card-text">Falta desc.</p>
-                      <a href="#" class="card-link"><i class="fas fa-eye"></i> Ver más</a>
-                    </div>
-                    <div class="col-2">
-                      <img src="assets/media/img/iconos/IconoFrenos.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
+          <div class="accordion accordion-flush" id="accordionQuimicos">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingQuimicos">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuimicos" aria-expanded="false" aria-controls="flush-collapseQuimicos">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">QUÍMICOS</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseQuimicos" class="accordion-collapse collapse" aria-labelledby="flush-headingQuimicos" data-bs-parent="#accordionQuimicos">
+                <div class="accordion-body vh-15 small">
+                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion accordion-flush" id="accordionGasolina">
+            <div class="accordion-item mb-3 rounded shadow-lg">
+              <h2 class="accordion-header" id="flush-headingGasolina">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGasolina" aria-expanded="false" aria-controls="flush-collapseGasolina">
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
+                  <h6 class="mitr pl-5 text-start">GASOLINA</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseGasolina" class="accordion-collapse collapse" aria-labelledby="flush-headingGasolina" data-bs-parent="#accordionGasolina">
+                <div class="accordion-body vh-15 small">
+                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
+              </div>
+            </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
@@ -569,7 +428,7 @@
           <div class="separator-top"></div>
 
           <!-- Carusel/slider marcas -->
-          <div class="slider">
+          <div class="slider mt-3">
             <div class="slide-track">
               <div class="slide">
                 <img src="assets/media/img/marcas/LUK.png" height="100" width="250" alt="" />
