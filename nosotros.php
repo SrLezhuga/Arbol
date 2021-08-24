@@ -163,190 +163,83 @@
       <div class="container mb-3">
         <div class="justify-content-center align-items-center text-center">
 
-          <h2 class="mitr">SISTEMAS</h2>
+          <h2 class="mitr">LINEA DEL TIEMPO</h2>
           <div class="separator-top"></div>
 
+          <ul class="timeline">
 
-          <div class="row">
-            <div class="main-timeline">
-              <div class="timeline">
-                <a class="timeline-content h-100">
-                  <div class="timeline-year">2018</div>
-                  <h4 class="title mitr">MARCAS RECONOCIDAS</h4>
-                  <p class="description">
-                    Contamos con las mejores marcas para ofrecer a tus clientes la mejor calidad en cada uno de los sistemas automotrices.
-                  </p>
-                </a>
+            <li class="timeline-milestone is-current timeline-start">
+              <div class="timeline-action shadow-lg">
+                <h2 class="title mitr">Inicio</h2>
+                <span class="date">2099</span>
+                <div class="content">
+                  <p class="small">Este es el comienzo de todo...</p>
+                </div>
               </div>
-              <div class="timeline">
-                <a class="timeline-content">
-                  <div class="timeline-year">2018</div>
-                  <h4 class="title mitr">SOPORTE EN LÍNEA</h4>
-                  <p class="description">
-                    Tenemos personal capacitado para darte la atención y asesoría técnica que requieres.
-                  </p>
-                </a>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable expanded">
+                <h2 class="title mitr">Titulo</h2>
+                <span class="date">2100</span>
+                <div class="content">
+                  <!--
+                  <ul class="file-list">
+                    <li><a href="example/video" class="video-link">Introduction video</a></li>
+                    <li><a href="example.pdf">Project Plan, pdf 2,8 MB</a></li>
+                    <li><a href="example.pdf">Requirements, pdf 5,3 MB</a></li>
+                    <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
+                  </ul>
+                  -->
+                  <p class="small">Este es el comienzo de todo...</p>
+
+                </div>
               </div>
-              <div class="timeline">
-                <a class="timeline-content">
-                  <div class="timeline-year">2019</div>
-                  <h4 class="title mitr">Java Script</h4>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                  </p>
-                </a>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable expanded">
+                <h2 class="title mitr">Initial planning</h2>
+                <span class="date">Second quarter 2013</span>
+                <div class="content">
+                  <ul class="file-list">
+                    <li><a href="example/video" class="video-link">Introduction video</a></li>
+                    <li><a href="example.pdf">Project Plan, pdf 2,8 MB</a></li>
+                    <li><a href="example.pdf">Requirements, pdf 5,3 MB</a></li>
+                    <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
+                  </ul>
+                </div>
               </div>
-              <div class="timeline">
-                <a href="#" class="timeline-content">
-                  <div class="timeline-year">2018</div>
-                  <h4 class="title">Web Designing</h4>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                  </p>
-                </a>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">Start construction</h2>
+                <span class="date">Fourth quarter 2013</span>
+                <div class="content">
+                  <p>Este es un texto de prueba</p>
+                </div>
               </div>
-              <div class="timeline">
-                <a href="#" class="timeline-content">
-                  <div class="timeline-year">2019</div>
-                  <h4 class="title">Java Script</h4>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                  </p>
-                </a>
+            </li>
+            <li class="timeline-milestone is-future timeline-end">
+              <div class="timeline-action shadow-lg">
+                <h2 class="title mitr">Test and verify</h2>
+                <span class="date">Second quarter 2014</span>
+                <div class="content">
+
+                </div>
               </div>
-              <div class="timeline">
-                <a href="#" class="timeline-content">
-                  <div class="timeline-year">2019</div>
-                  <h4 class="title">Java Script</h4>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
 
-          <style>
-            .main-timeline:after {
-              content: '';
-              display: block;
-              clear: both;
-            }
-
-            .main-timeline .timeline {
-              width: calc(50% + 58px);
-              border-top: 2px solid #404247;
-              float: left;
-              position: relative;
-              z-index: 1;
-            }
-
-            .main-timeline .timeline a {
-              text-decoration: none;
-            }
-
-            .main-timeline .timeline:before {
-              content: "";
-              background: #d31635;
-              width: 10px;
-              height: 10px;
-              border-radius: 50px;
-              position: absolute;
-              top: -5px;
-              right: 0;
-            }
-
-            .main-timeline .timeline-content {
-              color: #404247;
-              text-align: center;
-              padding: 15px 80px 15px 10px;
-              display: block;
-              position: relative;
-            }
-
-            .main-timeline .timeline-content:hover {
-              text-decoration: none;
-            }
-
-            .main-timeline .timeline-content:before {
-              content: "";
-              background: #d31635;
-              width: 15px;
-              height: 100%;
-              position: absolute;
-              top: 0;
-              right: 50px;
-            }
-
-            .main-timeline .timeline-year {
-              font-size: 35px;
-              line-height: 35px;
-              font-weight: 700;
-              transform: translateY(-50%) rotate(90deg);
-              position: absolute;
-              top: 50%;
-              right: -15px;
-            }
-
-            .main-timeline .title {
-              font-size: 22px;
-              font-weight: 600;
-              letter-spacing: 0.5px;
-              text-transform: uppercase;
-              margin: 0 0 8px;
-            }
-
-            .main-timeline .description {
-              font-size: 16px;
-              margin: 0;
-            }
-
-            .main-timeline .timeline:nth-child(even) {
-              float: right;
-            }
-
-            .main-timeline .timeline:nth-child(even):before {
-              right: auto;
-              left: 0;
-            }
-
-            .main-timeline .timeline:nth-child(even) .timeline-content {
-              padding: 15px 10px 15px 80px;
-            }
-
-            .main-timeline .timeline:nth-child(even) .timeline-content:before {
-              right: auto;
-              left: 51px;
-            }
-
-            .main-timeline .timeline:nth-child(even) .timeline-year {
-              right: auto;
-              left: -15px;
-            }
-
-            .main-timeline .timeline:nth-child(even) .timeline-content:before {
-              background: #d31635;
-            }
-
-            @media screen and (max-width: 767px) {
-              .main-timeline .timeline {
-                width: 100%;
-              }
-            }
-          </style>
 
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container rounded  mb-3" style="background-color: rgba(0, 0, 0, 0.8);">
+      <div class="container rounded mb-3" style="background-color: rgba(0, 0, 0, 0.8);">
         <div class="justify-content-center align-items-center">
           <center>
             <h2 class="mitr text-white pt-1"> MATRIZ: GUADALAJARA Refaccionaria Arboledas S.A. de C.V.</h2>
             <div class="separator-top"></div>
-
-
 
             <figure class="figure">
               <img class="figure-img img-fluid rounded mt-2" src="assets/media/img/Img_Nosotros.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
@@ -360,8 +253,6 @@
           <center>
             <h2 class="mitr text-white pt-1"> CEDIS: MONTERREY Refaccionaria Arboledas S.A. de C.V.</h2>
             <div class="separator-top"></div>
-
-
 
             <figure class="figure">
               <img class="figure-img img-fluid rounded mt-2" src="assets/media/img/Img_Nosotros.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
@@ -443,7 +334,32 @@
       </div>
     </section>
 
+    <script>
+      $(document).ready(function() {
+        $timelineExpandableTitle = $('.timeline-action.is-expandable .title');
 
+        $($timelineExpandableTitle).attr('tabindex', '0');
+
+        // Give timelines ID's
+        $('.timeline').each(function(i, $timeline) {
+          var $timelineActions = $($timeline).find('.timeline-action.is-expandable');
+
+          $($timelineActions).each(function(j, $timelineAction) {
+            var $milestoneContent = $($timelineAction).find('.content');
+
+            $($milestoneContent).attr('id', 'timeline-' + i + '-milestone-content-' + j).attr('role', 'region');
+            $($milestoneContent).attr('aria-expanded', $($timelineAction).hasClass('expanded'));
+
+            $($timelineAction).find('.title').attr('aria-controls', 'timeline-' + i + '-milestone-content-' + j);
+          });
+        });
+
+        $($timelineExpandableTitle).click(function() {
+          $(this).parent().toggleClass('is-expanded');
+          $(this).siblings('.content').attr('aria-expanded', $(this).parent().hasClass('is-expanded'));
+        });
+      });
+    </script>
 
   </div>
 

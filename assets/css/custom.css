@@ -1231,6 +1231,18 @@ div a:hover {
     color: white;
 }
 
+.card_body {
+    flex: 1 1 auto;
+    padding: .5rem 1rem;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+
+.card_title {
+    margin-bottom: 0.1rem;
+}
+
 .card:hover .card_marcas {
     top: 0px;
     transition: all .5s ease-in-out;
@@ -1285,7 +1297,7 @@ div a:hover {
 }
 
 
-/* ============= Begin Testimonial Flexbox ============ */
+/* ============= Carusel Directorio ============ */
 
 #flex-container {
     display: -webkit-box;
@@ -1510,3 +1522,153 @@ p.testimonialFrom {
 
 
 /* ============== End Testimonial Flexbox ============= */
+
+
+/* ============== Timeline ============= */
+
+.timeline {
+    list-style: none;
+    margin: 25px 0 22px;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.timeline:after {
+    border: 6px solid;
+    border-top-width: 13px;
+    border-color: #d41636 transparent transparent transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -19px;
+    left: 15px;
+}
+
+.timeline-horizontal:after {
+    border-top-width: 6px;
+    border-left-width: 13px;
+    border-color: transparent transparent transparent #d41636;
+    top: 15px;
+    right: 0;
+    bottom: auto;
+    left: auto;
+}
+
+.timeline-horizontal .timeline-milestone {
+    border-top: 2px solid #d41636;
+    display: inline;
+    float: left;
+    margin: 20px 0 0 0;
+    padding: 40px 0 0 0;
+}
+
+.timeline-horizontal .timeline-milestone:before {
+    top: -17px;
+    left: auto;
+}
+
+.timeline-milestone {
+    border-left: 2px solid #d41636;
+    margin: 0 0 0 20px;
+    padding: 0 0 5px 25px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.timeline-milestone:before {
+    border: 7px solid #d41636;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    left: -17px;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+.timeline-milestone.is-current:before {
+    background-color: #eee;
+}
+
+.timeline-milestone.is-future:before {
+    background-color: #d41636;
+    border: 0;
+}
+
+.timeline-milestone.is-future .timeline-action .title {
+    color: #d41636;
+}
+
+.timeline-action {
+    background-color: #fff;
+    padding: 12px 10px 12px 20px;
+    position: relative;
+    top: -15px;
+    margin-bottom: 10px;
+}
+
+.timeline-action.is-expandable .title {
+    cursor: pointer;
+    position: relative;
+}
+
+.timeline-action.is-expandable .title:focus {
+    outline: 0;
+    text-decoration: underline;
+}
+
+.timeline-action.is-expandable .title:after {
+    border: 6px solid #666;
+    border-color: transparent transparent transparent #666;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+.timeline-action.is-expandable .content {
+    display: none;
+}
+
+.timeline-action.is-expandable.is-expanded .title:after {
+    border-color: #666 transparent transparent transparent;
+    top: 10px;
+    right: 5px;
+}
+
+.timeline-action.is-expandable.is-expanded .content {
+    display: block;
+}
+
+.timeline-action .title,
+.timeline-action .content {
+    word-wrap: break-word;
+}
+
+.timeline-action .title {
+    color: #d41636;
+    font-size: 18px;
+    margin: 0;
+}
+
+.timeline-action .date {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.timeline-action .content {
+    font-size: 14px;
+}
+
+.file-list {
+    line-height: 1.4;
+    list-style: none;
+    padding-left: 10px;
+}
+
+
+/* ============== End Timeline ============= */
