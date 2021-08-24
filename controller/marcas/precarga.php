@@ -2,7 +2,7 @@
 include "../conexion.php";
 
 if ($_POST['Rs'] == 'ok') {
-  $query = $con->prepare("SELECT * FROM tab_marcas");
+  $query = $con->prepare("SELECT * FROM tab_marcas ORDER BY nombre_marca ASC");
   $query->setFetchMode(PDO::FETCH_ASSOC);
   $query->execute();
 
@@ -10,7 +10,7 @@ if ($_POST['Rs'] == 'ok') {
     
     echo '
     <!--' . $row["nombre_marca"] . '-->
-    <div class="col-lg-3 col-md-2 col-sm-1">
+    <div class="col-lg-3 col-md-4 col-sm-12">
       <div class="card h-100 overflow-hidden rounded shadow-lg">
         <img src="assets/media/img/marcas/' . $row["img_marca"] . '" class="card-img-top imagen" alt="' . $row["nombre_marca"] . '">
         <div class="card_body h-100 card_marcas">

@@ -54,7 +54,7 @@
       },
       beforeSend: function() {
         //imagen de carga
-        $("#item_marcas").html("<img src='assets/media/img/loader/loader.gif'>");
+        $("#item_marcas").html(" <div class='col-lg-3 col-md-4 col-sm-12'><img src='assets/media/img/loader/loader.gif'></div>");
       },
       error: function() {
         alert("error petición ajax");
