@@ -24,15 +24,6 @@ html {
     border-bottom: 3px solid #d41636;
 }
 
-.navbar-portal a {
-    font-size: 1.75rem;
-}
-
-.navbar-portal .img-arbol-menu {
-    width: 75px;
-    padding-top: 5px;
-}
-
 .navbar-portal {
     padding: 1px 1px;
 }
@@ -73,6 +64,57 @@ html {
 .btn-gris {
     background-color: #f6f6f6;
     border-color: #f6f6f6;
+}
+
+.btn-menus {
+    font-size: .6rem;
+    display: inline-flex;
+    width: auto;
+    border: 1px solid #dee2e6 !important;
+}
+
+.btn-menus img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 576px) {
+    .btn-menus {
+        font-size: 1rem;
+        display: inline-flex;
+        width: auto;
+        border: 1px solid #dee2e6 !important;
+    }
+    .btn-menus img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-menus {
+        font-size: 1rem;
+        display: inline-flex;
+        width: auto;
+        border: 1px solid #dee2e6 !important;
+    }
+    .btn-menus img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-menus {
+        font-size: .75rem;
+        display: inline-flex;
+        width: auto;
+        border: 1px solid #dee2e6 !important;
+    }
+    .btn-menus img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .navbar-center {
@@ -1154,41 +1196,29 @@ div a:hover {
     font-size: 2.5rem;
 }
 
-.img-arbol-menu {
-    width: 70px;
-    height: auto;
+.navbar-portal .img-arbol-menu {
+    width: 50px;
+    padding-top: 5px;
 }
 
 @media (min-width: 576px) {
-    .btn-portal {
-        width: 120px;
-        font-size: 2.5rem;
-    }
-    .img-arbol-menu {
+    .navbar-portal .img-arbol-menu {
         width: 100px;
-        height: auto;
+        padding-top: 5px;
     }
 }
 
 @media (min-width: 768px) {
-    .btn-portal {
-        width: 120px;
-        line-height: 1rem;
-    }
-    .img-arbol-menu {
+    .navbar-portal .img-arbol-menu {
         width: 100px;
-        height: auto;
+        padding-top: 5px;
     }
 }
 
 @media (min-width: 992px) {
-    .btn-portal {
-        width: 120px;
-        font-size: 2.5rem;
-    }
-    .img-arbol-menu {
+    .navbar-portal .img-arbol-menu {
         width: 100px;
-        height: auto;
+        padding-top: 5px;
     }
 }
 
@@ -1226,9 +1256,19 @@ div a:hover {
 
 .card_marcas {
     background: rgb(211 22 53 / 80%);
+    box-shadow: 0 40px 60px -6px black;
     position: absolute;
     top: -280px;
     color: white;
+}
+
+.card_catalogos {
+    background-color: rgba(0, 0, 0, .75);
+    box-shadow: 0 40px 60px -6px black;
+    position: absolute;
+    top: -280px;
+    color: white;
+    width: 100%;
 }
 
 .card_body {
@@ -1244,6 +1284,11 @@ div a:hover {
 }
 
 .card:hover .card_marcas {
+    top: 0px;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover .card_catalogos {
     top: 0px;
     transition: all .5s ease-in-out;
 }
