@@ -160,7 +160,7 @@ html {
     position: fixed;
     bottom: -180px;
     right: 30px;
-    z-index: 9999;
+    z-index: 90;
     opacity: 1;
     cursor: pointer;
 }
@@ -1095,7 +1095,7 @@ div a:hover {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 12));
+        transform: translateX(calc(-250px * 15));
     }
 }
 
@@ -1123,7 +1123,7 @@ div a:hover {
 .slider .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 24);
+    width: calc(250px * 30);
 }
 
 .slider .slide {
@@ -1223,7 +1223,7 @@ div a:hover {
 }
 
 .radiant-bg {
-    height: 400px;
+    height: 518px;
     background: rgb(245, 245, 245);
     background: linear-gradient(105deg, rgba(245, 245, 245, 1) 0%, rgba(245, 245, 245, 1) 48.5%, rgba(255, 0, 0, 1) 49%, rgba(245, 245, 245, 1) 49.5%, rgba(255, 0, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
 }
@@ -1281,6 +1281,13 @@ div a:hover {
 
 .card_title {
     margin-bottom: 0.1rem;
+}
+
+.card_center {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    position: absolute;
 }
 
 .card:hover .card_marcas {
@@ -1717,3 +1724,56 @@ p.testimonialFrom {
 
 
 /* ============== End Timeline ============= */
+
+
+/* =============== Banners ================= */
+
+@media screen and (max-width: 600px) {
+    .ocultar-banner-movil {
+        visibility: visible;
+        height: auto;
+    }
+    .ocultar-banner {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .ocultar-banner-movil {
+        visibility: hidden;
+        height: 0;
+    }
+    .ocultar-banner {
+        visibility: visible;
+        height: auto;
+    }
+}
+
+
+/* =============== End Banners ================= */
+
+.img-sistemas {
+    border-radius: 1px;
+    border: 1px solid #dee2e6 !important;
+    max-width: 90%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .img-sistemas {
+        border-radius: 1px;
+        border: 1px solid #dee2e6 !important;
+        max-width: 70%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .img-sistemas {
+        border-radius: 1px;
+        border: 1px solid #dee2e6 !important;
+        max-width: 100%;
+        height: auto;
+    }
+}

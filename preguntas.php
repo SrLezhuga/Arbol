@@ -48,10 +48,6 @@
       data: {
         Rs: busqueda
       },
-      beforeSend: function() {
-        //imagen de carga
-        $("#accordionPreguntas").html("<div class='col-12'><img src='assets/media/img/loader/loader.gif'></div>");
-      },
       error: function() {
         alert("error petición ajax");
       },

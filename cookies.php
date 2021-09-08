@@ -328,12 +328,6 @@
                             <td>2 años</td>
                             <td>Cookie (de terceros) –> Estrictamente necesaria. Visualización de mapas mediante Google Maps.</td>
                           </tr>
-                          <tr class="small">
-                            <td>cpsession</td>
-                            <td>mayoreoferreteroatlas.com</td>
-                            <td>sesion</td>
-                            <td>Cookie propia –> Estrictamente necesaria. Identificador asignado por el host.</td>
-                          </tr>
                         </tbody>
                       </table>
                     </div>

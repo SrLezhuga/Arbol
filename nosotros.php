@@ -113,7 +113,7 @@
               </h1>
             </div>
             <br>
-            <p><b> Innovación</b></p>
+            <p><b>Innovación</b></p>
           </div>
           <!-- Respeto -->
           <div class="col">
@@ -133,7 +133,7 @@
               </h1>
             </div>
             <br>
-            <p><b> Responsabilidad</b></p>
+            <p><b>Responsabilidad</b></p>
           </div>
           <!-- Compromiso -->
           <div class="col">
@@ -168,62 +168,124 @@
 
           <ul class="timeline">
 
+            <!-- Inicios -->
             <li class="timeline-milestone is-current timeline-start">
               <div class="timeline-action shadow-lg">
-                <h2 class="title mitr">Inicio</h2>
-                <span class="date">2099</span>
+                <h2 class="title mitr">1970</h2>
+                <span class="date">Fundación Tecuala, Nayarit.</span>
                 <div class="content">
-                  <p class="small">Este es el comienzo de todo...</p>
+                  <p class="small">(imagen, texto, datos)</p>
                 </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
               <div class="timeline-action shadow-lg is-expandable expanded">
-                <h2 class="title mitr">Titulo</h2>
-                <span class="date">2100</span>
+                <h2 class="title mitr">1986</h2>
+                <span class="date">Primer mostrador Paseo de la Arboleda Guadalajara, Jalisco.</span>
                 <div class="content">
-                  <!--
-                  <ul class="file-list">
-                    <li><a href="example/video" class="video-link">Introduction video</a></li>
-                    <li><a href="example.pdf">Project Plan, pdf 2,8 MB</a></li>
-                    <li><a href="example.pdf">Requirements, pdf 5,3 MB</a></li>
-                    <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
-                  </ul>
-                  -->
-                  <p class="small">Este es el comienzo de todo...</p>
+
+                  <p class="small">(imagen, texto, datos)</p>
 
                 </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
               <div class="timeline-action shadow-lg is-expandable expanded">
-                <h2 class="title mitr">Initial planning</h2>
-                <span class="date">Second quarter 2013</span>
+                <h2 class="title mitr">1989</h2>
+                <span class="date">Distribuidor Mayorista.</span>
                 <div class="content">
-                  <ul class="file-list">
-                    <li><a href="example/video" class="video-link">Introduction video</a></li>
-                    <li><a href="example.pdf">Project Plan, pdf 2,8 MB</a></li>
-                    <li><a href="example.pdf">Requirements, pdf 5,3 MB</a></li>
-                    <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
-                  </ul>
+                  <p class="small">(imagen, texto, datos)</p>
                 </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
               <div class="timeline-action shadow-lg is-expandable">
-                <h2 class="title mitr">Start construction</h2>
-                <span class="date">Fourth quarter 2013</span>
+                <h2 class="title mitr">1997</h2>
+                <span class="date">Distribuidor Federal Mogul.</span>
                 <div class="content">
-                  <p>Este es un texto de prueba</p>
+                  <p class="small">(imagen, texto, datos)</p>
                 </div>
               </div>
             </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">2004</h2>
+                <span class="date">Inaguración Cedis Guadalajara.</span>
+                <div class="content">
+                  <p class="small">(imagen, texto, datos)</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">2008</h2>
+                <span class="date">Inaguración Cedis Monterrey.</span>
+                <div class="content">
+                  <p class="small">(imagen, texto, datos)</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">2012</h2>
+                <span class="date">Expansión 2da Bodega Cedis Guadalajara.</span>
+                <div class="content">
+                  <p class="small">(imagen, texto, datos)</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">2018</h2>
+                <span class="date">Inauguración Cedis León.</span>
+                <div class="content">
+                  <p class="small">(imagen, texto, datos)</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">2019</h2>
+                <span class="date">Granizada Histórica Cedis Guadalajara.</span>
+                <div class="content">
+                  <p class="small">(imagen, texto, datos)</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">2019</h2>
+                <span class="date">La llave.</span>
+                <div class="content">
+                  <p class="small">(imagen, texto, datos)</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">2020</h2>
+                <span class="date">Marzo - Pandemia COVID-19.</span>
+                <div class="content">
+                  <p class="small">(imagen, texto, datos)</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-milestone is-future">
+              <div class="timeline-action shadow-lg is-expandable">
+                <h2 class="title mitr">2020</h2>
+                <span class="date">Agosto - Cierre Cedis León.</span>
+                <div class="content">
+                  <p class="small">(imagen, texto, datos)</p>
+                </div>
+              </div>
+            </li>
+            <!-- Actualidad -->
             <li class="timeline-milestone is-future timeline-end">
               <div class="timeline-action shadow-lg">
-                <h2 class="title mitr">Test and verify</h2>
-                <span class="date">Second quarter 2014</span>
+                <h2 class="title mitr">2021</h2>
+                <span class="date">Uno de los mejores aliados de nuestros clientes por las marcas y el servicio que nos distingue.</span>
                 <div class="content">
-
+                  <p class="small">(imagen, texto, datos)</p>
                 </div>
               </div>
             </li>

@@ -1,7 +1,7 @@
 <?php
 include "../conexion.php";
 
-$retVal = (!empty($_POST['Rs'])) ? $parametro = $_POST['Rs'] : $parametro = '' ;
+$retVal = (!empty($_POST['Rs'])) ? $parametro = $_POST['Rs'] : $parametro = '';
 
 // FETCH_ASSOC
 $query = $con->prepare("CALL BuscarCatalogo('%" . $parametro . "%')");
@@ -13,19 +13,33 @@ $query->execute();
 
 $rows = $query->rowCount();
 
-if ($rows <= 0){
-    echo "
-        <div class='alert alert-warning' role='alert'>
-            No se encontro ningun resultado que coincidan con esta busqueda: <b>".$parametro."</b>.
+if ($rows <= 0) {
+  echo
+  "
+    <!--Item card -->
+    <div class='cards rounded bg-white align-items-center text-center align-self-center'>
+    <input type='hidden' value=''>
+      <img class='rounded' src='assets/media/img/logorojo.png' alt=''>
+      <div class='cards-desc rounded'>
+        <div class='cards-div'>
+          <h4 class='mitr'>
+            Mensaje del sistema
+          </h4>
+          <h6 class='glacial small'>
+          No se encontro ningun resultado que coincidan con esta busqueda: " . $parametro . "
+          </h6>
         </div>
-        ";
+      </div>
+    </div>
+
+    ";
 } else {
 
 
-    // Mostramos los resultados
-    while ($row = $query->fetch()) {
-        echo
-        "
+  // Mostramos los resultados
+  while ($row = $query->fetch()) {
+    echo
+    "
     <!--Item card -->
     <div class='cards rounded  align-items-center text-center align-self-center'>
     <input type='hidden' value='" . $row["marca_catalogo"] . "'>
@@ -47,5 +61,5 @@ if ($rows <= 0){
     </div>
 
     ";
-    }
+  }
 }

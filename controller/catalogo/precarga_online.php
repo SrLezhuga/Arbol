@@ -13,7 +13,7 @@ while ($row = $query->fetch()) {
       <div class="card h-100 overflow-hidden rounded shadow-lg">
         <img src="assets/media/img/marcas/' . $row["img_catalogo_web"] . '" class="card-img-top imagen" alt="' . $row["nombre_catalogo_web"] . '">
         <div class="card_body h-100 card_catalogos">
-          <div>
+          <div class="card_center">
             <h6 class="card_title mitr text-center">
               ' . $row["nombre_catalogo_web"] . '
             </h6>

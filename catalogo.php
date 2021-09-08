@@ -35,7 +35,6 @@
               <label for="floatingSelect"><i class="fas fa-search"></i> Buscar catalogo:</label>
             </div>
           </div>
-
           <div class="d-grid gap-2 col-lg-1 col-sm-12 mb-3">
             <button type="button" class="btn btn-lg btn-danger" onclick="getBusqueda()"><i class="fas fa-search"></i></button>
           </div>
@@ -89,14 +88,16 @@
       },
       beforeSend: function() {
         //imagen de carga
-        $("#item_catalogo").html("<img src='assets/media/img/loader/loader.gif'>");
+        $("#item_catalogo").html("<div class='col-6'><img class='mx-auto d-block' src='assets/media/img/loader/spinning.gif'></div>");
       },
       error: function() {
         alert("error petición ajax");
       },
       success: function(data) {
-        $("#item_catalogo").empty();
-        $("#item_catalogo").append(data);
+        setTimeout(function() {
+          $("#item_catalogo").empty();
+          $("#item_catalogo").append(data);
+        }, 250);
       }
     });
   }
@@ -108,14 +109,16 @@
       type: "post",
       beforeSend: function() {
         //imagen de carga
-        $("#item_catalogo_web").html("<img src='assets/media/img/loader/loader.gif'>");
+        $("#item_catalogo_web").html("<div class='col-6'><img class='mx-auto d-block' src='assets/media/img/loader/spinning.gif'></div>");
       },
       error: function() {
         alert("error petición ajax");
       },
       success: function(data) {
-        $("#item_catalogo_web").empty();
-        $("#item_catalogo_web").append(data);
+        setTimeout(function() {
+          $("#item_catalogo_web").empty();
+          $("#item_catalogo_web").append(data);
+        }, 250);
       }
     });
   }

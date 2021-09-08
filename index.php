@@ -31,40 +31,35 @@
             <!-- carusel -->
             <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <!-- carusel item -->
-                <div class="carousel-item active" data-bs-interval="9999999">
-                  <div class="row radiant-bg">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
-                      <div class=" d-sm-flex align-items-center justify-content-center">
-                        <img class="img-fluid" src="assets/media/img/banners/slide coche.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
-                      <h1 class="text-center display-6 glacial-bold">
-                        <b class="text-white"> PROVEEDOR DE REFACCIONES
-                          <br>
-                          <span class="text-dark">AUTOMOTRICES DE MÉXICO</span>
-                        </b>
-                      </h1>
 
-                    </div>
-                  </div>
+                <!-- carusel item -->
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="assets/media/img/banners/autopar2 1.png" class="ocultar-banner w-100">
+                  <img src="assets/media/img/banners/ToyopowerMovil.jpeg" class="ocultar-banner-movil w-100">
                 </div>
                 <!-- carusel item -->
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="https://www.webempresa.com/wp-content/uploads/2015/08/5sliderswp_easingslider.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="assets/media/img/banners/cauplas52.png" class="ocultar-banner w-100">
+                  <img src="assets/media/img/banners/ToyopowerMovil.jpeg" class="ocultar-banner-movil w-100">
+
                 </div>
                 <!-- carusel item -->
-                <div class="carousel-item">
-                  <img src="https://www.webempresa.com/wp-content/uploads/2015/08/5sliderswp_easingslider.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="assets/media/img/banners/polar.jpg" class="ocultar-banner w-100">
+                  <img src="assets/media/img/banners/ToyopowerMovil.jpeg" class="ocultar-banner-movil w-100">
+
+                </div>
+                <!-- carusel item -->
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="assets/media/img/banners/sakura.png" class="ocultar-banner w-100">
+                  <img src="assets/media/img/banners/ToyopowerMovil.jpeg" class="ocultar-banner-movil w-100">
+
+                </div>
+                <!-- carusel item -->
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="assets/media/img/banners/Toyopower56.png" class="ocultar-banner w-100">
+                  <img src="assets/media/img/banners/ToyopowerMovil.jpeg" class="ocultar-banner-movil w-100">
+
                 </div>
               </div>
               <!-- carusel btns -->
@@ -429,81 +424,7 @@
 
           <!-- Carusel/slider marcas -->
           <div class="slider mt-3">
-            <div class="slide-track">
-              <div class="slide">
-                <img src="assets/media/img/marcas/LUK.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/SYD.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/BAW.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/KYB.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/WAGNER.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/NATIONAL.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/SAKURA.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/CONTINENTAL.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/POLAR.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/TOYOPOWER.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/FRACO.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/DC.png" height="100" width="250" alt="" />
-              </div>
-              <!-- segunda vuelta -->
-              <div class="slide">
-                <img src="assets/media/img/marcas/LUK.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/SYD.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/BAW.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/KYB.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/WAGNER.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/NATIONAL.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/SAKURA.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/CONTINENTAL.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/POLAR.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/TOYOPOWER.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/FRACO.png" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/media/img/marcas/DC.png" height="100" width="250" alt="" />
-              </div>
-            </div>
+            <div class="slide-track" id="item_slide_marcas"></div>
           </div>
 
         </div>
@@ -515,5 +436,32 @@
   <?php require('controller/common/footer.php'); ?>
 
 </body>
+
+
+<script>
+  $(document).ready(function() {
+    showSliderMarcas();
+  });
+
+  function showSliderMarcas() {
+
+    $.ajax({
+      url: "controller/marcas/precarga_lideres.php",
+      type: "post",
+      beforeSend: function() {
+        //imagen de carga
+        $("#item_slide_marcas").html("<div class='col-6'><img class='mx-auto d-block' src='assets/media/img/loader/spinning.gif'></div>");
+      },
+      error: function() {
+        alert("error petición ajax");
+      },
+      success: function(data) {
+        $("#item_slide_marcas").empty();
+        $("#item_slide_marcas").append(data);
+        $("#item_slide_marcas").append(data);
+      }
+    });
+  }
+</script>
 
 </html>
