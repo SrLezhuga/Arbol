@@ -8,19 +8,19 @@
      <ul class="social-media-container">
          <li class="social-media whatsapp">
              <i class="fab fa-whatsapp"></i>
-             <a class="small text-decoration-none" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank">CHATEA EN WHATSAPP</a>
+             <a class="small text-decoration-none" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank">Chatea con nosotros</a>
          </li>
          <li class="social-media youtube">
              <i class="fab fa-youtube"></i>
-             <a class="small text-decoration-none" href="https://www.youtube.com/user/RefArboledas/" target="_blank">SUSCRIBETE AL CANAL</a>
+             <a class="small text-decoration-none" href="https://www.youtube.com/user/RefArboledas/" target="_blank">Suscríbete al canal</a>
          </li>
          <li class="social-media facebook">
              <i class="fab fa-facebook-f"></i>
-             <a class="small text-decoration-none" href="https://www.messenger.com/t/165424793629852/" target="_blank">DA LIKE EN FACEBOOK</a>
+             <a class="small text-decoration-none" href="https://www.messenger.com/t/165424793629852/" target="_blank">Siguenos en Facebook</a>
          </li>
          <li class="social-media instagram">
              <i class="fab fa-instagram"></i>
-             <a class="small text-decoration-none" href="https://www.instagram.com/refaccionaria.arboledas/" target="_blank">SEGUIR EN INSTAGRAM</a>
+             <a class="small text-decoration-none" href="https://www.instagram.com/refaccionaria.arboledas/" target="_blank">Síguenos en instagram</a>
          </li>
      </ul>
  </center>
