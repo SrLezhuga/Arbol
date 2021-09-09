@@ -80,8 +80,8 @@
     </header>
 
     <section>
-      <div class="container mb-3 mitr">
-        <section class="quick-links ">
+      <div class="container mb-5 mitr">
+        <section class="quick-links bg-white shadow-lg">
 
           <div class="row g-0">
             <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -89,7 +89,7 @@
                 <a>
                   <i class="nuevas_refacciones">
                   </i>
-                  <h6>NUEVAS REFACCIONES</h6>
+                  <h6 class="small">NUEVAS REFACCIONES</h6>
                 </a>
               </div>
             </div>
@@ -97,7 +97,7 @@
               <div class="link text-center">
                 <a>
                   <i class="ofertas_especiales"></i>
-                  <h6>OFERTAS ESPECIALES</h6>
+                  <h6 class="small">OFERTAS ESPECIALES</h6>
                 </a>
               </div>
             </div>
@@ -105,7 +105,7 @@
               <div class="link text-center">
                 <a>
                   <i class="financiamiento"></i>
-                  <h6>CRÉDITO</h6>
+                  <h6 class="small">CRÉDITO</h6>
                 </a>
               </div>
             </div>
@@ -113,7 +113,7 @@
               <div class="link text-center">
                 <a>
                   <i class="stock"></i>
-                  <h6>AMPLIO CATÁLOGO</h6>
+                  <h6 class="small">AMPLIO CATÁLOGO</h6>
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@
               <div class="link text-center">
                 <a>
                   <i class="cedis"></i>
-                  <h6>CENTROS DE DISTRIBUCIÓN</h6>
+                  <h6 class="small">CENTROS DE DISTRIBUCIÓN</h6>
                 </a>
               </div>
             </div>
@@ -129,7 +129,7 @@
               <div class="link text-center">
                 <a>
                   <i class="entregas"></i>
-                  <h6>ENTREGAS</h6>
+                  <h6 class="small">ENTREGAS</h6>
                 </a>
               </div>
             </div>
@@ -448,10 +448,6 @@
     $.ajax({
       url: "controller/marcas/precarga_lideres.php",
       type: "post",
-      beforeSend: function() {
-        //imagen de carga
-        $("#item_slide_marcas").html("<div class='col-6'><img class='mx-auto d-block' src='assets/media/img/loader/spinning.gif'></div>");
-      },
       error: function() {
         alert("error petición ajax");
       },

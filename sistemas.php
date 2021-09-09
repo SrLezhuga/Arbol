@@ -154,7 +154,7 @@
           if (!busqueda) {
             $("#txt_sistema").html("TODOS LOS SISTEMAS");
           } else {
-            $("#txt_sistema").html("Resultado de: " + busqueda);
+            $("#txt_sistema").html("Resultado de " + busqueda);
           }
         }, 250);
       }
@@ -188,7 +188,7 @@
           if (!busqueda) {
             $("#txt_sistema").html("TODOS LOS SISTEMAS");
           } else {
-            $("#txt_sistema").html("Sistema de: " + busqueda);
+            $("#txt_sistema").html("Sistema de " + busqueda);
           }
           $("#txtBuscar").val('');
         }, 250);

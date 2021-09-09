@@ -2,15 +2,29 @@
  <div class="car-top car-down" id="arriba">
      <span><img src="assets/media/img/car.png" alt="Proveedores de Refacciones Automotrices por mayoreo"></span>
  </div>
- 
+
  <!-- Btn Social-->
  <center>
-     <div class="plus-button"></div>
-     <div class="social-button youtube-button justify-content-md-center align-items-center"><a data-toggle="tooltip" title="Youtube" data-placement="left" href="https://www.youtube.com/user/RefArboledas/" target="_blank" data-original-title="Youtube"><i class="fab fa-youtube"></i></a></div>
-     <div class="social-button facebook-button "><a data-toggle="tooltip" title="Facebook" data-placement="left" href="https://www.messenger.com/t/165424793629852/" target="_blank" data-original-title="Facebook"><i class="fab fa-facebook"></i></a></div>
-     <div class="social-button instagram-button "><a data-toggle="tooltip" title="Instagram" data-placement="left" href="https://www.instagram.com/refaccionaria.arboledas/" target="_blank" data-original-title="Instagram"><i class="fab fa-instagram"></i></a></div>
-     <div class="social-button whatsapp-button "><a data-toggle="tooltip" title="Whatsapp" data-placement="left" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank" data-original-title="Whatsapp"><i class="fab fa-whatsapp"></i></a></div>
+     <ul class="social-media-container">
+         <li class="social-media whatsapp">
+             <i class="fab fa-whatsapp"></i>
+             <a class="small text-decoration-none" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank">CHATEA EN WHATSAPP</a>
+         </li>
+         <li class="social-media youtube">
+             <i class="fab fa-youtube"></i>
+             <a class="small text-decoration-none" href="https://www.youtube.com/user/RefArboledas/" target="_blank">SUSCRIBETE AL CANAL</a>
+         </li>
+         <li class="social-media facebook">
+             <i class="fab fa-facebook-f"></i>
+             <a class="small text-decoration-none" href="https://www.messenger.com/t/165424793629852/" target="_blank">DA LIKE EN FACEBOOK</a>
+         </li>
+         <li class="social-media instagram">
+             <i class="fab fa-instagram"></i>
+             <a class="small text-decoration-none" href="https://www.instagram.com/refaccionaria.arboledas/" target="_blank">SEGUIR EN INSTAGRAM</a>
+         </li>
+     </ul>
  </center>
+
 
  <!-- Footer -->
  <footer id="footer" class="text-center text-lg-start text-white small" style="background-color: rgb(13 45 105 / 70%);  border-top: 3px solid #d41636;">
