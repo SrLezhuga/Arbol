@@ -36,7 +36,7 @@
                 </div>
                 <h4>MATRIZ</h4>
                 <div class="separator-top"></div>
-                <p>Altos Hornos #2755 Col. El Álamo Parque industrial C.P. 45560, Tlaquepaque, Jalisco, México.</p>
+                <p>Altos Hornos #2755 Col. Álamo industrial C.P. 45560, Tlaquepaque, Jalisco, México.</p>
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@
                       <img src="assets/media/img/iconos/LOGO CEDIS GDL.png" onContextMenu='return false;' draggable='false'>
                     </span>
                     <h1 class="mitr">Matriz Guadalajara</h1>
-                    <p>Altos Hornos #2755 Col. El Álamo Parque industrial
+                    <p>Altos Hornos #2755 Col. Álamo industrial
                       <br>C.P. 45560. Tlaquepaque, Jalisco.
                     </p>
                     <p class="testimonialFrom">

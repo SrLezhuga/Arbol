@@ -305,7 +305,7 @@
 
             <figure class="figure">
               <img class="figure-img img-fluid rounded mt-2" src="assets/media/img/Img_Nosotros.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
-              <figcaption class="figure-caption text-white">Altos Hornos #2755 Col. El Álamo Parque industrial C.P. 45560. Tlaquepaque, Jalisco.</figcaption>
+              <figcaption class="figure-caption text-white">Altos Hornos #2755 Col. Álamo industrial C.P. 45560. Tlaquepaque, Jalisco.</figcaption>
             </figure>
           </center>
         </div>

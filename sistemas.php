@@ -24,78 +24,141 @@
     <section>
       <div class="container rounded bg-white shadow-lg justify-content-center align-items-center text-center mt-5 mb-3 pt-3 pb-3">
 
-        <div class="row bg-white mb-3 justify-content-center align-items-center text-center">
+        <div class="row bg-white mb-3 justify-content-center align-items-center text-center ocultar-sistemas">
           <!-- MOTOR -->
           <div class="col">
             <button value="MOTOR" class="btn_sistema border-0 bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- ENCENDIDO -->
           <div class="col">
             <button value="ENCENDIDO" class="btn_sistema border-0 bg-white" type="button">
-            <img src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- SUSPENSION -->
           <div class="col">
             <button value="SUSPENSIÓN" class="btn_sistema border-0 bg-white" type="button">
-            <img src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- EMBRAGUE -->
           <div class="col">
             <button value="EMBRAGUE" class="btn_sistema border-0 bg-white" type="button">
-            <img src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- FRENOS -->
           <div class="col">
             <button value="FRENOS" class="btn_sistema border-0 bg-white" type="button">
-            <img src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- TRANSMISION -->
           <div class="col">
             <button value="TRANSMISION" class="btn_sistema border-0 bg-white" type="button">
-            <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- GASOLINA -->
           <div class="col">
             <button value="GASOLINA" class="btn_sistema border-0 bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- ENFRIAMIENTO -->
           <div class="col">
             <button value="ENFRIAMIENTO" class="btn_sistema border-0 bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- MISCELÁNEOS -->
           <div class="col">
             <button value="MISCELÁNEOS" class="btn_sistema border-0 bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- QUIMICOS -->
           <div class="col">
             <button value="QUIMICOS" class="btn_sistema border-0 bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: auto; width: 50px;">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
-          <!-- Buscar -->
-          <div class="row px-3 g-0">
-            <div class="col-sm-12 col-lg-11 mb-3">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="txtBuscar" placeholder="Buscar sistema, marca o parte:" onkeyup="getBusqueda()">
-                <label for="floatingSelect"><i class="fas fa-search"></i> Buscar sistema, marca o parte:</label>
-              </div>
+        </div>
+
+        <div class="row row-cols-5 bg-white mb-3 justify-content-center align-items-center text-center ocultar-sistemas-movil">
+          <!-- MOTOR -->
+          <div class="col">
+            <button value="MOTOR" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- ENCENDIDO -->
+          <div class="col">
+            <button value="ENCENDIDO" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- SUSPENSION -->
+          <div class="col">
+            <button value="SUSPENSIÓN" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- EMBRAGUE -->
+          <div class="col">
+            <button value="EMBRAGUE" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- FRENOS -->
+          <div class="col">
+            <button value="FRENOS" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- TRANSMISION -->
+          <div class="col">
+            <button value="TRANSMISION" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- GASOLINA -->
+          <div class="col">
+            <button value="GASOLINA" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- ENFRIAMIENTO -->
+          <div class="col">
+            <button value="ENFRIAMIENTO" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- MISCELÁNEOS -->
+          <div class="col">
+            <button value="MISCELÁNEOS" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+          <!-- QUIMICOS -->
+          <div class="col">
+            <button value="QUIMICOS" class="btn_sistema border-0 bg-white mini_btn" type="button">
+              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+            </button>
+          </div>
+        </div>
+        <!-- Buscar -->
+        <div class="row px-3 g-0">
+          <div class="col-sm-12 col-lg-11 mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="txtBuscar" placeholder="Buscar sistema, marca o parte:" onkeyup="getBusqueda()">
+              <label for="floatingSelect"><i class="fas fa-search"></i> Buscar:</label>
             </div>
-            <div class="d-grid gap-2 col-lg-1 col-sm-12 mb-3">
-              <button type="button" class="btn btn-lg btn-danger" onclick="getBusqueda()"><i class="fas fa-search"></i></button>
-            </div>
+          </div>
+          <div class="d-grid gap-2 col-lg-1 col-sm-12 mb-3">
+            <button type="button" class="btn btn-danger" onclick="getBusqueda()"><i class="fas fa-search"></i></button>
           </div>
         </div>
 

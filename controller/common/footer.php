@@ -33,7 +33,7 @@
      <section class="">
          <div class="container text-center text-md-start">
              <!-- Grid row -->
-             <div class="row mt-3">
+             <div class="row mt-3 justify-content-center align-items-center">
                  <!-- Grid column -->
                  <div class="col-md-3 col-lg-2 mx-auto mb-4">
                      <!-- Content -->
@@ -42,7 +42,7 @@
                  <!-- Grid column -->
 
                  <!-- Grid column -->
-                 <div class="col-md-2 col-lg-5 mx-auto mb-4">
+                 <div class="col-md-9 col-lg-5 mx-auto mb-4">
                      <!-- Links -->
                      <h6 class="text-uppercase fw-bold mitr">Refaccionaria Arboledas</h6>
 
@@ -53,13 +53,13 @@
                  <!-- Grid column -->
 
                  <!-- Grid column -->
-                 <div class="col-md-4 col-lg-5 mx-auto mb-md-0 mb-4">
+                 <div class="col-md-12 col-lg-5 mx-auto mb-md-0 mb-4">
                      <!-- Links -->
                      <h6 class="text-uppercase fw-bold mitr">Contacto</h6>
                      <p>
-                         <a class="color-white no-link" href="https://www.google.com/maps/place/Refaccionaria+Arboledas+SA+de+CV/@20.6241852,-103.328707,20z/data=!4m5!3m4!1s0x8428b25924c5075f:0x10f56039859b589b!8m2!3d20.6242434!4d-103.328454" target="_blank"><i class="fas fa-location-arrow"></i>
-
-                             Altos Hornos #2755 Col. El Álamo Parque industrial
+                         <a class="color-white no-link" href="https://www.google.com/maps/place/Refaccionaria+Arboledas+SA+de+CV/@20.6241852,-103.328707,20z/data=!4m5!3m4!1s0x8428b25924c5075f:0x10f56039859b589b!8m2!3d20.6242434!4d-103.328454" target="_blank">
+                         <i class="fas fa-location-arrow"></i>
+                             Altos Hornos #2755 Col. Álamo industrial
                              C.P. 45560, Tlaquepaque, Jalisco, México.
                          </a>
                          <br>

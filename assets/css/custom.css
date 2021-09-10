@@ -1672,15 +1672,15 @@ p.testimonialFrom {
 
 .social-media i {
     color: #fff;
-    font-size: 10px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 5px;
     text-align: center;
     width: 30px;
 }
 
 .social-media a {
     color: #fff;
-    padding: 0 10px;
+    padding: 0 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1705,3 +1705,42 @@ p.testimonialFrom {
 
 
 /*============== End Redes Sociales ===============*/
+
+.mini_btn {
+    margin: 0;
+    padding: 0;
+}
+
+.mini_btn img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =============== Menu sistemas ================= */
+
+.ocultar-sistemas-movil {
+    visibility: visible;
+    height: auto;
+}
+
+.ocultar-sistemas {
+    visibility: hidden;
+    height: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .ocultar-sistemas-movil {
+        visibility: hidden;
+        height: 0;
+    }
+    .ocultar-sistemas {
+        visibility: visible;
+        height: auto;
+    }
+}
+
+
+/* =============== End Menu sistemas ================= */
