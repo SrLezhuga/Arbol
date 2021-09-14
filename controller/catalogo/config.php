@@ -133,7 +133,6 @@
 
             //Input
             $('#InputFileArchivo').change(function() {
-                var box = $("#archivo_catalogo").val();
                 var input = this;
                 var url = $(this).val();
                 var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
@@ -141,13 +140,13 @@
                 if (input.files && input.files[0] && (ext == "pdf")) {
                     $('#archivo_catalogo').val(prefile);
                 } else {
-                    $('#archivo_catalogo').val(box);
-                    $('#InputFileArchivo').val('');
                     Swal.fire(
                         "Mensaje de aviso",
                         "Error: Solo se permiten archivos PDF",
                         "error"
                     );
+                    $('#archivo_catalogo').val('Selecciona Archivo PDF');
+                    $('#InputFileArchivo').val('');
                 }
             });
 
