@@ -2,7 +2,7 @@
 include "../conexion.php";
 
 if ($_POST['Rs'] == 'ok') {
-  $query = $con->prepare("SELECT * FROM tab_marcas ORDER BY nombre_marca ASC");
+  $query = $con->prepare("SELECT * FROM tab_marcas WHERE active = 'Y' ORDER BY nombre_marca ASC");
   $query->setFetchMode(PDO::FETCH_ASSOC);
   $query->execute();
 

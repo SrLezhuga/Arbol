@@ -1038,6 +1038,15 @@ div a:hover {
     background-color: #e5e5e5;
 }
 
+.form-reset {
+    color: #212529 !important;
+    background-color: #fff !important;
+}
+
+.fieldset-bg {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
 .btn-portal {
     width: 85px;
     line-height: 1rem;
