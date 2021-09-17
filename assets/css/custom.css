@@ -755,7 +755,7 @@ span {
     position: relative;
     max-width: 200px;
     max-height: 350px;
-    box-shadow: 0 40px 60px -6px black;
+    /* box-shadow: 0 40px 60px -6px black;*/
     margin-bottom: 10px;
     border: none;
 }

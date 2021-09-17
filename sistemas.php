@@ -22,9 +22,9 @@
     </div>
 
     <section>
-      <div class="container border rounded bg-white shadow-lg justify-content-center align-items-center text-center mt-5 mb-3 pt-3 pb-3">
+      <div class="container justify-content-center align-items-center text-center mt-5 mb-3 pt-3 pb-3">
 
-        <div class="row bg-white mb-2 justify-content-center align-items-center text-center ocultar-sistemas">
+        <div class="row mb-2 justify-content-center align-items-center text-center ocultar-sistemas">
           <!-- MOTOR -->
           <div class="col">
             <button value="MOTOR" class="btn_sistema border bg-white" type="button">
