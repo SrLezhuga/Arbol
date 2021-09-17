@@ -81,7 +81,7 @@
 
     <section>
       <div class="container mb-5 mitr">
-        <section class="quick-links bg-white shadow-lg">
+        <section class="quick-links bg-white border">
 
           <div class="row g-0">
             <div class="col-lg-2 col-md-4 col-sm-6 col-6">
@@ -254,7 +254,7 @@
         <div class="row mt-3 mb-3 row-cols-lg-5 row-cols-sm-1 justify-content-center align-items-center">
 
           <div class="accordion accordion-flush" id="accordionMotor">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingMotor">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMotor" aria-expanded="false" aria-controls="flush-collapseMotor">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
@@ -269,7 +269,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionEncendido">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingEncendido">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEncendido" aria-expanded="false" aria-controls="flush-collapseEncendido">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false'>
@@ -285,7 +285,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionSuspension">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingSuspension">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSuspension" aria-expanded="false" aria-controls="flush-collapseSuspension">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false'>
@@ -301,7 +301,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionEmbrague">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingEmbrague">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEmbrague" aria-expanded="false" aria-controls="flush-collapseEmbrague">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false'>
@@ -316,7 +316,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionFrenos">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingFrenos">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFrenos" aria-expanded="false" aria-controls="flush-collapseFrenos">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -331,7 +331,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionTransmision">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingTransmision">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTransmision" aria-expanded="false" aria-controls="flush-collapseTransmision">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false'>
@@ -348,7 +348,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionEnfriamiento">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingEnfriamiento">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEnfriamiento" aria-expanded="false" aria-controls="flush-collapseEnfriamiento">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -364,7 +364,7 @@
 
 
           <div class="accordion accordion-flush" id="accordionMiscelaneos">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingMiscelaneos">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMiscelaneos" aria-expanded="false" aria-controls="flush-collapseMiscelaneos">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -380,7 +380,7 @@
 
 
           <div class="accordion accordion-flush" id="accordionQuimicos">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingQuimicos">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuimicos" aria-expanded="false" aria-controls="flush-collapseQuimicos">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -396,7 +396,7 @@
 
 
           <div class="accordion accordion-flush" id="accordionGasolina">
-            <div class="accordion-item mb-3 rounded shadow-lg">
+            <div class="accordion-item mb-3 rounded shadow-lg border">
               <h2 class="accordion-header" id="flush-headingGasolina">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGasolina" aria-expanded="false" aria-controls="flush-collapseGasolina">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>

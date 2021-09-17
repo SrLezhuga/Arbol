@@ -87,7 +87,7 @@
       <div class="container mt-5 mb-5">
         <div class="row justify-content-center align-items-center">
           <!-- from -->
-          <div class="col-lg-8 col-md-8 col-sm-12 bg-white rounded shadow-lg">
+          <div class="col-lg-8 col-md-8 col-sm-12 bg-white rounded border shadow-lg">
             <div class="row">
               <!-- campo nombre -->
               <div class="col-lg-12">

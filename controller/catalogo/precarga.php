@@ -19,7 +19,7 @@ if ($rows <= 0) {
     <!--Item card -->
     <div class='cards rounded bg-white align-items-center text-center align-self-center'>
     <input type='hidden' value=''>
-      <img class='rounded' src='assets/media/img/logorojo.png' alt=''>
+      <img class='rounded' src='assets/media/img/loader/Placeholder.png'>
       <div class='cards-desc rounded'>
         <div class='cards-div'>
           <h4 class='mitr'>

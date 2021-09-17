@@ -21,35 +21,22 @@
   <div class="container mb-3 mt-5">
 
 
-    <ul class="social-media-container">
-      <li class="social-media whatsapp">
-        <i class="fab fa-whatsapp"></i>
-        <a class="small" href="https://florin-pop.com/whatsapp" target="_blank">Check out my whatsapp</a>
-      </li>
-      <li class="social-media twitter">
-        <i class="fab fa-twitter"></i>
-        <a class="small" href="https://twitter.com/florinpop1705" target="_blank">Follow me on Twitter</a>
-      </li>
-      <li class="social-media youtube">
-      <i class="fab fa-youtube"></i>
-        <a class="small" href="https://linkedin.com/in/florinpop17" target="_blank">Connect on Linkedin</a>
-      </li>
-      <li class="social-media facebook">
-        <i class="fab fa-facebook-f"></i>
-        <a class="small" href="https://facebook.com/florinpop17" target="_blank">Like my Facebook page</a>
-      </li>
-      <li class="social-media instagram">
-      <i class="fab fa-instagram"></i>
-        <a class="small" href="https://github.com/florinpop17" target="_blank">See projects on Github</a>
-      </li>
-    </ul>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput"><i class="fas fa-search"></i> Buscar por código o descripción</label>
+        </div>
+      </div>
+      <div class="col-12"></div>
+    </div>
 
 
   </div>
 
 
   <style>
-    
+
   </style>
 
   <script>

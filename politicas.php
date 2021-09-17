@@ -93,9 +93,11 @@
                         <li class="nav-item" role="presentation">
                           <a class="btn-none btn" id="pills-proveedores-tab" data-bs-toggle="pill" data-bs-target="#pills-proveedores" type="button" role="tab" aria-controls="pills-proveedores" aria-selected="false">Proveedores</a>
                         </li>
+                        <!--
                         <li class="nav-item" role="presentation">
                           <a class="btn-none btn" id="pills-empleados-tab" data-bs-toggle="pill" data-bs-target="#pills-empleados" type="button" role="tab" aria-controls="pills-empleados" aria-selected="false">Empleados</a>
                         </li>
+                        -->
                       </ul>
                       <hr>
                       <div class="tab-content" id="pills-tabContent">
@@ -469,6 +471,7 @@
                         </div>
                         <!-- End Proveedores -->
                         <!-- Empleados -->
+                        <!--
                         <div class="tab-pane fade" id="pills-empleados" role="tabpanel" aria-labelledby="pills-empleados-tab">
                           <h4 class="mitr text-uppercase">Aviso de Privacidad Empleados</h4>
                           <div class="separator-top"></div>
@@ -696,8 +699,9 @@
                               Fecha de última actualización: 02 de septiembre del 2021.
                             </cite>
                           </figcaption>
-                          <!-- End Empleados -->
+                         
                         </div>
+                            -->
                       </div>
                     </div>
                   </div>

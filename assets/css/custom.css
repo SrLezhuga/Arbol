@@ -899,7 +899,8 @@ div a:hover {
 }
 
 .shadow-lg {
-    box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%) !important;
+    /* box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%) !important;*/
+    box-shadow: none !important;
 }
 
 .rounded {
@@ -949,7 +950,8 @@ div a:hover {
 
 .slider {
     background: white;
-    box-shadow: 0 0 30px 0 rgb(20 27 202 / 20%);
+    /* box-shadow: 0 0 30px 0 rgb(20 27 202 / 20%);*/
+    border: 1px solid #dee2e6 !important;
     height: 100px;
     margin: auto;
     overflow: hidden;
@@ -991,7 +993,8 @@ div a:hover {
     background: white;
     border-radius: 100px;
     width: 74px;
-    box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%);
+    /* box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%);*/
+    border: 1px solid #dee2e6 !important;
     margin: 0px auto;
 }
 
@@ -1001,6 +1004,7 @@ div a:hover {
 }
 
 .our-services {
+    border: 1px solid #dee2e6 !important;
     margin-top: 75px;
     padding-bottom: 30px;
     padding: 5px 10px;
@@ -1009,7 +1013,7 @@ div a:hover {
     border-radius: 10px;
     background-color: #fff;
     transition: all .4s ease-in-out;
-    box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%) !important;
+    /*  box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%) !important;*/
 }
 
 .our-services .icon {
@@ -1024,7 +1028,7 @@ div a:hover {
 }
 
 .settings:hover {
-    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .5);
+    /* box-shadow: 0 0 25px 0 rgba(20, 27, 201, .5);*/
     cursor: pointer;
     /*background-image: linear-gradient(-45deg, #34b5bf 0%, #0d2d69 100%);*/
     background: rgba(0, 0, 0, 0.6);
@@ -1045,6 +1049,11 @@ div a:hover {
 
 .fieldset-bg {
     background-color: rgba(0, 0, 0, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
 
 .btn-portal {
@@ -1612,7 +1621,6 @@ p.testimonialFrom {
 
 .img-sistemas {
     border-radius: 1px;
-    border: 1px solid #dee2e6 !important;
     max-width: 90%;
     height: auto;
 }
@@ -1620,7 +1628,6 @@ p.testimonialFrom {
 @media screen and (min-width: 768px) {
     .img-sistemas {
         border-radius: 1px;
-        border: 1px solid #dee2e6 !important;
         max-width: 70%;
         height: auto;
     }
@@ -1629,7 +1636,6 @@ p.testimonialFrom {
 @media screen and (min-width: 992px) {
     .img-sistemas {
         border-radius: 1px;
-        border: 1px solid #dee2e6 !important;
         max-width: 100%;
         height: auto;
     }

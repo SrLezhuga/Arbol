@@ -15,7 +15,7 @@ if ($_POST['Rs'] == 'ok') {
     echo '
     
     <!-- Pregunta ' . $count . ' -->
-    <div class="accordion-item rounded shadow-lg">
+    <div class="accordion-item rounded border shadow-lg">
       <h2 class="accordion-header" id="heading' . $count . '">
         <button class="accordion-button ' . $collapsed . '" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' . $count . '" aria-expanded="' . $bool . '" aria-controls="collapse' . $count . '">
         ' . $count . '. ' . $row["pregunta"] . '
