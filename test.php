@@ -28,7 +28,10 @@
           <label for="floatingInput"><i class="fas fa-search"></i> Buscar por código o descripción</label>
         </div>
       </div>
-      <div class="col-12"></div>
+      <div class="col-12">
+        
+      </div>
+
     </div>
 
 

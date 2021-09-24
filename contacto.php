@@ -171,7 +171,7 @@
               <!-- btn enviar -->
               <div class="col-12">
                 <div class="mb-3 d-grid gap-2">
-                  <button type="button" class="btn btn-lg btn-outline-danger"><i class="fas fa-paper-plane"></i> Enviar</button>
+                  <button type="button" class="btn btn-lg btn-danger"><i class="fas fa-paper-plane"></i> Enviar</button>
                 </div>
               </div>
 

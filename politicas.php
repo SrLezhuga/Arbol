@@ -76,7 +76,7 @@
                   <!-- Aviso de pricacidad completo -->
                   <p>
                   <div class="d-grid gap-2">
-                    <button class="btn btn-outline-danger btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="btn btn-danger btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                       <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                       Aviso de privacidad completo
                       <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
@@ -709,7 +709,7 @@
                   <br>
                   <hr>
                   <p>
-                    <a class="btn btn-outline-danger btn-sm" role="button">
+                    <a class="btn btn-danger btn-sm" role="button">
                       <i class="fas fa-file-download"></i> Descargar Aviso de Privacidad
                     </a>
                   </p>

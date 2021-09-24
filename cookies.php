@@ -41,7 +41,7 @@
                     <br>Cookies utilizadas en nuestra web y la finalidad de las mismas.
                   </p>
                   <p>
-                    <a class="btn btn-outline-danger btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn btn-danger btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                       <i class="fas fa-angle-down"></i> Mostrar Cookies <i class="fas fa-angle-down"></i>
                     </a>
                   </p>

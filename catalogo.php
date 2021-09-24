@@ -122,4 +122,10 @@
       }
     });
   }
+
+  function descargarCatalogo(ruta) {
+    console.log(ruta);
+    window.location.href = 'controller/catalogo/download.php?id=' + ruta;
+  }
+
 </script>

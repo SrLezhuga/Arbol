@@ -19,5 +19,6 @@ $data['fecha_catalogo'] = $row['fecha_catalogo'];
 $data['img_catalogo'] = $row['img_catalogo'];
 $data['archivo_catalogo'] = $row['archivo_catalogo'];
 $data['activo'] = $row['activo'];
+$data['etiquetas'] = $row['etiquetas'];
 
 echo json_encode($data);

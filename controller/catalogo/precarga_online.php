@@ -20,7 +20,7 @@ while ($row = $query->fetch()) {
             <p class="card-text text_small text-center">
               ' . $row["info_catalogo_web"] . '
             </p>
-            <a style="width: 100%;" class="btn btn-sm btn-outline-danger small" href="' . $row["url_catalogo_web"] . '" target="_blank" role="button"><i class="fas fa-link"></i> Ver Online</a>
+            <a style="width: 100%;" class="btn btn-sm btn-danger small" href="' . $row["url_catalogo_web"] . '" target="_blank" role="button"><i class="fas fa-link"></i> Ver Online</a>
           </div>
         </div>
       </div>

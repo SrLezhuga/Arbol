@@ -18,7 +18,6 @@ if ($rows <= 0) {
   "
     <!--Item card -->
     <div class='cards border rounded bg-white align-items-center text-center align-self-center'>
-    <input type='hidden' value=''>
       <img class='rounded' src='assets/media/img/loader/Placeholder.png'>
       <div class='cards-desc rounded'>
         <div class='cards-div'>
@@ -38,11 +37,12 @@ if ($rows <= 0) {
 
   // Mostramos los resultados
   while ($row = $query->fetch()) {
+    $url = $row["id_catalogo"];
     echo
     "
     <!--Item card -->
     <div class='cards rounded  align-items-center text-center align-self-center'>
-    <input type='hidden' value='" . $row["marca_catalogo"] . "'>
+    <input type='hidden' value='" . $row["etiquetas"] . "'>
       <img class='rounded' src='files/" . $row["img_catalogo"] . "' alt=''>
       <div class='cards-desc rounded'>
         <div class='cards-div'>
@@ -53,8 +53,8 @@ if ($rows <= 0) {
             " . $row["subtitulo_catalogo"] . "<br>" . $row["fecha_catalogo"] . "
           </h6>
           <div class='d-grid gap-2'>
-            <a class='btn btn-sm btn-outline-danger small' href='files/" . $row["archivo_catalogo"] . "' target='_blank' role='button'><i class='far fa-eye'></i> Ver Online</a>
-            <a class='btn btn-sm btn-outline-danger small' role='button' value='" . $row["id_catalogo"] . "'><i class='fas fa-file-download'></i> Descargar</a>
+            <a class='btn btn-sm btn-danger small' href='files/" . $row["archivo_catalogo"] . "' target='_blank' role='button'><i class='far fa-eye'></i> Ver Online</a>
+            <a class='btn btn-sm btn-danger small' role='button' onclick='descargarCatalogo($url)' ><i class='fas fa-file-download'></i> Descargar</a>
           </div>
         </div>
       </div>
