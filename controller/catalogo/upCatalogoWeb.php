@@ -1,66 +1,37 @@
 <?php
 include("../conexion.php");
 
-formData.append("catalogo", catalogo);
-formData.append("informacion", informacion);
-formData.append("url", url);
-formData.append("titulo", titulo);
-formData.append("activo", activo);
-formData.append("img", img);
-formData.append("imgCatalogoWeb", imgCatalogoWeb);
-
-
-
-
-
 $catalogo = $_POST['catalogo'];
 $informacion = $_POST['informacion'];
 $titulo = $_POST['titulo'];
 $url = $_POST['url'];
-$fecha = $_POST['fecha'];
 $activo = $_POST['activo'];
 $img = $_POST['img'];
-$txt = $_POST['txt'];
-$archivo = $_POST['archivo'];
 
-if (!empty($_FILES['imgCatalogo']['name'])) {
-    $imgCatalogo = $_FILES['imgCatalogo']['name'];
+if (!empty($_FILES['imgCatalogoWeb']['name'])) {
+    $imgCatalogo = $_FILES['imgCatalogoWeb']['name'];
 } else {
     $imgCatalogo = $img;
 }
 
-if (!empty($_FILES['archivoCatalogo']['name'])) {
-    $archivoCatalogo = $_FILES['archivoCatalogo']['name'];
-} else {
-    $archivoCatalogo = $archivo;
-}
-
-if ($catalogo == 'nuevo') {
-    $catalogo = 'null';
-}
-
 $data = array();
 
-echo $sql = 'insert into web_arbol.tab_catalogo (id_catalogo, marca_catalogo, titulo_catalogo, subtitulo_catalogo, fecha_catalogo, img_catalogo, archivo_catalogo, activo, etiquetas)
-values  (' . $catalogo . ', "' . $marca . '", "' . $titulo . '", "' . $subtitulo . '", "' . $fecha . '", "' . $imgCatalogo . '", "' . $archivoCatalogo . '", "' . $activo . '", "' . $txt . '")
-on duplicate key update marca_catalogo = "' . $marca . '", titulo_catalogo = "' . $titulo . '", subtitulo_catalogo = "' . $subtitulo . '", fecha_catalogo = ' . $fecha . ', img_catalogo = "' . $imgCatalogo . '", archivo_catalogo = "' . $archivoCatalogo . '", activo = "' . $activo . '", etiquetas = "' . $txt . '";';
+$sql = 'insert into web_arbol.tab_catalogo_web (id_catalogo_web, nombre_catalogo_web, img_catalogo_web, info_catalogo_web, url_catalogo_web, active)
+values  (' . $catalogo . ', "' . $titulo . '", "' . $imgCatalogo . '", "' . $informacion . '", "' . $url . '", "' . $activo . '")
+on duplicate key update nombre_catalogo_web = "' . $titulo . '", img_catalogo_web = "' . $imgCatalogo . '", info_catalogo_web = "' . $informacion . '", url_catalogo_web = "' . $url . '", active = "' . $activo . '";';
 
-/*
 $query = $con->prepare($sql);
 if ($query->execute()) {
 
-    if (!empty($_FILES['imgCatalogo']['name'])) {
-        move_uploaded_file($_FILES["imgCatalogo"]["tmp_name"], "../../files/" . $_FILES['imgCatalogo']['name']);
-    }
-    if (!empty($_FILES['archivoCatalogo']['name'])) {
-        move_uploaded_file($_FILES["archivoCatalogo"]["tmp_name"], "../../files/" . $_FILES['archivoCatalogo']['name']);
+    if (!empty($_FILES['imgCatalogoWeb']['name'])) {
+        move_uploaded_file($_FILES["imgCatalogoWeb"]["tmp_name"], "../../assets/media/img/marcas/" . $_FILES['imgCatalogoWeb']['name']);
     }
 
     $data['status'] = 'ok';
     if ($catalogo == 'null') {
-        $data['msj'] = 'Se creó un nuevo catálogo';
+        $data['msj'] = 'Se creó un nuevo catálogo web';
     } else {
-        $data['msj'] = 'Se actualizó un catálogo';
+        $data['msj'] = 'Se actualizó un catálogo web';
     }
 } else {
     $data['status'] = 'error';
@@ -68,4 +39,3 @@ if ($query->execute()) {
 }
 
 echo json_encode($data);
-*/

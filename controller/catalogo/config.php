@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-floating mb-1">
-                        <input type="hidden" class="form-control form-reset" id="id_catalogo" placeholder="Marca" autocomplete="off">
+                        <input type="hidden" class="form-control form-reset" id="id_catalogo" placeholder="Id" autocomplete="off">
                         <label for="id_catalogo"><i class="fas fa-bookmark"></i> Id</label>
                     </div>
                 </div>

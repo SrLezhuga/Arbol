@@ -23,13 +23,9 @@ if (!empty($_FILES['archivoCatalogo']['name'])) {
     $archivoCatalogo = $archivo;
 }
 
-if ($catalogo == 'nuevo') {
-    $catalogo = 'null';
-}
-
 $data = array();
 
-$sql = 'insert into web_arbol.tab_catalogo (id_catalogo, marca_catalogo, titulo_catalogo, subtitulo_catalogo, fecha_catalogo, img_catalogo, archivo_catalogo, activo, etiquetas)
+echo $sql = 'insert into web_arbol.tab_catalogo (id_catalogo, marca_catalogo, titulo_catalogo, subtitulo_catalogo, fecha_catalogo, img_catalogo, archivo_catalogo, activo, etiquetas)
 values  (' . $catalogo . ', "' . $marca . '", "' . $titulo . '", "' . $subtitulo . '", "' . $fecha . '", "' . $imgCatalogo . '", "' . $archivoCatalogo . '", "' . $activo . '", "' . $txt . '")
 on duplicate key update marca_catalogo = "' . $marca . '", titulo_catalogo = "' . $titulo . '", subtitulo_catalogo = "' . $subtitulo . '", fecha_catalogo = ' . $fecha . ', img_catalogo = "' . $imgCatalogo . '", archivo_catalogo = "' . $archivoCatalogo . '", activo = "' . $activo . '", etiquetas = "' . $txt . '";';
 

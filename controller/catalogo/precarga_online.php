@@ -1,7 +1,7 @@
 <?php
 include "../conexion.php";
 
-$query = $con->prepare("SELECT * FROM tab_catalogo_web");
+$query = $con->prepare("SELECT * FROM tab_catalogo_web WHERE active = 'Y'");
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $query->execute();
 

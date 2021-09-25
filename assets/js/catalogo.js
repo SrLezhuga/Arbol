@@ -89,6 +89,7 @@ function resetCatalogo() {
 
 function nuevoCatalogo() {
     $("#formCatalogo").val('').attr('selected', 'selected');
+    $("#id_catalogo").val('null');
     $("#marca_catalogo").val('');
     $("#titulo_catalogo").val('');
     $("#subtitulo_catalogo").val('');
@@ -128,7 +129,6 @@ function getCatalogo() {
                 $("#archivo_catalogo").val(obj.archivo_catalogo);
                 $("#textareaCatalogo").val(obj.etiquetas);
                 if (obj.activo == 'Y') {
-                    var condiciones = $("#CheckBoxCatalogo").is(":checked");
                     $("#CheckBoxCatalogo").prop("checked", true);
                 } else {
                     $("#CheckBoxCatalogo").prop("checked", false);
@@ -145,9 +145,6 @@ function guardarCatalogo() {
     var formData = new FormData();
 
     var catalogo = $('#id_catalogo').val();
-    if (catalogo.length == 0) {
-        var catalogo = 'nuevo';
-    }
 
     var marca = $("#marca_catalogo").val();
     if (marca.length == 0) {
@@ -170,12 +167,12 @@ function guardarCatalogo() {
         return;
     }
     var archivo = $("#archivo_catalogo").val();
-    if (catalogo == 'nuevo' && (archivo.length == 0 || archivo == 'Selecciona Archivo PDF')) {
+    if (catalogo == 'null' && (archivo.length == 0 || archivo == 'Selecciona Archivo PDF')) {
         Swal.fire("Mensaje de confirmación", "No seleccionaste un PDF", "error");
         return;
     }
     var img = $("#img_catalogo").val();
-    if (catalogo == 'nuevo' && (img.length == 0 || img == 'Selecciona Archivo de Imagen')) {
+    if (catalogo == 'null' && (img.length == 0 || img == 'Selecciona Archivo de Imagen')) {
         Swal.fire("Mensaje de confirmación", "No seleccionaste una imagen", "error");
         return;
     }

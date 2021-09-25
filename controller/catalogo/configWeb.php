@@ -15,7 +15,7 @@
         </div>
         <div class="col-2">
             <div class="d-grid gap-2">
-                <button class="btn btn-lg btn-danger" id="btn-guardar-catalogo" type="button" onclick="guardarCatalogoWeb()">Guardar <i class="fas fa-save"></i></button>
+                <button class="btn btn-lg btn-danger" id="btn-guardar-catalogoWeb" type="button" onclick="guardarCatalogoWeb()">Guardar <i class="fas fa-save"></i></button>
             </div>
         </div>
     </div>
@@ -152,10 +152,9 @@
         $("#info_catalogo_web").prop("disabled", false);
         $("#url_catalogo_web").prop("disabled", false);
         $("#nombre_catalogo_web").prop("disabled", false);
-        $("#archivo_catalogo").prop("disabled", false);
         $("#imgCatalogoWeb").prop("disabled", false);
         $("#img_file_catalogo_web").prop("disabled", false);
-        $("#btn-guardar-catalogo").prop("disabled", false);
+        $("#btn-guardar-catalogoWeb").prop("disabled", false);
         $("#btn-ver-catalogoWeb").prop("disabled", false);
     }
 
@@ -165,11 +164,10 @@
         $("#info_catalogo_web").prop("disabled", true);
         $("#url_catalogo_web").prop("disabled", true);
         $("#nombre_catalogo_web").prop("disabled", true);
-        $("#archivo_catalogo").prop("disabled", true);
         $("#InputFileArchivo").prop("disabled", true);
         $("#imgCatalogoWeb").prop("disabled", true);
         $("#img_file_catalogo_web").prop("disabled", true);
-        $("#btn-guardar-catalogo").prop("disabled", true);
+        $("#btn-guardar-catalogoWeb").prop("disabled", true);
         $("#btn-ver-catalogoWeb").prop("disabled", true);
     }
 
@@ -178,7 +176,6 @@
         $("#info_catalogo_web").val('');
         $("#url_catalogo_web").val('');
         $("#nombre_catalogo_web").val('');
-        $("#archivo_catalogo").val('');
         $("#InputFileArchivo").val('');
         $("#imgCatalogoWeb").val('');
         $("#img_file_catalogo_web").val('');
@@ -191,7 +188,6 @@
         $("#info_catalogo_web").val('');
         $("#url_catalogo_web").val('');
         $("#nombre_catalogo_web").val('');
-        $("#archivo_catalogo").val('');
         $("#InputFileArchivo").val('');
         $("#imgCatalogoWeb").val('');
         $("#img_file_catalogo_web").val('');
@@ -200,10 +196,10 @@
 
     function nuevoCatalogoWeb() {
         $("#formCatalogoWeb").val('').attr('selected', 'selected');
+        $("#id_catalogo_web").val('null');
         $("#info_catalogo_web").val('');
         $("#url_catalogo_web").val('');
         $("#nombre_catalogo_web").val('');
-        $("#archivo_catalogo").val('');
         $("#InputFileArchivo").val('');
         $("#imgCatalogoWeb").val('');
         $("#img_file_catalogo_web").val('');
@@ -247,9 +243,7 @@
     function guardarCatalogoWeb() {
         var formData = new FormData();
         var catalogo = $('#id_catalogo_web').val();
-        if (catalogo.length == 0) {
-            var catalogo = 'nuevo';
-        }
+
         var informacion = $("#info_catalogo_web").val();
         if (informacion.length == 0) {
             Swal.fire("Mensaje de confirmación", "Campo información sin llenar", "error");
@@ -266,7 +260,7 @@
             return;
         }
         var img = $("#img_file_catalogo_web").val();
-        if (catalogo == 'nuevo' && (img.length == 0 || img == 'Selecciona Archivo de Imagen')) {
+        if (catalogo == 'null' && (img.length == 0 || img == 'Selecciona Archivo de Imagen')) {
             Swal.fire("Mensaje de confirmación", "No seleccionaste una imagen", "error");
             return;
         }
@@ -288,22 +282,20 @@
         formData.append("img", img);
         formData.append("imgCatalogoWeb", imgCatalogoWeb);
         $.ajax({
-            url: "controller/catalogo/upCatalogo.php",
+            url: "controller/catalogo/upCatalogoWeb.php",
             type: "post",
             data: formData,
             contentType: false,
             processData: false,
             success: function(data) {
-                console.log(data);
-                /*
                 var obj = JSON.parse(data);
                 if (obj.status == "ok") {
                     Swal.fire("Mensaje de confirmación", obj.msj, "success");
                     resetCatalogoWeb();
-                    loadSelectCatalogo();
+                    loadSelectCatalogoWeb();
                 } else {
                     Swal.fire("Mensaje de confirmación", obj.msj, "error");
-                }*/
+                }
             }
         });
     }
