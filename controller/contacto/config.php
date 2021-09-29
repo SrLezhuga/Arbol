@@ -1,5 +1,5 @@
 <fieldset class="border p-2 bg-white shadow-lg">
-    <legend class="w-auto"><b>Catálogo Web:</b></legend>
+    <legend class="w-auto"><b>Marcas:</b></legend>
 
     <div class="row">
         <div class="col-8">

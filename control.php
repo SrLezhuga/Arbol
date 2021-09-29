@@ -12,6 +12,7 @@
   <title>Refaccionaria Arboledas | Configuración</title>
 
   <script type="text/javascript" src="assets/js/catalogo.js"></script>
+  <script type="text/javascript" src="assets/js/catalogoWeb.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
                 <?php include('controller/catalogo/configWeb.php'); ?>
               </div>
               <div class="tab-pane fade" id="v-pills-marcas" role="tabpanel" aria-labelledby="v-pills-marcas-tab">
-                
+                <?php include('controller/marcas/config.php'); ?>
               </div>
               <div class="tab-pane fade" id="v-pills-sistemas" role="tabpanel" aria-labelledby="v-pills-sistemas-tab">...</div>
               <div class="tab-pane fade" id="v-pills-productos" role="tabpanel" aria-labelledby="v-pills-productos-tab">...</div>
