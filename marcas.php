@@ -21,18 +21,8 @@
       <h2 class="mitr">MARCAS</h2>
     </div>
 
-
     <section>
       <div class="container mt-5 mb-3">
-
-        <div class="col-lg-3 col-md-4 col-sm-12">
-          <div class="card h-100 overflow-hidden rounded">
-            <a href="detalles?marca=4KAR">
-              <img src="assets/media/img/marcas/4KAR.png" class="card-img-top imagen" alt="4KAR">
-            </a>
-          </div>
-        </div>
-
         <!-- Carusel/slider marcas -->
 
         <!-- Marcas -->
@@ -43,12 +33,9 @@
     </section>
   </div>
 
-
   <?php require('controller/common/footer.php'); ?>
 
 </body>
-
-
 
 </html>
 

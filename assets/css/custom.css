@@ -1121,11 +1121,12 @@ div a:hover {
 }
 
 .card_marcas {
-    background: rgb(211 22 53 / 80%);
+    background: rgb(0 0 0 / 70%);
     box-shadow: 0 40px 60px -6px black;
     position: absolute;
     top: -280px;
     color: white;
+    width: 100%;
 }
 
 .card_catalogos {
