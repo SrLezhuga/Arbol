@@ -439,10 +439,35 @@
 
 </body>
 
+<!-- Modal -->
+<div class="modal fade" id="ModalIndex" tabindex="-1" aria-labelledby="ModalIndexLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header p-0">
+        <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
+
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 1rem; position: absolute; right: 1rem;"></button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
   $(document).ready(function() {
     showSliderMarcas();
+
+    setTimeout(func, 5000);
+
+    function func() {
+      var myModal = new bootstrap.Modal(document.getElementById('ModalIndex'), {
+        keyboard: false
+      });
+
+      myModal.show();
+
+    }
+
   });
 
   function showSliderMarcas() {

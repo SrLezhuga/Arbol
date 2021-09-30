@@ -35,7 +35,7 @@
       <div class="container mb-3">
         <div class="row justify-content-center align-items-center text-center">
           <div class="col-md-10 ">
-            <fieldset class="border shadow-lg p-3 bg-body rounded">
+            <fieldset class="border  p-3 bg-body rounded">
 
               <div class="section-title">
 
@@ -59,7 +59,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 mt-3 mb-3">
             <h2 class="mitr">MISIÓN</h2>
             <div class="separator-top"></div>
-            <fieldset class="border shadow-lg p-3 bg-body rounded">
+            <fieldset class="border  p-3 bg-body rounded">
 
               <div class="section-title">
 
@@ -71,7 +71,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 mt-3 mb-3">
             <h2 class="mitr">VISIÓN</h2>
             <div class="separator-top"></div>
-            <fieldset class="border shadow-lg p-3 bg-body rounded">
+            <fieldset class="border  p-3 bg-body rounded">
 
               <div class="section-title">
 
@@ -97,7 +97,7 @@
         <div class="row justify-content-center align-items-center text-center">
           <!-- Honestidad -->
           <div class="col justify-content-center align-items-center">
-            <div class="bg-body box-crl shadow-1">
+            <div class="bg-body box-crl border shadow-1">
               <h1 class="display-3 item-center">
                 <i class="fas fa-heart"></i>
               </h1>
@@ -107,7 +107,7 @@
           </div>
           <!-- Innovación -->
           <div class="col">
-            <div class="bg-body box-crl shadow-2">
+            <div class="bg-body box-crl border shadow-2">
               <h1 class="display-3 item-center">
                 <i class="fas fa-lightbulb"></i>
               </h1>
@@ -117,7 +117,7 @@
           </div>
           <!-- Respeto -->
           <div class="col">
-            <div class="bg-body box-crl shadow-3">
+            <div class="bg-body box-crl border shadow-3">
               <h1 class="display-3 item-center">
                 <i class="fas fa-handshake"></i>
               </h1>
@@ -127,7 +127,7 @@
           </div>
           <!-- Responsabilidad -->
           <div class="col">
-            <div class="bg-body box-crl shadow-4">
+            <div class="bg-body box-crl border shadow-4">
               <h1 class="display-3 item-center">
                 <i class="fas fa-tasks"></i>
               </h1>
@@ -137,7 +137,7 @@
           </div>
           <!-- Compromiso -->
           <div class="col">
-            <div class="bg-body box-crl shadow-5">
+            <div class="bg-body box-crl border shadow-5">
               <h1 class="display-3 item-center">
                 <i class="fas fa-link"></i>
               </h1>
@@ -147,7 +147,7 @@
           </div>
           <!-- Espiritu de Servicio -->
           <div class="col">
-            <div class="bg-body box-crl shadow-6">
+            <div class="bg-body box-crl border shadow-6">
               <h1 class="display-3 item-center">
                 <i class="fas fa-medal"></i>
               </h1>
@@ -170,123 +170,82 @@
 
             <!-- Inicios -->
             <li class="timeline-milestone is-current timeline-start">
-              <div class="timeline-action border shadow-lg">
+              <div class="timeline-action border ">
                 <h2 class="title mitr">1970</h2>
                 <span class="date">Fundación Tecuala, Nayarit.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable expanded">
+              <div class="timeline-action border ">
                 <h2 class="title mitr">1986</h2>
                 <span class="date">Primer mostrador Paseo de la Arboleda Guadalajara, Jalisco.</span>
-                <div class="content">
-
-                  <p class="small">(imagen, texto, datos)</p>
-
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable expanded">
+              <div class="timeline-action border ">
                 <h2 class="title mitr">1989</h2>
                 <span class="date">Distribuidor Mayorista.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">1997</h2>
                 <span class="date">Distribuidor Federal Mogul.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">2004</h2>
                 <span class="date">Inaguración Cedis Guadalajara.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">2008</h2>
                 <span class="date">Inaguración Cedis Monterrey.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">2012</h2>
                 <span class="date">Expansión 2da Bodega Cedis Guadalajara.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">2018</h2>
                 <span class="date">Inauguración Cedis León.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">2019</h2>
                 <span class="date">Granizada Histórica Cedis Guadalajara.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">2019</h2>
                 <span class="date">La llave.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">2020</h2>
                 <span class="date">Marzo - Pandemia COVID-19.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <li class="timeline-milestone is-future">
-              <div class="timeline-action border shadow-lg is-expandable">
+              <div class="timeline-action border  ">
                 <h2 class="title mitr">2020</h2>
                 <span class="date">Agosto - Cierre Cedis León.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
             <!-- Actualidad -->
             <li class="timeline-milestone is-future timeline-end">
-              <div class="timeline-action border shadow-lg">
+              <div class="timeline-action border ">
                 <h2 class="title mitr">2021</h2>
                 <span class="date">Uno de los mejores aliados de nuestros clientes por las marcas y el servicio que nos distingue.</span>
-                <div class="content">
-                  <p class="small">(imagen, texto, datos)</p>
-                </div>
               </div>
             </li>
           </ul>
@@ -398,13 +357,13 @@
 
     <script>
       $(document).ready(function() {
-        $timelineExpandableTitle = $('.timeline-action border.is-expandable .title');
+        $timelineExpandableTitle = $('.timeline-action border. .title');
 
         $($timelineExpandableTitle).attr('tabindex', '0');
 
         // Give timelines ID's
         $('.timeline').each(function(i, $timeline) {
-          var $timelineActions = $($timeline).find('.timeline-action border.is-expandable');
+          var $timelineActions = $($timeline).find('.timeline-action border.');
 
           $($timelineActions).each(function(j, $timelineAction) {
             var $milestoneContent = $($timelineAction).find('.content');

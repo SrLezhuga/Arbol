@@ -11,240 +11,311 @@
   <title>Refaccionaria Arboledas | 404</title>
 </head>
 
-<style>
-  .container {
-    width: 100%;
-    height: 100%;
-    height: 100vh;
-    overflow: hidden !important;
-  }
-
-  h1 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: bold;
-    font-size: 90px;
-    letter-spacing: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffffff;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  h2 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffffff;
-    line-height: 50px;
-    padding: 0px;
-    margin: 0px;
-  }
-
-  h2 a {
-    color: #ffffff;
-    text-decoration: none;
-    border-bottom: 5px solid #B5B5B5;
-    margin: 0;
-    padding: 0;
-  }
-
-  h2 a span {
-    letter-spacing: 0px !important;
-    padding-right: 3px;
-  }
-
-  h2 a:hover {
-    color: #808080;
-    border-bottom: 5px solid #808080;
-  }
-
-  #scene ul {
-    width: 100% !important;
-    height: 100% !important;
-    height: 100vh !important;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .text {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%) !important;
-    -ms-transform: translateY(-50%) !important;
-    transform: translateY(-50%) !important;
-    z-index: 3;
-    display: block;
-  }
-
-
-  /* ---- reset ---- */
-
-  body {
-    margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
-  }
-
-  canvas {
-    display: block;
-  }
-
-  /* ---- particles.js container ---- */
-
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #b61924;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-</style>
-
-<script>
-  window.onload = function() {
-
-    /*inspired from : https://codepen.io/ArielBeninca/pen/yyKaPX
-Particle JS - Vincent Garreau
-*/
-    particlesJS('particles-js', {
-      'particles': {
-        'number': {
-          'value': 80,
-          'density': {
-            'enable': true,
-            'value_area': 800
-          }
-        },
-        'color': {
-          'value': '#ffffff'
-        },
-        'shape': {
-          'type': 'circle',
-          'stroke': {
-            'width': 0,
-            'color': '#000000'
-          },
-          'polygon': {
-            'nb_sides': 5
-          },
-          'image': {
-            'src': 'img/github.svg',
-            'width': 100,
-            'height': 100
-          }
-        },
-        'opacity': {
-          'value': 0.5,
-          'random': false,
-          'anim': {
-            'enable': false,
-            'speed': 1,
-            'opacity_min': 0.1,
-            'sync': false
-          }
-        },
-        'size': {
-          'value': 3,
-          'random': true,
-          'anim': {
-            'enable': false,
-            'speed': 40,
-            'size_min': 0.1,
-            'sync': false
-          }
-        },
-        'line_linked': {
-          'enable': true,
-          'distance': 150,
-          'color': '#ffffff',
-          'opacity': 0.4,
-          'width': 1
-        },
-        'move': {
-          'enable': true,
-          'speed': 6,
-          'direction': 'none',
-          'random': false,
-          'straight': false,
-          'out_mode': 'out',
-          'bounce': false,
-          'attract': {
-            'enable': false,
-            'rotateX': 600,
-            'rotateY': 1200
-          }
-        }
-      },
-      'interactivity': {
-        'detect_on': 'canvas',
-        'events': {
-          'onhover': {
-            'enable': true,
-            'mode': 'grab'
-          },
-          'onclick': {
-            'enable': true,
-            'mode': 'push'
-          },
-          'resize': true
-        },
-        'modes': {
-          'grab': {
-            'distance': 140,
-            'line_linked': {
-              'opacity': 1
-            }
-          },
-          'bubble': {
-            'distance': 400,
-            'size': 40,
-            'duration': 2,
-            'opacity': 8,
-            'speed': 3
-          },
-          'repulse': {
-            'distance': 200,
-            'duration': 0.4
-          },
-          'push': {
-            'particles_nb': 4
-          },
-          'remove': {
-            'particles_nb': 2
-          }
-        }
-      },
-      'retina_detect': true
-    });
-
-  };
-</script>
-
 <body>
 
-  <div id="particles-js">
-    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;">
-    </canvas>
+  <div id="clouds">
+    <div class="cloud x1"></div>
+    <div class="cloud x1_5"></div>
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
   </div>
-
-  <section class="all">
-    <div class="container">
-      <div class="text">
-        <center>
-          <img src="assets/media/img/LogoBlanco.png" alt="Refaccionaria Arboledas" width="20%" height="!00%" onContextMenu='return false;' draggable='false'>
-          <h1 style="text-shadow: -3px 0 0 rgba(255,0,0,.7), 3px 0 0 rgba(0,255,255,.7);"> ERROR 404 </h1>
-          <h2 style="text-shadow: -3px 0 0 rgba(255,0,0,.7), 3px 0 0 rgba(0,255,255,.7);">Regresar al <a href="index"> inicio</a> </h2>
-        </center>
-      </div>
-    </div>
-  </section>
-
+  <div class='c'>
+    <img src="assets/media/img/LogoBlanco.png" alt="Refaccionaria Arboledas" width="20%" height="!00%" onContextMenu='return false;' draggable='false'>
+    <hr>
+    <div class='_404 mb-3'>404</div>
+    <div class='_1 mb-2'>LA PÁGINA</div>
+    <div class='_2 mb-2'>NO SE ENCONTRÓ</div>
+    <br>
+    <a class='btn' href='index'>REGRESAR A ARBOLEDAS</a>
+  </div>
 </body>
 
 </html>
+
+<style>
+  .hit-the-floor {
+    color: #fff;
+    font-size: 12em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+  .hit-the-floor {
+    text-align: center;
+  }
+
+  body {
+
+    background: var(--bs-dark);
+  }
+
+  body {
+
+    background: var(--bs-dark);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    max-height: 700px;
+    overflow: hidden;
+  }
+
+  .c {
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 100px auto;
+  }
+
+  ._404 {
+    font-size: 220px;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    height: 250px;
+    letter-spacing: 15px;
+  }
+
+  ._1 {
+    text-align: center;
+    display: block;
+    position: relative;
+    letter-spacing: 12px;
+    font-size: 4em;
+    line-height: 80%;
+  }
+
+  ._2 {
+    text-align: center;
+    display: block;
+    position: relative;
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 19px 0px 0px 0px;
+    /* top: 256.301px; */
+    z-index: 3;
+    width: 100%;
+    line-height: 1.2em;
+    display: inline-block;
+  }
+
+
+  .btn {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    padding: 5px;
+    z-index: 5;
+    font-size: 25px;
+    margin: 0 auto;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 10px
+  }
+
+  .right {
+    float: right;
+    width: 60%;
+  }
+
+  hr {
+    padding: 0;
+    border: none;
+    border-top: 5px solid #fff;
+    color: #fff;
+    text-align: center;
+    margin: 0px auto;
+    width: 420px;
+    height: 10px;
+    z-index: -10;
+  }
+
+  hr:after {
+    content: "\2022";
+    display: inline-block;
+    position: relative;
+    top: -0.75em;
+    font-size: 2em;
+    padding: 0 0.2em;
+    background: #33cc99;
+  }
+
+  .cloud {
+    width: 350px;
+    height: 120px;
+
+    background: #FFF;
+    background: linear-gradient(top, #FFF 100%);
+    background: -webkit-linear-gradient(top, #FFF 100%);
+    background: -moz-linear-gradient(top, #FFF 100%);
+    background: -ms-linear-gradient(top, #FFF 100%);
+    background: -o-linear-gradient(top, #FFF 100%);
+
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+
+    position: absolute;
+    margin: 120px auto 20px;
+    z-index: -1;
+    transition: ease 1s;
+  }
+
+  .cloud:after,
+  .cloud:before {
+    content: '';
+    position: absolute;
+    background: #FFF;
+    z-index: -1
+  }
+
+  .cloud:after {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 50px;
+
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+  }
+
+  .cloud:before {
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: 50px;
+
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+  }
+
+  .x1 {
+    top: -50px;
+    left: 100px;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 15s linear infinite;
+    -moz-animation: moveclouds 15s linear infinite;
+    -o-animation: moveclouds 15s linear infinite;
+  }
+
+  .x1_5 {
+    top: -80px;
+    left: 250px;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+    -webkit-animation: moveclouds 17s linear infinite;
+    -moz-animation: moveclouds 17s linear infinite;
+    -o-animation: moveclouds 17s linear infinite;
+  }
+
+  .x2 {
+    left: 250px;
+    top: 30px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6;
+    -webkit-animation: moveclouds 25s linear infinite;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+  }
+
+  .x3 {
+    left: 250px;
+    bottom: -70px;
+
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.8;
+
+    -webkit-animation: moveclouds 25s linear infinite;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+  }
+
+  .x4 {
+    left: 470px;
+    botttom: 20px;
+
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75;
+
+    -webkit-animation: moveclouds 18s linear infinite;
+    -moz-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite;
+  }
+
+  .x5 {
+    left: 200px;
+    top: 300px;
+
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.8;
+
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+  }
+
+  @-webkit-keyframes moveclouds {
+    0% {
+      margin-left: 1000px;
+    }
+
+    100% {
+      margin-left: -1000px;
+    }
+  }
+
+  @-moz-keyframes moveclouds {
+    0% {
+      margin-left: 1000px;
+    }
+
+    100% {
+      margin-left: -1000px;
+    }
+  }
+
+  @-o-keyframes moveclouds {
+    0% {
+      margin-left: 1000px;
+    }
+
+    100% {
+      margin-left: -1000px;
+    }
+  }
+</style>
