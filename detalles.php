@@ -32,7 +32,7 @@
                   <div class="col-lg-12 mb-2">
                     <img class="mx-auto d-block img-thumbnail img_marca_detalle" src="assets/media/img/loader/PlaceholderWeb.png" onerror="this.src='assets/media/img/loader/PlaceholderWeb.png';" style="width: 310px; height: 160px;">
                   </div>
-                  <div class="col-lg-12 mb-2 text-center">
+                  <div class="col-lg-12 mb-2 text-justify">
                     <p id="txt_detalle">Refaccionaria Arboledas</p>
                   </div>
                 </div>

@@ -87,7 +87,7 @@
           </div>
         </div>
 
-        <div class="row row-cols-5 bg-white mb-3 justify-content-center align-items-center text-center ocultar-sistemas-movil">
+        <div class="row row-cols-5 mb-3 justify-content-center align-items-center text-center ocultar-sistemas-movil">
           <!-- MOTOR -->
           <div class="col">
             <button value="MOTOR" class="btn_sistema border bg-white mini_btn" type="button">

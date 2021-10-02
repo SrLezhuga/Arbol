@@ -12,23 +12,24 @@
 </head>
 
 <body>
-
-  <div id="clouds">
-    <div class="cloud x1"></div>
-    <div class="cloud x1_5"></div>
-    <div class="cloud x2"></div>
-    <div class="cloud x3"></div>
-    <div class="cloud x4"></div>
-    <div class="cloud x5"></div>
-  </div>
-  <div class='c'>
-    <img src="assets/media/img/LogoBlanco.png" alt="Refaccionaria Arboledas" width="20%" height="!00%" onContextMenu='return false;' draggable='false'>
-    <hr>
-    <div class='_404 mb-3'>404</div>
-    <div class='_1 mb-2'>LA PÁGINA</div>
-    <div class='_2 mb-2'>NO SE ENCONTRÓ</div>
-    <br>
-    <a class='btn' href='index'>REGRESAR A ARBOLEDAS</a>
+  <div class="container">
+    <div id="clouds overflow-hidden">
+      <div class="cloud x1"></div>
+      <div class="cloud x1_5"></div>
+      <div class="cloud x2"></div>
+      <div class="cloud x3"></div>
+      <div class="cloud x4"></div>
+      <div class="cloud x5"></div>
+    </div>
+    <div class='c'>
+      <img src="assets/media/img/LogoBlanco.png" alt="Refaccionaria Arboledas" width="20%" height="!00%" onContextMenu='return false;' draggable='false'>
+      <br>
+      <div class='_404 mb-3'><b>404</b></div>
+      <div class='_1 mb-2'><b>LA PÁGINA</b></div>
+      <div class='_2 mb-2'>NO SE ENCONTRÓ</div>
+      <br>
+      <a class='btn_404' href='index'>REGRESAR A ARBOLEDAS</a>
+    </div>
   </div>
 </body>
 
@@ -82,20 +83,19 @@
   }
 
   ._404 {
-    font-size: 220px;
+    font-size: 6rem;
     position: relative;
     display: inline-block;
     z-index: 2;
-    height: 250px;
-    letter-spacing: 15px;
+    letter-spacing: .5rem;
   }
 
   ._1 {
     text-align: center;
     display: block;
     position: relative;
-    letter-spacing: 12px;
-    font-size: 4em;
+    letter-spacing: 0.4rem;
+    font-size: 3rem;
     line-height: 80%;
   }
 
@@ -103,31 +103,17 @@
     text-align: center;
     display: block;
     position: relative;
-    font-size: 20px;
+    font-size: 1.7rem;
   }
 
-  .text {
-    font-size: 70px;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    margin: 19px 0px 0px 0px;
-    /* top: 256.301px; */
-    z-index: 3;
-    width: 100%;
-    line-height: 1.2em;
-    display: inline-block;
-  }
-
-
-  .btn {
+  .btn_404 {
     background-color: rgb(255, 255, 255);
     position: relative;
     display: inline-block;
     width: 358px;
     padding: 5px;
     z-index: 5;
-    font-size: 25px;
+    font-size: 1.5rem;
     margin: 0 auto;
     color: #000000;
     text-decoration: none;
@@ -137,28 +123,6 @@
   .right {
     float: right;
     width: 60%;
-  }
-
-  hr {
-    padding: 0;
-    border: none;
-    border-top: 5px solid #fff;
-    color: #fff;
-    text-align: center;
-    margin: 0px auto;
-    width: 420px;
-    height: 10px;
-    z-index: -10;
-  }
-
-  hr:after {
-    content: "\2022";
-    display: inline-block;
-    position: relative;
-    top: -0.75em;
-    font-size: 2em;
-    padding: 0 0.2em;
-    background: #33cc99;
   }
 
   .cloud {
