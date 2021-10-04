@@ -32,7 +32,7 @@
           <div class="col-sm-12 col-lg-11 mb-3">
             <div class="form-floating">
               <input type="text" class="form-control" id="txtBuscar" placeholder="Buscar catalogo:" onkeyup="getBusqueda()">
-              <label for="floatingSelect"><i class="fas fa-search"></i> Buscar catalogo:</label>
+              <label for="floatingSelect"><i class="fas fa-search"></i> Buscar catálogo:</label>
             </div>
           </div>
           <div class="d-grid gap-2 col-lg-1 col-sm-12 mb-3">

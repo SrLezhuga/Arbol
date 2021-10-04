@@ -7,14 +7,16 @@
                     <a class="navbar-brand color-white smaller" href="mailto:hola@refaccionariaarboledas.com.mx">
                         <i class="far fa-envelope"></i> hola@refaccionariaarboledas.com.mx
                     </a>
+                    &nbsp;
                     <a class="navbar-brand color-white smaller" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-whatsapp"></i> Whatsapp
                     </a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <a class="navbar-brand color-white smaller" href="tel:3338371280">
                         <i class="fas fa-phone-alt"></i> INFO: 3338371280
                     </a>
+                    &nbsp;
                     <a class="navbar-brand color-white smaller" href="tel:3338371285">
                         <i class="fas fa-phone-alt"></i> VENTAS: 3338371285
                     </a>
@@ -50,6 +52,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="container">
                 <div class="row justify-content-md-center align-items-center">
+                    <div class="col-lg-auto col-sm-12 cool-link">
+                        <a class="nav-link color-black" href="index">INICIO</a>
+                    </div>
                     <div class="col-lg-auto col-sm-12 cool-link">
                         <a class="nav-link color-black" href="sistemas">SISTEMAS</a>
                     </div>
@@ -98,4 +103,3 @@
 
     });
 </script>
-

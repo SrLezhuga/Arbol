@@ -13,6 +13,7 @@
 
   <script type="text/javascript" src="assets/js/catalogo.js"></script>
   <script type="text/javascript" src="assets/js/catalogoWeb.js"></script>
+  <script type="text/javascript" src="assets/js/marcas.js"></script>
 </head>
 
 <body>
@@ -34,11 +35,11 @@
               <button class="nav-link" id="v-pills-marcas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-marcas" type="button" role="tab" aria-controls="v-pills-marcas" aria-selected="false">MARCAS</button>
               <button class="nav-link" id="v-pills-sistemas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sistemas" type="button" role="tab" aria-controls="v-pills-sistemas" aria-selected="false">SISTEMAS</button>
               <button class="nav-link" id="v-pills-productos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-productos" type="button" role="tab" aria-controls="v-pills-productos" aria-selected="false">PRODUCTOS</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">PREGUNTAS</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">DIRECTORIO</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">NOSOTROS</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">BANNERS</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">AVISOS</button>
+              <button class="nav-link" id="v-pills-preguntas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-preguntas" type="button" role="tab" aria-controls="v-pills-preguntas" aria-selected="false">PREGUNTAS</button>
+              <button class="nav-link" id="v-pills-directorio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-directorio" type="button" role="tab" aria-controls="v-pills-directorio" aria-selected="false">DIRECTORIO</button>
+              <button class="nav-link" id="v-pills-nosotros-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nosotros" type="button" role="tab" aria-controls="v-pills-nosotros" aria-selected="false">NOSOTROS</button>
+              <button class="nav-link" id="v-pills-banners-tab" data-bs-toggle="pill" data-bs-target="#v-pills-banners" type="button" role="tab" aria-controls="v-pills-banners" aria-selected="false">BANNERS</button>
+              <button class="nav-link" id="v-pills-avisos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-avisos" type="button" role="tab" aria-controls="v-pills-avisos" aria-selected="false">AVISOS</button>
 
 
 
@@ -54,8 +55,15 @@
               <div class="tab-pane fade" id="v-pills-marcas" role="tabpanel" aria-labelledby="v-pills-marcas-tab">
                 <?php include('controller/marcas/config.php'); ?>
               </div>
-              <div class="tab-pane fade" id="v-pills-sistemas" role="tabpanel" aria-labelledby="v-pills-sistemas-tab">...</div>
-              <div class="tab-pane fade" id="v-pills-productos" role="tabpanel" aria-labelledby="v-pills-productos-tab">...</div>
+              <div class="tab-pane fade" id="v-pills-sistemas" role="tabpanel" aria-labelledby="v-pills-sistemas-tab">...sistemas</div>
+              <div class="tab-pane fade" id="v-pills-productos" role="tabpanel" aria-labelledby="v-pills-productos-tab">...productos</div>
+              <div class="tab-pane fade" id="v-pills-preguntas" role="tabpanel" aria-labelledby="v-pills-preguntas-tab">
+                <?php include('controller/preguntas/config.php'); ?>
+              </div>
+              <div class="tab-pane fade" id="v-pills-directorio" role="tabpanel" aria-labelledby="v-pills-directorio-tab">...directorio</div>
+              <div class="tab-pane fade" id="v-pills-nosotros" role="tabpanel" aria-labelledby="v-pills-nosotros-tab">...nosotros</div>
+              <div class="tab-pane fade" id="v-pills-banners" role="tabpanel" aria-labelledby="v-pills-banners-tab">...banners</div>
+              <div class="tab-pane fade" id="v-pills-avisos" role="tabpanel" aria-labelledby="v-pills-avisos-tab">...avisos</div>
             </div>
           </div>
 

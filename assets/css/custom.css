@@ -28,6 +28,11 @@ html {
     padding: 1px 1px;
 }
 
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 .navber-menu {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -59,6 +64,12 @@ html {
 ::-moz-selection {
     background: #db2d2e;
     color: #fff;
+}
+
+.btn-light:hover {
+    color: #14336e;
+    background-color: #f9fafb;
+    border-color: #14336e !important;
 }
 
 .btn-gris {
@@ -576,7 +587,7 @@ span {
 }
 
 .smaller {
-    font-size: 0.7em;
+    font-size: 0.95rem;
     margin-right: 0;
 }
 
@@ -708,8 +719,8 @@ span {
 /* █████████████████████████████████ */
 
 .accordion-button:not(.collapsed) {
-    color: #ffffff;
-    background-color: #db2d2e;
+    color: var(--bs-gray-dark);
+    background-color: var(--bs-white);
     border: 1px #db2d2e;
 }
 
@@ -1370,7 +1381,7 @@ input:checked~.content-test {
         -ms-flex-direction: row;
         flex-direction: row;
         min-height: auto;
-        height: 350px;
+        height: 400px;
         /* position: absolute; */
         top: 0;
         bottom: 0;
@@ -1382,7 +1393,6 @@ input:checked~.content-test {
     }
     .content-test {
         width: 75%;
-        height: fit-content;
         pointer-events: auto;
         -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);

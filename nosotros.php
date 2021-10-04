@@ -159,6 +159,7 @@
       </div>
     </section>
 
+    <!--
     <section>
       <div class="container mb-3">
         <div class="justify-content-center align-items-center text-center">
@@ -168,7 +169,6 @@
 
           <ul class="timeline">
 
-            <!-- Inicios -->
             <li class="timeline-milestone is-current timeline-start">
               <div class="timeline-action border ">
                 <h2 class="title mitr">1970</h2>
@@ -241,7 +241,6 @@
                 <span class="date">Agosto - Cierre Cedis León.</span>
               </div>
             </li>
-            <!-- Actualidad -->
             <li class="timeline-milestone is-future timeline-end">
               <div class="timeline-action border ">
                 <h2 class="title mitr">2021</h2>
@@ -250,10 +249,10 @@
             </li>
           </ul>
 
-
         </div>
       </div>
     </section>
+-->
 
     <section>
       <div class="container rounded mb-3" style="background-color: rgba(0, 0, 0, 0.8);">
@@ -285,73 +284,107 @@
     </section>
 
     <section>
-      <div class="container-fluid mb-3">
+      <div class="container mb-3">
+        <div class="justify-content-center align-items-center text-center">
 
-        <div class="row">
-          <!-- card item-->
-          <div class="col-lg-3 col-md-3 col-sm-12">
-            <div class="box">
-              <div class="our-services settings">
-                <div class="icon">
-                  <div class="sub-box">
-                    <img src="assets/media/img/iconos/Icono_MarcasReconocidas_negro.png" oncontextmenu="return false;" draggable="false">
-                  </div>
-                </div>
-                <h4>MARCAS RECONOCIDAS</h4>
-                <div class="separator-top"></div>
-                <p>Contamos con las mejores marcas para ofrecer a tus clientes la mejor calidad en cada uno de los sistemas automotrices.</p>
-              </div>
-            </div>
-          </div>
-          <!-- card item-->
-          <div class="col-lg-3 col-md-3 col-sm-12">
-            <div class="box">
-              <div class="our-services settings">
-                <div class="icon">
-                  <div class="sub-box">
-                    <img src="assets/media/img/iconos/IconoSoporte_negro.png" oncontextmenu="return false;" draggable="false">
-                  </div>
-                </div>
-                <h4>SOPORTE EN LÍNEA</h4>
-                <div class="separator-top"></div>
-                <p>Tenemos personal capacitado para darte la atención y asesoría técnica que requieres.</p>
-              </div>
-            </div>
-          </div>
-          <!-- card item-->
-          <div class="col-lg-3 col-md-3 col-sm-12">
-            <div class="box">
-              <div class="our-services settings">
-                <div class="icon">
-                  <div class="sub-box">
-                    <img src="assets/media/img/iconos/IconoServicio_negro.png" oncontextmenu="return false;" draggable="false">
-                  </div>
-                </div>
-                <h4>SERVICIO</h4>
-                <div class="separator-top"></div>
-                <p>Buscamos siempre otorgar un trato amable, información oportuna y estar siempre a la altura de nuestros clientes más exigentes.</p>
-              </div>
-            </div>
-          </div>
-          <!-- card item-->
-          <div class="col-lg-3 col-md-3 col-sm-12">
-            <div class="box">
-              <div class="our-services settings">
-                <div class="icon">
-                  <div class="sub-box">
-                    <img src="assets/media/img/iconos/IconoEntregaMexico_negro.png" oncontextmenu="return false;" draggable="false">
-                  </div>
-                </div>
-                <h4>ENTREGA A TODO MÉXICO</h4>
-                <div class="separator-top"></div>
-                <p>Haz tu pedido en cualquier parte de la República y nosotros nos encargamos de que llegue hasta su destino.</p>
-              </div>
-            </div>
-          </div>
+          <h2 class="mitr">¿POR QUÉ ELEGIRNOS?</h2>
+          <div class="separator-top"></div>
 
+          <div class="row">
+            <!-- card item-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="box">
+                <div class="our-services settings">
+                  <div class="icon">
+                    <div class="sub-box">
+                      <img src="assets/media/img/iconos/Icono_MarcasReconocidas_negro.png" oncontextmenu="return false;" draggable="false">
+                    </div>
+                  </div>
+                  <h6 class="mitr">MARCAS RECONOCIDAS</h6>
+                  <div class="separator-top"></div>
+                  <p class="small">Contamos con las mejores marcas para ofrecer a tus clientes la mejor calidad en cada uno de los sistemas automotrices.</p>
+                </div>
+              </div>
+            </div>
+            <!-- card item-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="box">
+                <div class="our-services settings">
+                  <div class="icon">
+                    <div class="sub-box">
+                      <img src="assets/media/img/iconos/IconoSoporte_negro.png" oncontextmenu="return false;" draggable="false">
+                    </div>
+                  </div>
+                  <h6 class="mitr">SOPORTE EN LÍNEA</h6>
+                  <div class="separator-top"></div>
+                  <p class="small">Tenemos personal capacitado para darte la atención y asesoría técnica que requieres.</p>
+                </div>
+              </div>
+            </div>
+            <!-- card item-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="box">
+                <div class="our-services settings">
+                  <div class="icon">
+                    <div class="sub-box">
+                      <img src="assets/media/img/iconos/IconoServicio_negro.png" oncontextmenu="return false;" draggable="false">
+                    </div>
+                  </div>
+                  <h6 class="mitr">SERVICIO</h6>
+                  <div class="separator-top"></div>
+                  <p class="small">Buscamos siempre otorgar un trato amable, información oportuna y estar siempre a la altura de nuestros clientes más exigentes.</p>
+                </div>
+              </div>
+            </div>
+            <!-- card item-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="box">
+                <div class="our-services settings">
+                  <div class="icon">
+                    <div class="sub-box">
+                      <img src="assets/media/img/iconos/IconoEntregaMexico_negro.png" oncontextmenu="return false;" draggable="false">
+                    </div>
+                  </div>
+                  <h6 class="mitr">ENTREGA A TODO MÉXICO</h6>
+                  <div class="separator-top"></div>
+                  <p class="small">Haz tu pedido en cualquier parte de la República y nosotros nos encargamos de que llegue hasta su destino.</p>
+                </div>
+              </div>
+            </div>
+            <!-- card item-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="box">
+                <div class="our-services settings">
+                  <div class="icon">
+                    <div class="sub-box">
+                      <img src="assets/media/img/iconos/ServicioDomicilio_negro.png" oncontextmenu="return false;" draggable="false">
+                    </div>
+                  </div>
+                  <h6 class="mitr">SERVICIO A DOMICILIO</h6>
+                  <div class="separator-top"></div>
+                  <p class="small">Te entregamos tus refacciones automotrices hasta la puerta de tu negocio, para que te preocupes solo por vender.</p>
+                </div>
+              </div>
+            </div>
+            <!-- card item-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="box">
+                <div class="our-services settings">
+                  <div class="icon">
+                    <div class="sub-box">
+                      <img src="assets/media/img/iconos/IconoStock.png" oncontextmenu="return false;" draggable="false">
+                    </div>
+                  </div>
+                  <h6 class="mitr">AMPLIO CATÁLOGO DE PRODUCTOS</h6>
+                  <div class="separator-top"></div>
+                  <p class="small">Revoluciona tu refaccionaria con nuestro gran catálogo de productos para los diferentes sistemas automotrices.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
         </div>
-
       </div>
     </section>
 
