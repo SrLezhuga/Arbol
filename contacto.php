@@ -27,60 +27,7 @@
 
           <div id="flex-container" class="testimonials border rounded shadow-lg">
             <div id="left-zone">
-              <ul class="list">
-                <!-- Matriz GDL-->
-                <li class="item">
-                  <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
-                  <label class="label_testimonial" for="radio_testimonial-1">Matriz Guadalajara</label>
-                  <div class="content-test content_testimonial">
-                    <span class="picto">
-                      <img src="assets/media/img/iconos/LOGO CEDIS GDL.png" onContextMenu='return false;' draggable='false'>
-                    </span>
-                    <h1 class="mitr">Matriz Guadalajara</h1>
-                    <p>Altos Hornos #2755 Col. Álamo industrial
-                      <br>C.P. 45560. Tlaquepaque, Jalisco.
-                    </p>
-                    <p>
-                      <i class="fas fa-phone-alt"></i> Info: <a href="tel:3338371280">3338371280</a>
-                      &nbsp;
-                      <i class="fas fa-phone-alt"></i> Ventas: <a href="tel:3338371285">3338371285</a>
-                    </p>
-                    <p>
-                      <i class="far fa-envelope"></i> Correo: <a href="mailto:hola@refaccionariaarboledas.com.mx">hola@refaccionariaarboledas.com.mx</a>
-                    </p>
-                    <p class="testimonialFrom">
-                      <a href="https://www.google.com/maps/place/Refaccionaria+Arboledas+SA+de+CV/@20.6241852,-103.328707,20z/data=!4m5!3m4!1s0x8428b25924c5075f:0x10f56039859b589b!8m2!3d20.6242434!4d-103.328454" target="_blank" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i> Ver en Google Maps</a>
-                    </p>
-                  </div>
-                </li>
-                <!-- Cedis MTY-->
-                <li class="item">
-                  <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
-                  <label class="label_testimonial" for="radio_testimonial-2">Cedis Monterrey</label>
-                  <div class="content-test content_testimonial">
-                    <span class="picto">
-                      <img src="assets/media/img/iconos/LOGO CEDIS MTY.png" onContextMenu='return false;' draggable='false'>
-
-                    </span>
-                    <h1 class="mitr">Cedis Monterrey</h1>
-                    <p>Bonifacio Salinas #108 Col. Industrial Las Américas
-                      <br>C.P. 67128. Guadalupe, Nuevo León.
-                    </p>
-                    <p>
-                      <i class="fas fa-phone-alt"></i> Info: <a href="tel:3338371280">placeholder</a>
-                      &nbsp;
-                      <i class="fas fa-phone-alt"></i> Ventas: <a href="tel:3338371285">placeholder</a>
-                    </p>
-                    <p>
-                      <i class="far fa-envelope"></i> Correo: <a href="mailto:hola@refaccionariaarboledas.com.mx">hola@refaccionariaarboledas.com.mx</a>
-                    </p>
-                    <p class="testimonialFrom">
-                      <a href="https://www.google.com/maps/place/Refaccionaria+Arboledas/@25.7011461,-100.2400004,18.75z/data=!4m13!1m7!3m6!1s0x8662eabf08222bcb:0xef6281387d0e18cd!2sAv+Bonifacio+Salinas+Nte+108,+Antiguo+Nogalar,+67128+Guadalupe,+N.L.!3b1!8m2!3d25.7015881!4d-100.2404084!3m4!1s0x8662eabfa6313af5:0xad03efde29fb5a3c!8m2!3d25.7015775!4d-100.240204" target="_blank" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i> Ver en Google Maps</a>
-                    </p>
-                    <br>
-                  </div>
-                </li>
-              </ul>
+              <ul class="list" id="CardCedis"></ul>
             </div>
             <div id="right-zone"></div>
           </div>
@@ -88,45 +35,6 @@
 
         </div>
       </div>
-
-      <script>
-        // Makeshift carousel function that gets invoked with the Index to start it off, then the callback increments the index to recursively invoke the same function. Works even in IE11!
-        var testimonialItems = document.querySelectorAll(".item label");
-        var timer;
-
-        function cycleTestimonials(index) {
-          timer = setTimeout(function() {
-            var evt;
-            if (document.createEvent) {
-              //If browser = IE, then polyfill
-              evt = document.createEvent('MouseEvent');
-              evt.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            } else {
-              //If Browser = modern, then create new MouseEvent
-              evt = new MouseEvent("click", {
-                view: window,
-                bubbles: true,
-                cancelable: true,
-                clientX: 20
-              });
-            }
-            var ele = "." + testimonialItems[index].className;
-            var ele2 = document.querySelector(ele)
-            ele2.dispatchEvent(evt);
-            index++; // Increment the index
-            if (index >= testimonialItems.length) {
-              index = 0; // Set it back to `0` when it reaches `3`
-            }
-            cycleTestimonials(index); // recursively call `cycleTestimonials()`
-            document.querySelector(".testimonials").addEventListener("click", function() {
-              clearTimeout(timer); //stop the carousel when someone clicks on the div
-            });
-          }, 2000); //adjust scroll speed in miliseconds
-        }
-        //run the function
-        cycleTestimonials(0);
-      </script>
-
 
     </section>
 
@@ -242,6 +150,64 @@
   <?php require('controller/common/footer.php'); ?>
 
 </body>
+
+<script>
+  $(document).ready(function() {
+    var busqueda = 'ok';
+    $.ajax({
+      url: "controller/contacto/precarga.php",
+      type: "post",
+      data: {
+        Rs: busqueda
+      },
+      error: function() {
+        alert("error petición ajax");
+      },
+      success: function(data) {
+        console.log(data);
+        $("#CardCedis").append(data);
+      }
+    });
+  });
+</script>
+
+<script>
+  // Makeshift carousel function that gets invoked with the Index to start it off, then the callback increments the index to recursively invoke the same function. Works even in IE11!
+  var testimonialItems = document.querySelectorAll(".item label");
+  var timer;
+
+  function cycleTestimonials(index) {
+    timer = setTimeout(function() {
+      var evt;
+      if (document.createEvent) {
+        //If browser = IE, then polyfill
+        evt = document.createEvent('MouseEvent');
+        evt.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+      } else {
+        //If Browser = modern, then create new MouseEvent
+        evt = new MouseEvent("click", {
+          view: window,
+          bubbles: true,
+          cancelable: true,
+          clientX: 20
+        });
+      }
+      var ele = "." + testimonialItems[index].className;
+      var ele2 = document.querySelector(ele)
+      ele2.dispatchEvent(evt);
+      index++; // Increment the index
+      if (index >= testimonialItems.length) {
+        index = 0; // Set it back to `0` when it reaches `3`
+      }
+      cycleTestimonials(index); // recursively call `cycleTestimonials()`
+      document.querySelector(".testimonials").addEventListener("click", function() {
+        clearTimeout(timer); //stop the carousel when someone clicks on the div
+      });
+    }, 2000); //adjust scroll speed in miliseconds
+  }
+  //run the function
+  cycleTestimonials(0);
+</script>
 
 
 

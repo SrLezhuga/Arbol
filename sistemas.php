@@ -39,13 +39,13 @@
           </div>
           <!-- SUSPENSION -->
           <div class="col">
-            <button value="SUSPENSIÓN" class="btn_sistema border bg-white" type="button">
+            <button value="SUSPENSIÓN Y DIRECCIÓN" class="btn_sistema border bg-white" type="button">
               <img src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- EMBRAGUE -->
           <div class="col">
-            <button value="EMBRAGUE" class="btn_sistema border bg-white" type="button">
+            <button value="EMBRAGUE Y CARDÁN" class="btn_sistema border bg-white" type="button">
               <img src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
@@ -57,7 +57,7 @@
           </div>
           <!-- TRANSMISION -->
           <div class="col">
-            <button value="TRANSMISION" class="btn_sistema border bg-white" type="button">
+            <button value="TRANSMISION Y EJES" class="btn_sistema border bg-white" type="button">
               <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
@@ -102,13 +102,13 @@
           </div>
           <!-- SUSPENSION -->
           <div class="col">
-            <button value="SUSPENSIÓN" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="SUSPENSIÓN Y DIRECCIÓN" class="btn_sistema border bg-white mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- EMBRAGUE -->
           <div class="col">
-            <button value="EMBRAGUE" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="EMBRAGUE Y CARDÁN" class="btn_sistema border bg-white mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
@@ -120,7 +120,7 @@
           </div>
           <!-- TRANSMISION -->
           <div class="col">
-            <button value="TRANSMISION" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="TRANSMISION Y EJES" class="btn_sistema border bg-white mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
