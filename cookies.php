@@ -8,7 +8,7 @@
 
   <?php require_once('controller/common/header.php'); ?>
 
-  <title>Refaccionaria Arboledas | Cookies</title>
+  <title>REFACCIONARIA ARBOLEDAS | Cookies</title>
 </head>
 
 <body>

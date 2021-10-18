@@ -8,7 +8,7 @@
 
   <?php require_once('controller/common/header.php'); ?>
 
-  <title>Refaccionaria Arboledas | Inicio</title>
+  <title>REFACCIONARIA ARBOLEDAS | Inicio</title>
   <!-- Loader -->
   <script src="assets/js/loader.js"></script>
 </head>

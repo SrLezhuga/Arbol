@@ -8,7 +8,7 @@
 
   <?php require_once('controller/common/header.php'); ?>
 
-  <title>Refaccionaria Arboledas | Detalles de Marcas</title>
+  <title>REFACCIONARIA ARBOLEDAS | Detalles de Marcas</title>
 </head>
 
 <body>
@@ -32,12 +32,16 @@
                   <div class="col-lg-12 mb-2">
                     <img class="mx-auto d-block img-thumbnail img_marca_detalle" src="assets/media/img/loader/PlaceholderWeb.png" onerror="this.src='assets/media/img/loader/PlaceholderWeb.png';" style="width: 310px; height: 160px;">
                   </div>
-                  <div class="col-lg-12 mb-2 text-justify">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="position-relative">
+                  <div class="col-lg-12 mb-2 text-justify centrar-div">
                     <p id="txt_detalle">Refaccionaria Arboledas</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-12">
                 <h4 class="mitr">GARANTIAS</h4>
                 <div class="row border-bottom mb-2 mt-2">
                   <div class="col-10">
@@ -100,7 +104,7 @@
           $(".img_marca_detalle").attr("src", "assets/media/img/marcas/" + obj.img_marca);
           $('#titulo').html(obj.nombre_marca);
           $("#txt_detalle").html(obj.info_marca);
-        } 
+        }
       }
     });
   });

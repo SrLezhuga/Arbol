@@ -8,7 +8,7 @@
 
   <?php require_once('controller/common/header.php'); ?>
 
-  <title>Refaccionaria Arboledas | Nosotros</title>
+  <title>REFACCIONARIA ARBOLEDAS | Nosotros</title>
 </head>
 
 <body>
@@ -248,40 +248,12 @@
               </div>
             </li>
           </ul>
-
         </div>
       </div>
     </section>
 -->
 
-    <section>
-      <div class="container rounded mb-3" style="background-color: rgba(0, 0, 0, 0.8);">
-        <div class="justify-content-center align-items-center">
-          <center>
-            <h2 class="mitr text-white pt-1"> MATRIZ: GUADALAJARA Refaccionaria Arboledas S.A. de C.V.</h2>
-            <div class="separator-top"></div>
-
-            <figure class="figure">
-              <img class="figure-img img-fluid rounded mt-2" src="assets/media/img/Img_Nosotros.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
-              <figcaption class="figure-caption text-white">Altos Hornos #2755 Col. Álamo industrial C.P. 45560. Tlaquepaque, Jalisco.</figcaption>
-            </figure>
-          </center>
-        </div>
-      </div>
-      <div class="container rounded  mt-5 mb-3" style="background-color: rgba(0, 0, 0, 0.8);">
-        <div class="justify-content-center align-items-center">
-          <center>
-            <h2 class="mitr text-white pt-1"> CEDIS: MONTERREY Refaccionaria Arboledas S.A. de C.V.</h2>
-            <div class="separator-top"></div>
-
-            <figure class="figure">
-              <img class="figure-img img-fluid rounded mt-2" src="assets/media/img/Img_Nosotros.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
-              <figcaption class="figure-caption text-white">Bonifacio Salinas #108 Col. Industrial Las Américas C.P. 67128. Guadalupe, Nuevo León.</figcaption>
-            </figure>
-          </center>
-        </div>
-      </div>
-    </section>
+    <section id="Cedis_ra"></section>
 
     <section>
       <div class="container mb-3">
@@ -411,6 +383,25 @@
         $($timelineExpandableTitle).click(function() {
           $(this).parent().toggleClass('is-expanded');
           $(this).siblings('.content').attr('aria-expanded', $(this).parent().hasClass('is-expanded'));
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        var busqueda = 'ok';
+        $.ajax({
+          url: "controller/nosotros/precarga_cedis.php",
+          type: "post",
+          data: {
+            Rs: busqueda
+          },
+          error: function() {
+            alert("error petición ajax");
+          },
+          success: function(data) {
+            console.log(data);
+            $("#Cedis_ra").append(data);
+          }
         });
       });
     </script>

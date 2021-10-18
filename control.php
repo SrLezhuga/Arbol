@@ -9,7 +9,7 @@
 
   <?php require_once('controller/common/header.php'); ?>
 
-  <title>Refaccionaria Arboledas | Configuración</title>
+  <title>REFACCIONARIA ARBOLEDAS | Configuración</title>
 
   <script type="text/javascript" src="assets/js/catalogo.js"></script>
   <script type="text/javascript" src="assets/js/catalogoWeb.js"></script>

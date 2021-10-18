@@ -8,7 +8,7 @@
 
   <?php require_once('controller/common/header.php'); ?>
 
-  <title>Refaccionaria Arboledas | Contacto</title>
+  <title>REFACCIONARIA ARBOLEDAS | Contacto</title>
 </head>
 
 <body>
@@ -164,7 +164,6 @@
         alert("error petición ajax");
       },
       success: function(data) {
-        console.log(data);
         $("#CardCedis").append(data);
       }
     });
