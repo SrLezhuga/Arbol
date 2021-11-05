@@ -32,7 +32,7 @@
 
             <!-- carusel -->
             <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
+              <div class="carousel-inner" id="carousel-slider">
 
                 <!-- carusel item -->
                 <div class="carousel-item active" data-bs-interval="5000">
@@ -256,7 +256,7 @@
         <div class="row mt-3 mb-3 row-cols-lg-5 row-cols-sm-1 justify-content-center align-items-center">
 
           <div class="accordion accordion-flush" id="accordionMotor">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingMotor">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMotor" aria-expanded="false" aria-controls="flush-collapseMotor">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
@@ -271,7 +271,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionEncendido">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingEncendido">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEncendido" aria-expanded="false" aria-controls="flush-collapseEncendido">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false'>
@@ -287,7 +287,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionSuspension">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingSuspension">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSuspension" aria-expanded="false" aria-controls="flush-collapseSuspension">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false'>
@@ -303,7 +303,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionEmbrague">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingEmbrague">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEmbrague" aria-expanded="false" aria-controls="flush-collapseEmbrague">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false'>
@@ -318,7 +318,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionFrenos">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingFrenos">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFrenos" aria-expanded="false" aria-controls="flush-collapseFrenos">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -333,7 +333,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionTransmision">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingTransmision">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTransmision" aria-expanded="false" aria-controls="flush-collapseTransmision">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false'>
@@ -350,7 +350,7 @@
           </div>
 
           <div class="accordion accordion-flush" id="accordionEnfriamiento">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingEnfriamiento">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEnfriamiento" aria-expanded="false" aria-controls="flush-collapseEnfriamiento">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -366,7 +366,7 @@
 
 
           <div class="accordion accordion-flush" id="accordionMiscelaneos">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingMiscelaneos">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMiscelaneos" aria-expanded="false" aria-controls="flush-collapseMiscelaneos">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -382,7 +382,7 @@
 
 
           <div class="accordion accordion-flush" id="accordionQuimicos">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingQuimicos">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuimicos" aria-expanded="false" aria-controls="flush-collapseQuimicos">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -398,7 +398,7 @@
 
 
           <div class="accordion accordion-flush" id="accordionGasolina">
-            <div class="accordion-item mb-3 rounded shadow-lg border">
+            <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingGasolina">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGasolina" aria-expanded="false" aria-controls="flush-collapseGasolina">
                   <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
@@ -439,34 +439,11 @@
 
 </body>
 
-<!-- Modal -->
-<div class="modal fade" id="ModalIndex" tabindex="-1" aria-labelledby="ModalIndexLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header p-0">
-        <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
-
-
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 1rem; position: absolute; right: 1rem;"></button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script>
   $(document).ready(function() {
     showSliderMarcas();
-
-    setTimeout(func, 5000);
-
-    function func() {
-      var myModal = new bootstrap.Modal(document.getElementById('ModalIndex'), {
-        keyboard: false
-      });
-
-      myModal.show();
-
-    }
+    showSlider();
+    showAnuncio();
 
   });
 
@@ -485,6 +462,69 @@
       }
     });
   }
+
+  function showAnuncio() {
+
+    let setCookie = (name, value, days) => {
+      let expires = "";
+      if (days) {
+        let date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    };
+
+    let getCookie = name => {
+      let nameEQ = name + "=";
+      let ca = document.cookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === " ") c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length,
+          c.length);
+      }
+      return null;
+    };
+
+    if (getCookie('closedApp') == null) {
+
+      setTimeout(func, 5000);
+
+      function func() {
+        var myModal = new bootstrap.Modal(document.getElementById('ModalIndex'), {
+          keyboard: false
+        });
+
+        myModal.show();
+
+      }
+      setCookie("closedApp", "true", 0);
+
+    }
+
+
+  }
+
+  function showSlider() {
+    var busqueda = 'ok';
+    $.ajax({
+      url: "controller/index/precarga_slider.php",
+      type: "post",
+      data: {
+        Rs: busqueda
+      },
+      error: function() {
+        alert("error petición ajax");
+      },
+      success: function(data) {
+        $("#carousel-slider").empty();
+        $("#carousel-slider").append(data);
+      }
+    });
+  }
 </script>
+
+
 
 </html>

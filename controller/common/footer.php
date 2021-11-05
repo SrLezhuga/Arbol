@@ -1,3 +1,55 @@
+ <!-- Modal -->
+ <div class="modal fade" id="ModalIndex" tabindex="-1" aria-labelledby="ModalIndexLabel" aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header p-0">
+                 <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
+
+
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 1rem; position: absolute; right: 1rem;"></button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content " style="border-radius: 1.3rem !important;">
+             <div class="modal-header">
+                 <div class="row">
+                     <div class="col-12">
+
+                         <h3 class="modal-title text-center mitr" id="exampleModalLabel">Suscríbete a nuestro boletín</h3>
+                         <p class="text-center">
+                             <img class="img-arbol-menu" src="assets/media/img/LogoRojo.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
+                         </p>
+                         <h6 class="smaller text-center">Suscríbase a nuestro boletín mensual para recibir las últimas noticias, actualizaciones y ofertas increíbles directamente en su correo.</h6>
+
+                         <div class="form-floating mb-1">
+                             <input type="text" class="form-control form-reset" id="txt_nombre" placeholder="Fecha Catálogo" autocomplete="off">
+                             <label for="txt_nombre"><i class="fas fa-bookmark"></i> Nombre</label>
+                         </div>
+                         <div class="form-floating mb-1">
+                             <input type="text" class="form-control form-reset" id="txt_telefono" placeholder="Fecha Catálogo" autocomplete="off">
+                             <label for="txt_telefono"><i class="fas fa-phone-alt"></i> Teléfono</label>
+                         </div>
+                         <div class="form-floating mb-2">
+                             <input type="text" class="form-control form-reset" id="txt_correo" placeholder="Fecha Catálogo" autocomplete="off">
+                             <label for="txt_correo"><i class="fas fa-at"></i> Correo</label>
+                         </div>
+                     </div>
+                     <div class="col-12 text-end">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                         <button type="button" class="btn btn-danger">Suscribirse</button>
+                     </div>
+                 </div>
+
+             </div>
+         </div>
+     </div>
+ </div>
+
  <!-- Carrito top -->
  <div class="car-top car-down" id="arriba">
      <span><img src="assets/media/img/car.png" alt="Proveedores de Refacciones Automotrices por mayoreo"></span>
@@ -21,6 +73,15 @@
          <li class="social-media instagram">
              <i class="fab fa-instagram"></i>
              <a class="small text-decoration-none" href="https://www.instagram.com/refaccionaria.arboledas/" target="_blank">Síguenos en instagram</a>
+         </li>
+         <br>
+         <li class="social-media black">
+             <i class="fas fa-newspaper"></i>
+             <a class="small text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribete al boletin.</a>
+         </li>
+         <li class="social-media black">
+             <i class="fas fa-bell"></i>
+             <a class="small text-decoration-none" href="#" id="verPromocionesModal">Ver promociones</a>
          </li>
      </ul>
  </center>
@@ -58,7 +119,7 @@
                      <h6 class="text-uppercase fw-bold mitr">Contacto</h6>
                      <p>
                          <a class="color-white no-link" href="https://www.google.com/maps/place/Refaccionaria+Arboledas+SA+de+CV/@20.6241852,-103.328707,20z/data=!4m5!3m4!1s0x8428b25924c5075f:0x10f56039859b589b!8m2!3d20.6242434!4d-103.328454" target="_blank">
-                         <i class="fas fa-location-arrow"></i>
+                             <i class="fas fa-location-arrow"></i>
                              Altos Hornos #2755 Col. Álamo industrial
                              C.P. 45560, Tlaquepaque, Jalisco, México.
                          </a>
@@ -91,3 +152,14 @@
      <!-- Copyright -->
  </footer>
  <!-- Footer -->
+
+ <script>
+     $('#verPromocionesModal').click(function() {
+         //Some code
+
+         var myModal = new bootstrap.Modal(document.getElementById('ModalIndex'));
+
+         myModal.show();
+
+     });
+ </script>

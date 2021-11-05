@@ -86,7 +86,6 @@
                Mar: Marca
            },
            success: function(data) {
-               console.log(data);
 
                var obj = JSON.parse(data);
                if (obj.status == "ok") {
@@ -151,7 +150,6 @@
            contentType: false,
            processData: false,
            success: function(data) {
-               console.log(data)
                var obj = JSON.parse(data);
                if (obj.status == "ok") {
                    Swal.fire("Mensaje de confirmación", obj.msj, "success");

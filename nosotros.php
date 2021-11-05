@@ -20,68 +20,10 @@
     <div class="container menus rounded">
       <h2 class="mitr">NOSOTROS</h2>
     </div>
-
     <header>
-
-      <div class="container mt-5 mb-3">
-        <div class="row justify-content-center align-items-center text-center">
-          <div class="col-12">
-            <h2 class="mitr">SOBRE NOSOTROS</h2>
-            <div class="separator-top"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mb-3">
-        <div class="row justify-content-center align-items-center text-center">
-          <div class="col-md-10 ">
-            <fieldset class="border  p-3 bg-body rounded">
-
-              <div class="section-title">
-
-                <p>Refaccionaria Arboledas S.A. de C.V. es una empresa mexicana dedicada a la distribución de refacciones
-                  automotrices nacionales e importadas de la mejor calidad. Con más de 30 años en el mercado y con el
-                  objetivo de establecer verdaderas relaciones comerciales basadas en los valores de nuestra empresa, por lo
-                  que promovemos el crecimiento humano de todos nuestros colaboradores además de aprovechar el avance
-                  tecnológico, todo esto con el propósito de ser corresponsables con el desarrollo de nuestros socios de
-                  negocios.</p>
-              </div>
-            </fieldset>
-          </div>
-        </div>
-      </div>
-
     </header>
 
-    <section>
-      <div class="container mb-3">
-        <div class="row justify-content-center align-items-center text-center">
-          <div class="col-lg-6 col-md-6 col-sm-12 mt-3 mb-3">
-            <h2 class="mitr">MISIÓN</h2>
-            <div class="separator-top"></div>
-            <fieldset class="border  p-3 bg-body rounded">
-
-              <div class="section-title">
-
-                <p>Elevar la competitividad de nuestros clientes entregando una asesoría profesional, autopartes y servicio de calidad, siendo una empresa socialmente responsable y financieramente sana</p>
-              </div>
-            </fieldset>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12 mt-3 mb-3">
-            <h2 class="mitr">VISIÓN</h2>
-            <div class="separator-top"></div>
-            <fieldset class="border  p-3 bg-body rounded">
-
-              <div class="section-title">
-
-                <p> Somos la mejor opción para nuestros socios de negocio, comercializando marcas de prestigio, en constante crecimiento, trascendiendo a través de nuestro capital humano.</p>
-              </div>
-            </fieldset>
-          </div>
-
-        </div>
-      </div>
+    <section id="nosotrosInfo">
     </section>
 
     <section>
@@ -253,7 +195,9 @@
     </section>
 -->
 
-    <section id="Cedis_ra"></section>
+    <section>
+      <div class="container mb-3" id="Cedis_ra"></div>
+    </section>
 
     <section>
       <div class="container mb-3">
@@ -390,7 +334,7 @@
       $(document).ready(function() {
         var busqueda = 'ok';
         $.ajax({
-          url: "controller/nosotros/precarga_cedis.php",
+          url: "controller/nosotros/precarga_img.php",
           type: "post",
           data: {
             Rs: busqueda
@@ -399,8 +343,21 @@
             alert("error petición ajax");
           },
           success: function(data) {
-            console.log(data);
             $("#Cedis_ra").append(data);
+          }
+        });
+
+        $.ajax({
+          url: "controller/nosotros/precarga_nosotros.php",
+          type: "post",
+          data: {
+            Rs: busqueda
+          },
+          error: function() {
+            alert("error petición ajax");
+          },
+          success: function(data) {
+            $("#nosotrosInfo").append(data);
           }
         });
       });
