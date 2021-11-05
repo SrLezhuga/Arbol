@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <a class="navbar-brand color-white smaller" href="mailto:hola@refaccionariaarboledas.com.mx">
-                        <i class="far fa-envelope"></i> hola@refaccionariaarboledas.com.mx
+                        <i class="far fa-envelope"></i> Correo
                     </a>
                     &nbsp;
                     <a class="navbar-brand color-white smaller" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank">
