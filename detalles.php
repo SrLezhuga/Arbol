@@ -21,7 +21,6 @@
       <h2 class="mitr" id="titulo">Refaccionaria Arboledas</h2>
     </div>
 
-
     <section>
       <div class="row justify-content-center align-items-center">
         <div class="container mt-5 mb-3 col-lg-6 col-sm-12">

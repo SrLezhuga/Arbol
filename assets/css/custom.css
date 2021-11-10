@@ -1987,3 +1987,14 @@ figure.effect-goliath:hover p {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+
+
+/*-------------*/
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-content {
+    background-color: transparent !important;
+}

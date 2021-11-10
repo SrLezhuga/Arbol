@@ -3,8 +3,45 @@
      <div class="modal-dialog">
          <div class="modal-content">
              <div class="modal-header p-0">
-                 <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
+                 <!-- carusel -->
+                 <div id="carouselPromos" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-inner" id="promo-slider">
 
+                         <!-- carusel item -->
+                         <div class="carousel-item active" data-bs-interval="5000">
+                             <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
+                         </div>
+                         <!-- carusel item -->
+                         <div class="carousel-item" data-bs-interval="5000">
+                             <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
+
+                         </div>
+                         <!-- carusel item -->
+                         <div class="carousel-item" data-bs-interval="5000">
+                             <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
+
+                         </div>
+                         <!-- carusel item -->
+                         <div class="carousel-item" data-bs-interval="5000">
+                             <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
+
+                         </div>
+                         <!-- carusel item -->
+                         <div class="carousel-item" data-bs-interval="5000">
+                             <img class="img-fluid rounded" src="assets/media/img/modal/placeholder.jpg" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu='return false;' draggable='false'>
+
+                         </div>
+                     </div>
+                     <!-- carusel btns -->
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromos" data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselPromos" data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                     </button>
+                 </div>
 
                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 1rem; position: absolute; right: 1rem;"></button>
              </div>
@@ -154,6 +191,25 @@
  <!-- Footer -->
 
  <script>
+     $(document).ready(function() {
+         var busqueda = 'ok';
+         $.ajax({
+             url: "controller/banner/precarga_promociones.php",
+             type: "post",
+             data: {
+                 Rs: busqueda
+             },
+             error: function() {
+                 alert("error petición ajax");
+             },
+             success: function(data) {
+                 $("#promo-slider").empty();
+                 $("#promo-slider").append(data);
+             }
+         });
+     });
+
+
      $('#verPromocionesModal').click(function() {
          //Some code
 

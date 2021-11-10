@@ -227,7 +227,7 @@
 
   .x4 {
     left: 470px;
-    botttom: 20px;
+    bottom: 20px;
 
     -webkit-transform: scale(0.75);
     -moz-transform: scale(0.75);
@@ -283,3 +283,4 @@
     }
   }
 </style>
+
