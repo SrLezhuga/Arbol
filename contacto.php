@@ -191,7 +191,6 @@
           clientX: 20
         });
       }
-      var ele = "." + testimonialItems[index].className;
       var ele2 = document.querySelector(ele)
       ele2.dispatchEvent(evt);
       index++; // Increment the index

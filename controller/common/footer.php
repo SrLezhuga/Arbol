@@ -53,7 +53,7 @@
  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
      <div class="modal-dialog modal-dialog-centered">
          <div class="modal-content " style="border-radius: 1.3rem !important;">
-             <div class="modal-header">
+             <div class="modal-header" style="background: aliceblue;">
                  <div class="row">
                      <div class="col-12">
 
