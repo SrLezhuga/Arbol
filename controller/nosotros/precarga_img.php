@@ -12,7 +12,7 @@ if ($_POST['Rs'] == 'ok') {
       <!-- ' . $row['cedis'] . ' -->
       <div class="grid rounded">
         <figure class="effect-goliath rounded bordered">
-          <img src="assets/media/img/' . $row['img_cedis'] . '" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu="return false;" draggable="false"/>
+          <img src="assets/media/img/' . $row['img_cedis'] . '" style="width: 100%;" alt="Proveedores de Refacciones Automotrices por mayoreo" onContextMenu="return false;" draggable="false"/>
             <figcaption>
               <h4 class="mitr smaller" style="background: rgba(0,0,0,0.4);">' . $row['cedis'] . ' Refaccionaria Arboledas S.A. de C.V.</h4>
               <p class="smaller">' . $row['direccion_cedis'] . ' Col. ' . $row['col_cedis'] . ' C.P. ' . $row['cp_cedis'] . '. ' . $row['mun_cedis'] . ', ' . $row['est_cedis'] . '.</p>

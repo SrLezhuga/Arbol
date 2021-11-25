@@ -62,6 +62,9 @@
                         <a class="nav-link color-black" href="marcas">MARCAS</a>
                     </div>
                     <div class="col-lg-auto col-sm-12 cool-link">
+                        <a class="nav-link color-black" href="garantias">GARANTIAS</a>
+                    </div>
+                    <div class="col-lg-auto col-sm-12 cool-link">
                         <a class="nav-link color-black" href="catalogo">CATÁLOGO</a>
                     </div>
                     <div class="col-lg-auto col-sm-12 cool-link">

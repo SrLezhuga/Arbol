@@ -17,6 +17,8 @@
   <script type="text/javascript" src="assets/js/pregunta.js"></script>
   <script type="text/javascript" src="assets/js/directorio.js"></script>
   <script type="text/javascript" src="assets/js/nosotros.js"></script>
+  <script type="text/javascript" src="assets/js/banner.js"></script>
+  <script type="text/javascript" src="assets/js/avisos.js"></script>
 </head>
 
 <body>
@@ -72,7 +74,9 @@
               <div class="tab-pane fade" id="v-pills-banners" role="tabpanel" aria-labelledby="v-pills-banners-tab">
                 <?php include('controller/banner/config.php'); ?>
               </div>
-              <div class="tab-pane fade" id="v-pills-avisos" role="tabpanel" aria-labelledby="v-pills-avisos-tab">...avisos</div>
+              <div class="tab-pane fade" id="v-pills-avisos" role="tabpanel" aria-labelledby="v-pills-avisos-tab">
+                <?php include('controller/avisos/config.php'); ?>
+              </div>
             </div>
           </div>
 

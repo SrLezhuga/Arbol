@@ -36,7 +36,7 @@
         $("#img_directorio").prop("disabled", false);
         $("#textareaMap_cedis").prop("disabled", false);
         $("#btn-guardar-directorio").prop("disabled", false);
-        $("#btn-ver-directorio").prop("disabled", false);
+        //$("#btn-ver-directorio").prop("disabled", false);
         $("#mun_cedis").prop("disabled", false);
         $("#est_cedis").prop("disabled", false);
         $("#email_cedis").prop("disabled", false);

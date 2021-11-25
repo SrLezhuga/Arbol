@@ -142,6 +142,44 @@
 
     </section>
 
+    <section>
+      <form class="form-horizontal" method="POST" action="https://formspree.io/hola@refaccionariaarboledas.com.mx">
+        <div class="contact-form row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input id="name" type="text" placeholder="NOMBRE*" class="form-control" name="nombre">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="form-group">
+              <input type="email" placeholder="CORREO*" class="form-control" name="correo">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="form-group">
+              <input type="text" placeholder="TELÉFONO*" class="form-control" name="telefono">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" placeholder="ESTADO*" class="form-control" name="estado"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <textarea class="form-control input-message" placeholder="MENSAJE*" rows="7" name="mensaje"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <input type="hidden" name="_next" value="https://refaccionariaarboledas.com.mx/" />
+            <button id="submit" name="submit" type="submit" value="Send" class="button red"> ENVIAR
+            </button>
+          </div>
+        </div>
+  </div>
+  </div>
+  </form>
+  </section>
 
   </div>
 

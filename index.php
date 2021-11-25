@@ -353,7 +353,7 @@
             <div class="accordion-item mb-3 rounded border">
               <h2 class="accordion-header" id="flush-headingEnfriamiento">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEnfriamiento" aria-expanded="false" aria-controls="flush-collapseEnfriamiento">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
+                  <img class="rounded-circle" src="assets/media/img/iconos/IconoEnfriamiento.png" onContextMenu='return false;' draggable='false'>
                   <h6 class="mitr pl-5 text-start">ENFRIAMIENTO</h6>
                 </button>
               </h2>

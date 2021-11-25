@@ -1,6 +1,6 @@
  <!-- Modal -->
  <div class="modal fade" id="ModalIndex" tabindex="-1" aria-labelledby="ModalIndexLabel" aria-hidden="true">
-     <div class="modal-dialog">
+     <div class="modal-dialog modal-dialog-centered">
          <div class="modal-content">
              <div class="modal-header p-0">
                  <!-- carusel -->
@@ -43,7 +43,7 @@
                      </button>
                  </div>
 
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 1rem; position: absolute; right: 1rem;"></button>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 1rem; position: absolute; right: 1rem; z-index: 100;"></button>
              </div>
          </div>
      </div>
@@ -111,6 +111,13 @@
              <i class="fab fa-instagram"></i>
              <a class="small text-decoration-none" href="https://www.instagram.com/refaccionaria.arboledas/" target="_blank">Síguenos en instagram</a>
          </li>
+         <li class="social-media linkedin">
+             <i class="fab fa-linkedin-in"></i>
+             <a class="small text-decoration-none" href=" https://mx.linkedin.com/company/refaccionaria-arboledas-s.a.-de-c.v." target="_blank">Síguenos en linkedin</a>
+         </li>
+
+
+
          <br>
          <li class="social-media black">
              <i class="fas fa-newspaper"></i>

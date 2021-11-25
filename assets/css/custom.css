@@ -1701,6 +1701,10 @@ p.testimonialFrom {
     background: radial-gradient(circle at 40% 300%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
+.social-media.linkedin {
+    background-color: #0072b1;
+}
+
 .social-media.youtube {
     background-color: #FF0000;
 }

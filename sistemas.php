@@ -70,7 +70,7 @@
           <!-- ENFRIAMIENTO -->
           <div class="col">
             <button value="ENFRIAMIENTO" class="btn_sistema border bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
+              <img src="assets/media/img/iconos/IconoEnfriamiento.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- MISCELÁNEOS -->
@@ -133,7 +133,7 @@
           <!-- ENFRIAMIENTO -->
           <div class="col">
             <button value="ENFRIAMIENTO" class="btn_sistema border bg-white mini_btn" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+              <img src="assets/media/img/iconos/IconoEnfriamiento.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- MISCELÁNEOS -->
