@@ -10,17 +10,23 @@ if ($_POST['Rs'] == 'ok') {
     
     echo '
     <!--' . $row["nombre_marca"] . '-->
-    <div class="col-lg-2 col-md-3 col-sm-12">
-      <div class="card h-100 w-100 overflow-hidden rounded">
-        <img src="assets/media/img/marcas/' . $row["img_marca"] . '" class="card-img-top imagen" alt="' . $row["nombre_marca"] . '">
-        <div class="card_body h-100 card_marcas align-items-center">
-          <div>
+ 
+    <div class="accordion accordion-flush" id="accordion' . $row["id_marca"] . '">
+      <div class="accordion-item mb-3 rounded border">
+        <h2 class="accordion-header" id="flush-heading' . $row["id_marca"] . '">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse' . $row["id_marca"] . '" aria-expanded="false" aria-controls="flush-collapse' . $row["id_marca"] . '">
+            <img class="img-fluid" src="assets/media/img/marcas/' . $row["img_marca"] . '" onContextMenu="return false;" draggable="false">
+          </button>
+        </h2>
+        <div id="flush-collapse' . $row["id_marca"] . '" class="accordion-collapse collapse" aria-labelledby="flush-heading' . $row["id_marca"] . '" data-bs-parent="#accordion' . $row["id_marca"] . '">
+          <div class="accordion-body vh-15 small">
             <h6 class="card_title mitr text-center">' . $row["nombre_marca"] . '</h6>
-            <a class="btn btn-danger" href="detalles?m=' . $row["nombre_marca"] . '" role="button">Información</a>
+            <h6 class="small">' . $row["info_marca"] . '</h6> 
           </div>
         </div>
       </div>
     </div>
+
     ';
   }
 } else {

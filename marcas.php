@@ -22,18 +22,19 @@
     </div>
 
     <section>
-      <div class="container mt-5 mb-3">
-        <!-- Carusel/slider marcas -->
-
+      <div class="container">
         <!-- Marcas -->
-        <div id="item_marcas" class="row g-4 justify-content-center align-items-center"></div>
-        <!-- /Marcas -->
-
+        <div id="item_marcas" class="row mt-5 mb-3 row-cols-lg-4 row-cols-sm-1 justify-content-center align-items-center">
+          <!-- /Marcas -->
+        </div>
       </div>
     </section>
-  </div>
 
-  <?php require('controller/common/footer.php'); ?>
+
+
+
+
+    <?php require('controller/common/footer.php'); ?>
 
 </body>
 

@@ -46,9 +46,6 @@
               <button class="nav-link" id="v-pills-banners-tab" data-bs-toggle="pill" data-bs-target="#v-pills-banners" type="button" role="tab" aria-controls="v-pills-banners" aria-selected="false">BANNERS</button>
               <button class="nav-link" id="v-pills-avisos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-avisos" type="button" role="tab" aria-controls="v-pills-avisos" aria-selected="false">AVISOS</button>
 
-
-
-
             </div>
             <div class="tab-content" id="v-pills-tabContent" style="width: 100%;">
               <div class="tab-pane fade show active" id="v-pills-catalogos" role="tabpanel" aria-labelledby="v-pills-catalogos-tab">
@@ -80,7 +77,6 @@
             </div>
           </div>
 
-
         </div>
       </div>
     </section>
@@ -88,7 +84,5 @@
   </div>
 
 </body>
-
-
 
 </html>
