@@ -24,6 +24,15 @@
 <!--  Iconos -->
 <script src="https://kit.fontawesome.com/863472b478.js" crossorigin="anonymous"></script>
 
+<!-- DataTables -->
+<script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="assets/js/datatables.js"></script>
+<link href="assets/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+<!-- Select2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
