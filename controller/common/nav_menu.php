@@ -50,7 +50,7 @@
     <!-- Nav Bottom -->
     <nav class="navbar navber-menu navbar-expand-lg mitr" id="nav2">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-md-center align-items-center">
                     <div class="col-lg-auto col-sm-12 cool-link">
                         <a class="nav-link color-black" href="index">INICIO</a>

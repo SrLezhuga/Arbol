@@ -253,166 +253,8 @@
         <h2 class="mitr">SISTEMAS</h2>
         <div class="separator-top"></div>
 
-        <div class="row mt-3 mb-3 row-cols-lg-5 row-cols-sm-1 justify-content-center align-items-center">
-
-          <div class="accordion accordion-flush" id="accordionMotor">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingMotor">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMotor" aria-expanded="false" aria-controls="flush-collapseMotor">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">MOTOR</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseMotor" class="accordion-collapse collapse" aria-labelledby="flush-headingMotor" data-bs-parent="#accordionMotor">
-                <div class="accordion-body vh-15 small">
-                  Contamos con accesorios de calidad para un funcionamiento óptimo del motor. </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion accordion-flush" id="accordionEncendido">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingEncendido">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEncendido" aria-expanded="false" aria-controls="flush-collapseEncendido">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">ENCENDIDO</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseEncendido" class="accordion-collapse collapse" aria-labelledby="flush-headingEncendido" data-bs-parent="#accordionEncendido">
-                <div class="accordion-body vh-15 small">
-                  Las mejores marcas de calidad en cables y productos para el sistema de encendido automotriz.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion accordion-flush" id="accordionSuspension">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingSuspension">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSuspension" aria-expanded="false" aria-controls="flush-collapseSuspension">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">SUSPENSIÓN Y DIRECCIÓN</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseSuspension" class="accordion-collapse collapse" aria-labelledby="flush-headingSuspension" data-bs-parent="#accordionSuspension">
-                <div class="accordion-body vh-15 small">
-                  Mantener la estabilidad del vehículo es vital, contamos con la mejor línea de amortiguadores y suspensión.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion accordion-flush" id="accordionEmbrague">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingEmbrague">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEmbrague" aria-expanded="false" aria-controls="flush-collapseEmbrague">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">EMBRAGUE Y CARDÁN</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseEmbrague" class="accordion-collapse collapse" aria-labelledby="flush-headingEmbrague" data-bs-parent="#accordionEmbrague">
-                <div class="accordion-body vh-15 small">
-                  Las marcas más reconocidas en la industria en productos y kits para tu sistema de embrague y cardán. </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion accordion-flush" id="accordionFrenos">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingFrenos">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFrenos" aria-expanded="false" aria-controls="flush-collapseFrenos">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">FRENOS</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseFrenos" class="accordion-collapse collapse" aria-labelledby="flush-headingFrenos" data-bs-parent="#accordionFrenos">
-                <div class="accordion-body vh-15 small">
-                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion accordion-flush" id="accordionTransmision">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingTransmision">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTransmision" aria-expanded="false" aria-controls="flush-collapseTransmision">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">TRANSMISIÓN Y EJES</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseTransmision" class="accordion-collapse collapse" aria-labelledby="flush-headingTransmision" data-bs-parent="#accordionTransmision">
-                <div class="accordion-body vh-15 small">
-                  Manejamos kits de transmisiones automáticas y manuales para tu refaccionaria.
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="accordion accordion-flush" id="accordionEnfriamiento">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingEnfriamiento">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEnfriamiento" aria-expanded="false" aria-controls="flush-collapseEnfriamiento">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoEnfriamiento.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">ENFRIAMIENTO</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseEnfriamiento" class="accordion-collapse collapse" aria-labelledby="flush-headingEnfriamiento" data-bs-parent="#accordionEnfriamiento">
-                <div class="accordion-body vh-15 small">
-                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="accordion accordion-flush" id="accordionMiscelaneos">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingMiscelaneos">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMiscelaneos" aria-expanded="false" aria-controls="flush-collapseMiscelaneos">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">MISCELÁNEOS</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseMiscelaneos" class="accordion-collapse collapse" aria-labelledby="flush-headingMiscelaneos" data-bs-parent="#accordionMiscelaneos">
-                <div class="accordion-body vh-15 small">
-                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="accordion accordion-flush" id="accordionQuimicos">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingQuimicos">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuimicos" aria-expanded="false" aria-controls="flush-collapseQuimicos">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">QUÍMICOS</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseQuimicos" class="accordion-collapse collapse" aria-labelledby="flush-headingQuimicos" data-bs-parent="#accordionQuimicos">
-                <div class="accordion-body vh-15 small">
-                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="accordion accordion-flush" id="accordionGasolina">
-            <div class="accordion-item mb-3 rounded border">
-              <h2 class="accordion-header" id="flush-headingGasolina">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGasolina" aria-expanded="false" aria-controls="flush-collapseGasolina">
-                  <img class="rounded-circle" src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
-                  <h6 class="mitr pl-5 text-start">GASOLINA</h6>
-                </button>
-              </h2>
-              <div id="flush-collapseGasolina" class="accordion-collapse collapse" aria-labelledby="flush-headingGasolina" data-bs-parent="#accordionGasolina">
-                <div class="accordion-body vh-15 small">
-                  Mantén la seguridad de los vehículos de tus clientes, con frenos de la más alta calidad y durabilidad. </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        <!-- Lineas -->
+        <div id="item_lineas" class="row mt-3 mb-3 row-cols-lg-5 row-cols-sm-1 justify-content-center align-items-center"></div>
 
       </div>
     </section>
@@ -444,7 +286,7 @@
     showSliderMarcas();
     showSlider();
     showAnuncio();
-
+    showLineas();
   });
 
   function showSliderMarcas() {
@@ -520,6 +362,24 @@
       success: function(data) {
         $("#carousel-slider").empty();
         $("#carousel-slider").append(data);
+      }
+    });
+  }
+
+  function showLineas() {
+    var busqueda = 'ok';
+    $.ajax({
+      url: "controller/index/precarga_lineas.php",
+      type: "post",
+      data: {
+        Rs: busqueda
+      },
+      error: function() {
+        alert("error petición ajax");
+      },
+      success: function(data) {
+        $("#item_lineas").empty();
+        $("#item_lineas").append(data);
       }
     });
   }

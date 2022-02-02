@@ -707,12 +707,14 @@
                   </div>
                   <!--End Aviso de pricacidad completo -->
                   <br>
+                  <!--
                   <hr>
                   <p>
                     <a class="btn btn-danger btn-sm" role="button">
                       <i class="fas fa-file-download"></i> Descargar Aviso de Privacidad
                     </a>
                   </p>
+                  -->
                 </div>
               </div>
             </div>

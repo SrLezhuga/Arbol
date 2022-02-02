@@ -64,7 +64,7 @@
           <!-- GASOLINA -->
           <div class="col">
             <button value="GASOLINA" class="btn_sistema border bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
+              <img src="assets/media/img/iconos/IconoGasolina.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- ENFRIAMIENTO -->
@@ -76,13 +76,13 @@
           <!-- MISCELÁNEOS -->
           <div class="col">
             <button value="MISCELÁNEOS" class="btn_sistema border bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
+              <img src="assets/media/img/iconos/IconoMiscelaneos.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- QUIMICOS -->
           <div class="col">
             <button value="QUIMICOS" class="btn_sistema border bg-white" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
+              <img src="assets/media/img/iconos/IconoQuimicos.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
         </div>
@@ -127,7 +127,7 @@
           <!-- GASOLINA -->
           <div class="col">
             <button value="GASOLINA" class="btn_sistema border bg-white mini_btn" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+              <img src="assets/media/img/iconos/IconoGasolina.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- ENFRIAMIENTO -->
@@ -139,13 +139,13 @@
           <!-- MISCELÁNEOS -->
           <div class="col">
             <button value="MISCELÁNEOS" class="btn_sistema border bg-white mini_btn" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+              <img src="assets/media/img/iconos/IconoMiscelaneos.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- QUIMICOS -->
           <div class="col">
             <button value="QUIMICOS" class="btn_sistema border bg-white mini_btn" type="button">
-              <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
+              <img src="assets/media/img/iconos/IconoQuimicos.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
         </div>
