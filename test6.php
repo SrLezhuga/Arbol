@@ -14,7 +14,7 @@ $client = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
 $params = array(
 
   "lang" => "es-MX",
-  "searchQuery" => "619084667",
+  "searchQuery" => "1976-1",
   "searchQueryType" => "freetext",
   "includeAutoCarePartData" => 1,
   "includeTecDocPartData" => 1,

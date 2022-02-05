@@ -95,7 +95,32 @@
 
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="modalAutoCareApplication" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalAutoCareApplicationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" style="background-color: #fff !important;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAutoCareApplicationLabel">
+            <legend class="w-auto">Aplicaciones:</legend>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 1rem; position: absolute; right: 1rem; z-index: 100;"></button>
 
+        </div>
+        <div class="modal-body">
+
+
+
+          <div>
+            <ul id="getApplication">
+
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     $(document).ready(function() {
@@ -235,17 +260,18 @@
                "<br><b> imageURL: </b>" + obj[count].imageURL + "<br>" +
                "</p>");*/
 
-
             $("#formPreguntas").append(
               "<tr>" +
               "<td scope='row' style='text-align-last: center; vertical-align: middle;'>" +
               (count + 1) +
               "</td>" +
               "<td scope='row' style='text-align-last: center; vertical-align: middle;'>" +
-              "<img class='img_marcas mx-auto d-block img-thumbnail figure-img' src='" + obj[count].imageURL + "' onerror='this.src=" + "'assets/media/img/loader/PlaceholderCatalogo.png'" + ";' style='height: 65px;'>" +
+              "<img class='img_marcas mx-auto d-block figure-img' alt='" + obj[count].partNumber + "' src='" + obj[count].imageURL + "' onerror='this.src=" + "'assets/media/img/loader/PlaceholderCatalogo.png'" + ";' style='height: 40px;'>" +
+              "<label style='display: none;'>" + obj[count].partNumber + "</label>" +
               "</td>" +
               "<td scope='row' style='text-align-last: center; vertical-align: middle;'>" +
-              "<img class='img_marcas mx-auto d-block img-thumbnail figure-img' src='" + obj[count].logo + "' onerror='this.src=" + "'assets/media/img/loader/PlaceholderCatalogo.png'" + ";' style='height: 65px;'>" +
+              "<img class='img_marcas mx-auto d-block figure-img' alt='" + obj[count].brandName + "' src='" + obj[count].logo + "' onerror='this.src=" + "'assets/media/img/loader/PlaceholderCatalogo.png'" + ";' style='height: 40px;'>" +
+              "<label style='display: none;'>" + obj[count].brandName + "</label>" +
               "</td>" +
               "<td scope='row' style='text-align-last: left; vertical-align: middle;'>" +
               "<p>" +
@@ -255,7 +281,7 @@
               "</p>" +
               "</td>" +
               "<td scope='row' style='text-align-last: center; vertical-align: middle;'>" +
-              "<button type='button' class='btn btn-light'><i class='fas fa-car-side'></i> Aplicaciones</button>" +
+              "<button type='button' class='btn btn-light' onclick='test(`" + obj[count].brandCode + "|" + obj[count].partNumber + "`,this)' data-toggle='modal' data-target='#modalAutoCareApplication' value='este es un valor'><i class='fas fa-car-side'></i> Aplicaciones</button>" +
               "<button type='button' class='btn btn-light'><i class='fas fa-info-circle'></i> Detalles</button>" +
               "<button type='button' class='btn btn-light'><i class='fas fa-link'></i> </button>" +
               "</td>" +
@@ -271,6 +297,46 @@
       });
     }
 
+    // Modal tarjeta cliente
+    function test(value) {
+
+      $.ajax({
+        type: "GET",
+        url: "controller/soap/getAutoCarePartApplications.php",
+        data: {
+          id_button: value
+        },
+        beforeSend: function() {
+          Swal.fire({
+            title: 'Cargando datos',
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+            timer: 3600000,
+            showConfirmButton: false,
+            willOpen: () => {
+              swal.showLoading();
+            }
+          });
+
+        },
+        success: function(data) {
+          console.log(data);
+          var obj = JSON.parse(JSON.stringify(data));
+          var count = 0;
+          $('#getApplication').empty();
+          obj.forEach(element => {
+            $("#getApplication").append("<li>" + obj[count].vehicle + " " + obj[count].attributeValueName + "</li>");
+            count++;
+          });
+        },
+        complete: function() {
+          var myModal = new bootstrap.Modal('#modalAutoCareApplication');
+
+          myModal.show();
+          Swal.close();
+        }
+      });
+    }
 
     function loadTable() {
 
@@ -308,13 +374,6 @@
     }
   </script>
 
-
 </body>
 
 </html>
-
-
-<?php
-
-
-?>
