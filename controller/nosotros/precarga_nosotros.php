@@ -22,7 +22,7 @@ if ($_POST['Rs'] == 'ok') {
     <div class="container mb-3">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-md-10 ">
-          <fieldset class="border  p-3 bg-body rounded">
+          <fieldset class="border  p-3 bg-body shadow-lg rounded">
 
             <div class="section-title">
 
@@ -50,7 +50,7 @@ if ($_POST['Rs'] == 'ok') {
         <div class="col-lg-6 col-md-6 col-sm-12 mt-3 mb-3">
           <h2 class="mitr">MISIÓN</h2>
           <div class="separator-top"></div>
-          <fieldset class="border  p-3 bg-body rounded">
+          <fieldset class="border  p-3 bg-body shadow-lg rounded">
 
             <div class="section-title">
 
@@ -71,7 +71,7 @@ if ($_POST['Rs'] == 'ok') {
         <div class="col-lg-6 col-md-6 col-sm-12 mt-3 mb-3">
           <h2 class="mitr">VISIÓN</h2>
           <div class="separator-top"></div>
-          <fieldset class="border  p-3 bg-body rounded">
+          <fieldset class="border  p-3 bg-body shadow-lg rounded">
 
             <div class="section-title">
 

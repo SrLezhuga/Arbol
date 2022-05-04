@@ -1,6 +1,7 @@
 body {
-    background-image: url('../media/img/PageBackground.jpg');
-    height: 100%;
+    /*background-image: url('../media/img/PageBackground.jpg');
+    height: 100%;*/
+    background-color: #f8f9fa;
 }
 
 html {
@@ -348,6 +349,7 @@ span {
 
 .quick-links {
     min-height: 203px;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%) !important;
 }
 
 .quick-links .link a {
@@ -487,7 +489,7 @@ span {
 
 .menus {
     color: #fff !important;
-    background-color: rgb(13 45 105 / 70%);
+    background-color: #002262;
 }
 
 .menus h2 {
@@ -766,7 +768,7 @@ span {
     position: relative;
     max-width: 200px;
     max-height: 350px;
-    /* box-shadow: 0 40px 60px -6px black;*/
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%) !important;
     margin-bottom: 10px;
     border: none;
 }
@@ -910,8 +912,7 @@ div a:hover {
 }
 
 .shadow-lg {
-    /* box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%) !important;*/
-    box-shadow: none !important;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%) !important;
 }
 
 .rounded {
@@ -961,7 +962,7 @@ div a:hover {
 
 .slider {
     background: white;
-    /* box-shadow: 0 0 30px 0 rgb(20 27 202 / 20%);*/
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%) !important;
     border: 1px solid #dee2e6 !important;
     height: 100px;
     margin: auto;
@@ -1004,7 +1005,7 @@ div a:hover {
     background: white;
     border-radius: 100px;
     width: 74px;
-    /* box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%);*/
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%) !important;
     border: 1px solid #dee2e6 !important;
     margin: 0px auto;
 }
@@ -1024,7 +1025,7 @@ div a:hover {
     border-radius: 10px;
     background-color: #fff;
     transition: all .4s ease-in-out;
-    /*  box-shadow: 0 0 30px 0 rgb(20 27 202 / 25%) !important;*/
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%) !important;
 }
 
 .our-services .icon {
@@ -1994,4 +1995,11 @@ figure.effect-goliath:hover p {
 
 .modal-content {
     background-color: transparent !important;
+}
+
+
+/*-------------*/
+
+.select2-container {
+    width: 100% !important;
 }

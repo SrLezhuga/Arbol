@@ -8,6 +8,7 @@
 
   <?php require_once('controller/common/header.php'); ?>
 
+
   <title>REFACCIONARIA ARBOLEDAS | Sistemas</title>
 </head>
 
@@ -27,61 +28,61 @@
         <div class="row mb-2 justify-content-center align-items-center text-center ocultar-sistemas">
           <!-- MOTOR -->
           <div class="col">
-            <button value="MOTOR" class="btn_sistema border bg-white" type="button">
+            <button value="MOTOR" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- ENCENDIDO -->
           <div class="col">
-            <button value="ENCENDIDO" class="btn_sistema border bg-white" type="button">
+            <button value="ENCENDIDO" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- SUSPENSION -->
           <div class="col">
-            <button value="SUSPENSIÓN Y DIRECCIÓN" class="btn_sistema border bg-white" type="button">
+            <button value="SUSPENSIÓN Y DIRECCIÓN" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- EMBRAGUE -->
           <div class="col">
-            <button value="EMBRAGUE Y CARDÁN" class="btn_sistema border bg-white" type="button">
+            <button value="EMBRAGUE Y CARDÁN" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- FRENOS -->
           <div class="col">
-            <button value="FRENOS" class="btn_sistema border bg-white" type="button">
+            <button value="FRENOS" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- TRANSMISION -->
           <div class="col">
-            <button value="TRANSMISION Y EJES" class="btn_sistema border bg-white" type="button">
+            <button value="TRANSMISION Y EJES" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- GASOLINA -->
           <div class="col">
-            <button value="GASOLINA" class="btn_sistema border bg-white" type="button">
+            <button value="GASOLINA" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoGasolina.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- ENFRIAMIENTO -->
           <div class="col">
-            <button value="ENFRIAMIENTO" class="btn_sistema border bg-white" type="button">
+            <button value="ENFRIAMIENTO" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoEnfriamiento.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- MISCELÁNEOS -->
           <div class="col">
-            <button value="MISCELÁNEOS" class="btn_sistema border bg-white" type="button">
+            <button value="MISCELÁNEOS" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoMiscelaneos.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
           <!-- QUIMICOS -->
           <div class="col">
-            <button value="QUIMICOS" class="btn_sistema border bg-white" type="button">
+            <button value="QUIMICOS" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoQuimicos.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
@@ -90,61 +91,61 @@
         <div class="row row-cols-5 mb-3 justify-content-center align-items-center text-center ocultar-sistemas-movil">
           <!-- MOTOR -->
           <div class="col">
-            <button value="MOTOR" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="MOTOR" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoMotor.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- ENCENDIDO -->
           <div class="col">
-            <button value="ENCENDIDO" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="ENCENDIDO" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoEncendido.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- SUSPENSION -->
           <div class="col">
-            <button value="SUSPENSIÓN Y DIRECCIÓN" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="SUSPENSIÓN Y DIRECCIÓN" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoSuspension.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- EMBRAGUE -->
           <div class="col">
-            <button value="EMBRAGUE Y CARDÁN" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="EMBRAGUE Y CARDÁN" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoEmbrague.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- FRENOS -->
           <div class="col">
-            <button value="FRENOS" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="FRENOS" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoFrenos.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- TRANSMISION -->
           <div class="col">
-            <button value="TRANSMISION Y EJES" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="TRANSMISION Y EJES" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- GASOLINA -->
           <div class="col">
-            <button value="GASOLINA" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="GASOLINA" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoGasolina.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- ENFRIAMIENTO -->
           <div class="col">
-            <button value="ENFRIAMIENTO" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="ENFRIAMIENTO" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoEnfriamiento.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- MISCELÁNEOS -->
           <div class="col">
-            <button value="MISCELÁNEOS" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="MISCELÁNEOS" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoMiscelaneos.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
           <!-- QUIMICOS -->
           <div class="col">
-            <button value="QUIMICOS" class="btn_sistema border bg-white mini_btn" type="button">
+            <button value="QUIMICOS" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoQuimicos.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
@@ -161,9 +162,6 @@
             <button type="button" class="btn btn-danger" onclick="getBusqueda()"><i class="fas fa-search"></i></button>
           </div>
         </div>
-
-
-
 
         <h2 class="mitr text-uppercase" id="txt_sistema">TODOS LOS SISTEMAS</h2>
         <div class="separator-top"></div>
@@ -185,98 +183,6 @@
 </body>
 
 
+<script type="text/javascript" src="assets/js/js_sistemas.js"></script>
 
 </html>
-
-
-<script>
-  $(document).ready(function() {
-    showSistemas();
-  });
-
-  function getBusqueda() {
-    var busqueda = $("#txtBuscar").val();
-
-    $.ajax({
-      url: "controller/sistemas/busqueda.php",
-      type: "post",
-      data: {
-        Rs: busqueda
-      },
-      beforeSend: function() {
-        //imagen de carga
-        $("#item_sistemas").html("<div class='col-6'><img class='mx-auto d-block' src='assets/media/img/loader/spinning.gif'></div>");
-      },
-      error: function() {
-        alert("error petición ajax");
-      },
-      success: function(data) {
-        setTimeout(function() {
-          $("#item_sistemas").empty();
-          $("#item_sistemas").append(data);
-          if (!busqueda) {
-            $("#txt_sistema").html("TODOS LOS SISTEMAS");
-          } else {
-            $("#txt_sistema").html("Resultado de " + busqueda);
-          }
-        }, 250);
-      }
-    });
-  }
-
-  $('.btn_sistema').on('click', function() {
-    var id_button = $(this).val();
-    getSistema(id_button);
-  });
-
-  function getSistema(busqueda) {
-
-    $.ajax({
-      url: "controller/sistemas/busqueda.php",
-      type: "post",
-      data: {
-        Rs: busqueda
-      },
-      beforeSend: function() {
-        //imagen de carga
-        $("#item_sistemas").html("<div class='col-6'><img class='mx-auto d-block' src='assets/media/img/loader/spinning.gif'></div>");
-      },
-      error: function() {
-        alert("error petición ajax");
-      },
-      success: function(data) {
-        setTimeout(function() {
-          $("#item_sistemas").empty();
-          $("#item_sistemas").append(data);
-          if (!busqueda) {
-            $("#txt_sistema").html("TODOS LOS SISTEMAS");
-          } else {
-            $("#txt_sistema").html("Sistema de " + busqueda);
-          }
-          $("#txtBuscar").val('');
-        }, 250);
-      }
-    });
-  }
-
-  function showSistemas() {
-
-    $.ajax({
-      url: "controller/sistemas/precarga.php",
-      type: "post",
-      beforeSend: function() {
-        //imagen de carga
-        $("#item_sistemas").html("<div class='col-6'><img class='mx-auto d-block' src='assets/media/img/loader/spinning.gif'></div>");
-      },
-      error: function() {
-        alert("error petición ajax");
-      },
-      success: function(data) {
-        setTimeout(function() {
-          $("#item_sistemas").empty();
-          $("#item_sistemas").append(data);
-        }, 250);
-      }
-    });
-  }
-</script>

@@ -10,10 +10,10 @@ define('SERVICE_URL', 'https://webservice.tecalliance.services/catalog/v1/servic
 
 $client = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
 
-$idMakeFacets = $_POST['idMakeFacets'];
-$idYearFacets = $_POST['idYearFacets'];
+$idMakeFacets = $_POST['vehicleMake'];
+$idYearFacets = $_POST['vehicleYear'];
 
-//Obten listado de marcas en formato Aces/Pies
+//Obten listado de items en formato Aces/Pies
 $params = array(
 
   "regionIds" => 3,
@@ -34,24 +34,24 @@ try {
     //print_r($output);
 
     $arr_json = json_decode(json_encode($output), true);
-    $marcas = array();
+    $items = array();
 
-    foreach ($arr_json['vehicles'] as $t_marcas) {
+    foreach ($arr_json['vehicles'] as $t_items) {
       //trae solo los campos que requieres
 
-      $marcas[] = array(
+      $items[] = array(
         
 
-        'baseVehicleId' => $t_marcas['baseVehicleId'],
-        'modelName' => $t_marcas['modelName'],
-        'subModelName' => $t_marcas['subModelName']
+        'baseVehicleId' => $t_items['baseVehicleId'],
+        'modelName' => $t_items['modelName'],
+        'subModelName' => $t_items['subModelName']
 
       );
     }
 
-    //print_r($marcas);
+    //print_r($items);
 
-    echo json_encode($marcas);
+    echo json_encode($items);
 
 
     exit;

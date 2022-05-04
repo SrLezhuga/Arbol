@@ -12,12 +12,6 @@ $client = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
 
 $baseVehicleId = (!empty($_GET['baseVehicleId'])) ? $_GET['baseVehicleId'] : 118800;
 
-//Obten listado de marcas en formato Aces/Pies
-/*
-[status] => 200
-[total] => 325
-[maxAllowedPage] => 4
-*/
 $params = array(
   "includeParts" => 1,
   "includePartFitments" => 1,
@@ -30,18 +24,19 @@ try {
   $result = $client->getAutoCareSearchResults($params);
   if ($result->status === 200) {
     $output = $result;
-    //mostrar valores	  
+    $marcas[] = array(
+      'status' => $result->status,
+      'total' => $result->total,
+      'maxAllowedPage' => $result->maxAllowedPage,
+    );
 
     //print_r($output);
-
-    //imprime el arreglo en PHP
-    //var_dump($output);
 
     $arr_json = json_decode(json_encode($output), true);
     $marcas = array();
 
     foreach ($arr_json['parts'] as $t_marcas) {
-      //trae solo los campos que requieres
+    
       $marcas[] = array(
 
         'partNumber' => $t_marcas['piesItem']['partNumber'],
@@ -65,7 +60,6 @@ try {
     }
 
 
-    //genera json completo para limpiarlo en https://codebeautify.org/json-to-text-converter
     $arr_json = json_encode($marcas);
 
     echo $arr_json;

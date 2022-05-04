@@ -24,7 +24,7 @@
     <section>
       <div class="container mt-5 mb-3">
         <!-- Marcas -->
-        <div id="item_marcas" class="row mt-5 mb-3 row-cols-lg-4 row-cols-sm-1 justify-content-center align-items-center">
+        <div id="item_marcas" class="small row mt-5 mb-3 row-cols-lg-4 row-cols-sm-1 justify-content-center align-items-center">
           <!-- /Marcas -->
 
         </div>
@@ -42,7 +42,7 @@
   $(document).ready(function() {
     var busqueda = 'ok';
     $.ajax({
-      url: "controller/marcas/precarga_garantias.php",
+      url: "controller/garantias/precarga_garantias.php",
       type: "post",
       data: {
         Rs: busqueda

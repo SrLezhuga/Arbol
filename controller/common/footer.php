@@ -50,14 +50,14 @@
  </div>
 
  <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="suscripcionModal" tabindex="-1" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
      <div class="modal-dialog modal-dialog-centered">
          <div class="modal-content " style="border-radius: 1.3rem !important;">
-             <div class="modal-header" style="background: aliceblue;">
+             <div class="modal-header" style="background: #f8f9fa;">
                  <div class="row">
                      <div class="col-12">
 
-                         <h3 class="modal-title text-center mitr" id="exampleModalLabel">Suscríbete a nuestro boletín</h3>
+                         <h3 class="modal-title text-center mitr" id="suscripcionModalLabel">Suscríbete a nuestro boletín</h3>
                          <p class="text-center">
                              <img class="img-arbol-menu" src="assets/media/img/LogoRojo.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
                          </p>
@@ -76,9 +76,10 @@
                              <label for="txt_correo"><i class="fas fa-at"></i> Correo</label>
                          </div>
                      </div>
+                     <h6 class="text-muted"><small>Puedes cancelar tu suscripción enviando un correo</small></h6>
                      <div class="col-12 text-end">
                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                         <button type="button" class="btn btn-danger">Suscribirse</button>
+                         <button type="button" class="btn btn-danger" onclick="suscripcion()">Suscribirse</button>
                      </div>
                  </div>
 
@@ -121,7 +122,7 @@
          <br>
          <li class="social-media black">
              <i class="fas fa-newspaper"></i>
-             <a class="small text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribete al boletin.</a>
+             <a class="small text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#suscripcionModal">Suscribete al boletin.</a>
          </li>
          <li class="social-media black">
              <i class="fas fa-bell"></i>
@@ -132,7 +133,7 @@
 
 
  <!-- Footer -->
- <footer id="footer" class="text-center text-lg-start text-white small" style="background-color: rgb(13 45 105 / 70%);  border-top: 3px solid #d41636;">
+ <footer id="footer" class="text-center text-lg-start text-white small" style="background-color: #002262;  border-top: 3px solid #d41636;">
 
      <!-- Section: Links  -->
      <section class="">
@@ -142,7 +143,7 @@
                  <!-- Grid column -->
                  <div class="col-md-3 col-lg-2 mx-auto mb-4">
                      <!-- Content -->
-                     <img class="img-footer" src="assets/media/img/LogoBlanco.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
+                     <img class="img-footer" src="assets/media/img/LogoBlanco.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false' style='max-width: 125px;max-height: 125px;'>
                  </div>
                  <!-- Grid column -->
 
@@ -197,32 +198,4 @@
  </footer>
  <!-- Footer -->
 
- <script>
-     $(document).ready(function() {
-         var busqueda = 'ok';
-         $.ajax({
-             url: "controller/banner/precarga_promociones.php",
-             type: "post",
-             data: {
-                 Rs: busqueda
-             },
-             error: function() {
-                 alert("error petición ajax");
-             },
-             success: function(data) {
-                 $("#promo-slider").empty();
-                 $("#promo-slider").append(data);
-             }
-         });
-     });
-
-
-     $('#verPromocionesModal').click(function() {
-         //Some code
-
-         var myModal = new bootstrap.Modal(document.getElementById('ModalIndex'));
-
-         myModal.show();
-
-     });
- </script>
+ <script type="text/javascript" src="assets/js/js_footer.js"></script>
