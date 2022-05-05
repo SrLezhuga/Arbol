@@ -20,14 +20,15 @@ VALUES (' . $marcas . ', "' . $titulo . '", "' . $informacion . '", "' . $imgMar
 on duplicate key update 
 nombre_marca = "' . $titulo . '", 
 info_marca = "' . $informacion . '", 
-img_marca = "' . $imgMarcas . '", ';
+img_marca = "' . $imgMarcas . '", 
+active = "' . $activo . '";';
 
 $query = $con->prepare($sql);
 
 if ($query->execute()) {
 
     if (!empty($_FILES['imgMarcas']['name'])) {
-        move_uploaded_file($_FILES["imgMarcas"]["tmp_name"], "../../assets/media/img/marcas/" . $_FILES['imgMarcas']['name']);
+        move_uploaded_file($_FILES['imgMarcas']['tmp_name'], "../../assets/media/img/marcas/" . $_FILES['imgMarcas']['name']);
     }
 
     $data['status'] = 'ok';
