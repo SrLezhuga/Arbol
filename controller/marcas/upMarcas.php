@@ -1,27 +1,26 @@
 <?php
 include("../conexion.php");
 
-$titulo = $_POST['titulo'];
+$marcas = $_POST['marcas'];
 $informacion = $_POST['informacion'];
-$garantia = $_POST['garantia'];
-$activo = $_POST['condiciones'];
-$nombre_archivo = $_POST['nombre_archivo'];
+$titulo = $_POST['titulo'];
+$activo = $_POST['activo'];
+$img = $_POST['img'];
 
-if (!empty($_FILES['InputFilePDF']['name'])) {
-    $pdf = $_FILES['InputFilePDF']['name'];
+if (!empty($_FILES['imgMarcas']['name'])) {
+    $imgMarcas = $_FILES['imgMarcas']['name'];
 } else {
-    $pdf = $nombre_archivo;
+    $imgMarcas = $img;
 }
 
 $data = array();
 
-$sql = 'INSERT INTO web_arbol.tab_garantias (id_garantia, marca_garantia, nombre_pdf, archivo, active) 
-VALUES (' . $garantia . ', "' . $informacion . '", "' . $titulo . '", "' . $pdf . '", "' . $activo . '")
-ON DUPLICATE KEY UPDATE 
-marca_garantia = "' . $informacion . '", 
-nombre_pdf = "' . $titulo . '", 
-archivo = "' . $pdf . '", 
-active = "' . $activo . '";';
+$sql = 'INSERT INTO web_arbol.tab_marcas (id_marca, nombre_marca, info_marca, img_marca, active) 
+VALUES (' . $marcas . ', "' . $titulo . '", "' . $informacion . '", "' . $imgMarcas . '", "' . $activo . '")
+on duplicate key update 
+nombre_marca = "' . $titulo . '", 
+info_marca = "' . $informacion . '", 
+img_marca = "' . $imgMarcas . '", ';
 
 $query = $con->prepare($sql);
 
