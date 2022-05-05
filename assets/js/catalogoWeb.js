@@ -2,11 +2,24 @@
 $(document).ready(function() {
     loadSelectCatalogoWeb();
     desactivarCatalogoWeb();
+    loadCatalogoWeb();
 });
+
+//Marcas
+function loadCatalogoWeb() {
+    $.ajax({
+        type: "POST",
+        url: "controller/catalogo/getMarca.php",
+        success: function(data) {
+            $('#marca_catalogo_web').empty();
+            $("#marca_catalogo_web").append(data);
+        }
+    });
+}
 
 //Catalogo Web
 function verCatalogoWeb() {
-    $('#modalNombreCatalogoWeb').html($("#nombre_catalogo_web").val());
+    $('#modalNombreCatalogoWeb').html($("#marca_catalogo_web").val());
     $('#modalInfoCatalogoWeb').html($("#info_catalogo_web").val());
     $('#modalUrlCatalogoWeb').attr('href', $("#url_catalogo_web").val());
     $('#modalImgCatalogoWeb').attr('src', $('.img_catalogo_web').attr('src'));
@@ -29,7 +42,7 @@ function loadSelectCatalogoWeb() {
 function activeCatalogoWeb() {
     $("#info_catalogo_web").prop("disabled", false);
     $("#url_catalogo_web").prop("disabled", false);
-    $("#nombre_catalogo_web").prop("disabled", false);
+    $("#marca_catalogo_web").prop("disabled", false);
     $("#imgCatalogoWeb").prop("disabled", false);
     $("#img_file_catalogo_web").prop("disabled", false);
     $("#btn-guardar-catalogoWeb").prop("disabled", false);
@@ -41,7 +54,7 @@ function desactivarCatalogoWeb() {
     $(".img_catalogo_web").attr("src", "assets/media/img/loader/PlaceholderWeb.png");
     $("#info_catalogo_web").prop("disabled", true);
     $("#url_catalogo_web").prop("disabled", true);
-    $("#nombre_catalogo_web").prop("disabled", true);
+    $("#marca_catalogo_web").prop("disabled", true);
     $("#InputFileArchivo").prop("disabled", true);
     $("#imgCatalogoWeb").prop("disabled", true);
     $("#img_file_catalogo_web").prop("disabled", true);
@@ -53,7 +66,7 @@ function limpiarCatalogoWeb() {
     $("#formCatalogoWeb").val('').attr('selected', 'selected');
     $("#info_catalogo_web").val('');
     $("#url_catalogo_web").val('');
-    $("#nombre_catalogo_web").val('');
+    $("#marca_catalogo_web").val('').attr('selected', 'selected');
     $("#InputFileArchivo").val('');
     $("#imgCatalogoWeb").val('');
     $("#img_file_catalogo_web").val('');
@@ -65,7 +78,7 @@ function resetCatalogoWeb() {
     $("#formCatalogoWeb").val('').attr('selected', 'selected');
     $("#info_catalogo_web").val('');
     $("#url_catalogo_web").val('');
-    $("#nombre_catalogo_web").val('');
+    $("#marca_catalogo_web").val('').attr('selected', 'selected');
     $("#InputFileArchivo").val('');
     $("#imgCatalogoWeb").val('');
     $("#img_file_catalogo_web").val('');
@@ -77,7 +90,7 @@ function nuevoCatalogoWeb() {
     $("#id_catalogo_web").val('null');
     $("#info_catalogo_web").val('');
     $("#url_catalogo_web").val('');
-    $("#nombre_catalogo_web").val('');
+    $("#marca_catalogo_web").val('').attr('selected', 'selected');
     $("#InputFileArchivo").val('');
     $("#imgCatalogoWeb").val('');
     $("#img_file_catalogo_web").val('');
@@ -103,9 +116,8 @@ function getCatalogoWeb() {
                 $("#id_catalogo_web").val(obj.id_catalogo_web);
                 $("#info_catalogo_web").val(obj.info_catalogo_web);
                 $("#url_catalogo_web").val(obj.url_catalogo_web);
-                $("#nombre_catalogo_web").val(obj.nombre_catalogo_web);
+                $("#marca_catalogo_web").val(obj.marca_catalogo_web).attr('selected', true);
                 if (obj.active == 'Y') {
-                    var condiciones = $("#CheckBoxCatalogoWeb").is(":checked");
                     $("#CheckBoxCatalogoWeb").prop("checked", true);
                 } else {
                     $("#CheckBoxCatalogoWeb").prop("checked", false);
@@ -132,7 +144,7 @@ function guardarCatalogoWeb() {
         Swal.fire("Mensaje de confirmación", "Campo url sin llenar", "error");
         return;
     }
-    var titulo = $("#nombre_catalogo_web").val();
+    var titulo = $("#marca_catalogo_web").val();
     if (titulo.length == 0) {
         Swal.fire("Mensaje de confirmación", "Campo titulo sin llenar", "error");
         return;

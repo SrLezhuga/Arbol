@@ -95,7 +95,6 @@
                    $("#info_marcas").val(obj.info_marcas);
                    $("#nombre_marcas").val(obj.nombre_marcas);
                    if (obj.active == 'Y') {
-                       var condiciones = $("#CheckBoxMarcas").is(":checked");
                        $("#CheckBoxMarcas").prop("checked", true);
                    } else {
                        $("#CheckBoxMarcas").prop("checked", false);

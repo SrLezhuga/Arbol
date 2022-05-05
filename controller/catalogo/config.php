@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-6">
                     <div class="form-floating mb-1">
-                        <input type="text" class="form-control form-reset" id="marca_catalogo" placeholder="Marca" autocomplete="off">
+                        <select id="marca_catalogo" name="marca_catalogo" class="form-select form-select-lg" aria-label="Default select example"></select>
                         <label for="marca_catalogo"><i class="fas fa-bookmark"></i> Marca</label>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                     <div class="justify-content-center align-items-center">
                         <!--Item card -->
                         <div class='cards rounded border align-items-center text-center align-self-center' style="left: 50%; transform: translate(-50%, 0%);">
-                            <img class='rounded' src='' id="modalImgCatalogo">
+                            <img class='rounded modalImgCatalogo' src="">
                             <div class='cards-desc rounded'>
                                 <div class='cards-div'>
                                     <h4 class='mitr' id="modalTituloCatalogo"></h4>

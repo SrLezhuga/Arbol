@@ -128,7 +128,6 @@
           Swal.fire("Mensaje de confirmación", "No seleccionaste una imagen", "error");
           return;
       }
-      var condiciones = $("#CheckBoxBanner").is(":checked");
       if (!condiciones) {
           var activo = "N";
       } else {

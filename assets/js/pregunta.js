@@ -79,7 +79,6 @@
                   $("#txt_respuesta").val(obj.respuesta);
                   $("#txt_pregunta").val(obj.pregunta);
                   if (obj.active == 'Y') {
-                      var condiciones = $("#CheckBoxPreguntas").is(":checked");
                       $("#CheckBoxPreguntas").prop("checked", true);
                   } else {
                       $("#CheckBoxPreguntas").prop("checked", false);

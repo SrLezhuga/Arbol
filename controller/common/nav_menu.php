@@ -31,16 +31,14 @@
         <div class="container-fluid p-0 m-0">
             <div class="row g-0 justify-content-md-center align-items-center ">
                 <div class="col text-center">
-                    <a class="btn btn-light btn-menus mitr rounded" href="https://web.refaccionariaarboledas.com.mx/clientes/wcp.wcplogin.aspx" target="_blank" role="button">
-                        <img src="assets/media/img/Carrito.png">
-                        COMPRA <br> EN LÍNEA
+                    <a class="btn btn-light mitr rounded" href="https://web.refaccionariaarboledas.com.mx/clientes/wcp.wcplogin.aspx" target="_blank" role="button" >
+                        <img src="assets/media/img/Portal.jpeg" style="max-width: 200px">
                     </a>
                     <a href="index">
                         <img class="img-arbol-menu" src="assets/media/img/LogoRojo.png" alt="Refaccionaria Arboledas" onContextMenu='return false;' draggable='false'>
                     </a>
-                    <a class="btn btn-light btn-menus mitr rounded" href="https://web.refaccionariaarboledas.com.mx/wspv20/wsp.weblogin.aspx" target="_blank" role="button">
-                        <img src="assets/media/img/Escudo.png">
-                        ESCUDERÍA <br> ARBOLEDAS
+                    <a class="btn btn-light mitr rounded" href="https://web.refaccionariaarboledas.com.mx/wspv20/wsp.weblogin.aspx" target="_blank" role="button" >
+                        <img src="assets/media/img/Escuderia.png" style="max-width: 200px">
                     </a>
                 </div>
             </div>

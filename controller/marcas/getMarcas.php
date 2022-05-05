@@ -3,7 +3,7 @@ include "../conexion.php";
 
 $marcas = $_POST["Mar"];
 
-$query = $con->prepare("SELECT * FROM tab_marcas WHERE id_marca = $marcas");
+$query = $con->prepare("SELECT * FROM tab_marcas WHERE id_marca = '$marcas' ORDER BY nombre_marca ASC");
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $query->execute();
 $row = $query->fetch();

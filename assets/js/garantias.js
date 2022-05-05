@@ -44,7 +44,6 @@
                   $("#nombre_archivo").val(obj.archivo);
                   $("#marca_garantia").val(obj.marca_garantia).attr('selected', true);
                   if (obj.active == 'Y') {
-                      var condiciones = $("#CheckBoxGarantias").is(":checked");
                       $("#CheckBoxGarantias").prop("checked", true);
                   } else {
                       $("#CheckBoxGarantias").prop("checked", false);

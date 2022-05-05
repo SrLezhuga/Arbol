@@ -2,13 +2,26 @@
 $(document).ready(function() {
     loadSelectCatalogo();
     desactivarCatalogo();
+    loadCatalogo();
 });
+
+//Marcas
+function loadCatalogo() {
+    $.ajax({
+        type: "POST",
+        url: "controller/catalogo/getMarca.php",
+        success: function(data) {
+            $('#marca_catalogo').empty();
+            $("#marca_catalogo").append(data);
+        }
+    });
+}
 
 //Catalogo
 function verCatalogo() {
     $('#modalTituloCatalogo').html($("#titulo_catalogo").val());
     $('#modalSubtituloCatalogo').html($("#subtitulo_catalogo").val() + '<br>' + $("#fecha_catalogo").val());
-    $('#modalImgCatalogo').attr('src', $('.Img-Catalogo').attr('src'));
+    $('.modalImgCatalogo').attr('src', $('.Img-Catalogo').attr('src'));
     $('#modalCatalogo').modal({
         show: true
     });
@@ -37,7 +50,6 @@ function activeCatalogo() {
     $("#textareaCatalogo").prop("disabled", false);
     $("#btn-guardar-catalogo").prop("disabled", false);
     $("#btn-ver-catalogo").prop("disabled", false);
-
 }
 
 function desactivarCatalogo() {
@@ -54,13 +66,11 @@ function desactivarCatalogo() {
     $("#textareaCatalogo").prop("disabled", true);
     $("#btn-guardar-catalogo").prop("disabled", true);
     $("#btn-ver-catalogo").prop("disabled", true);
-
-
 }
 
 function limpiarCatalogo() {
     $("#formCatalogo").val('').attr('selected', 'selected');
-    $("#marca_catalogo").val('');
+    $("#marca_catalogo").val('').attr('selected', 'selected');
     $("#titulo_catalogo").val('');
     $("#subtitulo_catalogo").val('');
     $("#fecha_catalogo").val('');
@@ -75,7 +85,7 @@ function limpiarCatalogo() {
 
 function resetCatalogo() {
     $("#formCatalogo").val('').attr('selected', 'selected');
-    $("#marca_catalogo").val('');
+    $("#marca_catalogo").val('').attr('selected', 'selected');
     $("#titulo_catalogo").val('');
     $("#subtitulo_catalogo").val('');
     $("#fecha_catalogo").val('');
@@ -90,7 +100,7 @@ function resetCatalogo() {
 function nuevoCatalogo() {
     $("#formCatalogo").val('').attr('selected', 'selected');
     $("#id_catalogo").val('null');
-    $("#marca_catalogo").val('');
+    $("#marca_catalogo").val('').attr('selected', 'selected');
     $("#titulo_catalogo").val('');
     $("#subtitulo_catalogo").val('');
     $("#fecha_catalogo").val('');
@@ -105,8 +115,6 @@ function nuevoCatalogo() {
     Swal.fire("Mensaje de aviso", "Se activo el formulario", "success");
 }
 
-
-
 function getCatalogo() {
     var Catalogo = $("#formCatalogo").val();
     $.ajax({
@@ -120,9 +128,8 @@ function getCatalogo() {
             if (obj.status == "ok") {
                 $(".Img-Catalogo").attr("src", "files/" + obj.img_catalogo);
                 $("#img_catalogo").val(obj.img_catalogo);
-
                 $("#id_catalogo").val(obj.id_catalogo);
-                $("#marca_catalogo").val(obj.marca_catalogo);
+                $("#marca_catalogo").val(obj.marca_catalogo).attr('selected', true);
                 $("#titulo_catalogo").val(obj.titulo_catalogo);
                 $("#subtitulo_catalogo").val(obj.subtitulo_catalogo);
                 $("#fecha_catalogo").val(obj.fecha_catalogo);

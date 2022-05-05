@@ -31,8 +31,8 @@
                 </div>
                 <div class="col-12">
                     <div class="form-floating mb-1">
-                        <input type="text" class="form-control form-reset" id="nombre_catalogo_web" placeholder="Fecha Catálogo" autocomplete="off">
-                        <label for="nombre_catalogo_web"><i class="fas fa-bookmark"></i> Nombre Catálogo</label>
+                        <select id="marca_catalogo_web" name="marca_catalogo_web" class="form-select form-select-lg" aria-label="Default select example"></select>
+                        <label for="marca_catalogo_web"><i class="fas fa-bookmark"></i> Marca</label>
                     </div>
                 </div>
                 <div class="col-12">
@@ -92,7 +92,7 @@
     <!-- Modal -->
     <div class="modal fade" id="modalCatalogoWeb" tabindex="-1" aria-labelledby="modalLabelCatalogoWeb" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content" style="background-color: #fff;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalLabelCatalogoWeb">Vista Prevía</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

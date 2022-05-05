@@ -79,7 +79,6 @@
                     $("#txt_valor").val(obj.valor);
                     $("#campo_nosotros").val(obj.campo);
                     if (obj.active == 'Y') {
-                        var condiciones = $("#CheckBoxNosotros").is(":checked");
                         $("#CheckBoxNosotros").prop("checked", true);
                     } else {
                         $("#CheckBoxNosotros").prop("checked", false);
