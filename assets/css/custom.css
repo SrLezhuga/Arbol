@@ -1229,11 +1229,6 @@ div a:hover {
     width: fit-content;
 }
 
-#wrapper {
-    min-height: 100%;
-    position: relative;
-}
-
 .no-shadow:focus {
     box-shadow: none;
 }
@@ -2093,4 +2088,27 @@ figure.effect-goliath:hover p {
 .menu-bg-black {
     background-color: #323232;
     border-bottom: 3px solid #d41636 !important;
+}
+
+#wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+}
+
+.no-row {
+    width: max-content;
+}
+
+.img-marcas {
+    min-width: 100%;
+    min-height: auto;
+    max-width: 300px;
+    max-height: 150px;
 }

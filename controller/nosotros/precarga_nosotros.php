@@ -31,7 +31,7 @@ if ($_POST['Rs'] == 'ok') {
           </fieldset>
         </div>
       </div>
-    </div>>';
+    </div>';
   }
 
   $query = $con->prepare("SELECT * FROM tab_nosotros WHERE campo = 'Misión' ");

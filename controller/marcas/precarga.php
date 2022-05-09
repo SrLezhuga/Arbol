@@ -11,11 +11,11 @@ if ($_POST['Rs'] == 'ok') {
     echo '
     <!--' . $row["nombre_marca"] . '-->
  
-    <div class="accordion accordion-flush" id="accordion' . $row["id_marca"] . '">
+    <div class="accordion accordion-flush p-0" id="accordion' . $row["id_marca"] . '">
       <div class="accordion-item mb-3 rounded border">
         <h2 class="accordion-header" id="flush-heading' . $row["id_marca"] . '">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse' . $row["id_marca"] . '" aria-expanded="false" aria-controls="flush-collapse' . $row["id_marca"] . '">
-            <img class="img-fluid" src="assets/media/img/marcas/' . $row["img_marca"] . '" onContextMenu="return false;" draggable="false">
+          <button class="accordion-button collapsed p-0 m-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse' . $row["id_marca"] . '" aria-expanded="false" aria-controls="flush-collapse' . $row["id_marca"] . '">
+            <img class="img-marcas mx-auto d-block" src="assets/media/img/marcas/' . $row["img_marca"] . '" onContextMenu="return false;" draggable="false">
           </button>
         </h2>
         <div id="flush-collapse' . $row["id_marca"] . '" class="accordion-collapse collapse" aria-labelledby="flush-heading' . $row["id_marca"] . '" data-bs-parent="#accordion' . $row["id_marca"] . '">

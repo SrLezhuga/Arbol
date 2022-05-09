@@ -41,14 +41,14 @@ if ($rows <= 0) {
                     <div class="card_body col-lg-2 col-sm-12 col-md-4">
                     <img class="img-sistemas mx-auto d-block" src="assets/media/img/marcas/' . $row['img_item'] . '" onContextMenu="return false;" draggable="false">
                     </div>
-                    <div class="col-lg-8 col-sm-8 col-md-6">
+                    <div class="col-lg-8 col-sm-6 col-md-6">
                     <p class="text-start" style="margin: 1rem .75rem;">
                         <b class="mitr">' . $row['marca'] . '</b>
                         <br>
                         ' . $row['descripcion_item'] . '
                     </p>
                     </div>
-                    <div class="col-lg-2 col-sm-4 col-md-2" > 
+                    <div class="col-lg-2 col-sm-6 col-md-2" > 
                     <a class="btn btn-light btn-menus mitr rounded" href="https://web.refaccionariaarboledas.com.mx/clientes/wcp.wcplogin.aspx" target="_blank" role="button">
                         <img src="assets/media/img/Carrito.png">
                         COMPRA <br> EN LÍNEA

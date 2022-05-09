@@ -129,7 +129,7 @@
  </center>
 
  <!-- Footer -->
- <footer class="text-center text-lg-start text-white small" style="background-color: #002262;  border-top: 3px solid #d41636;">
+ <footer id="footer" class="text-center text-lg-start text-white small" style="background-color: #002262;  border-top: 3px solid #d41636;">
 
      <!-- Section: Links  -->
      <section class="">
@@ -180,17 +180,18 @@
              </div>
              <!-- Grid row -->
          </div>
+         <!-- Copyright -->
+         <div class="text-center p-3 border-top" style="background-color: #212529">
+             © <?php echo date("Y"); ?> Copyright:
+             <a class="text-white small" href="www.refaccionariaarboledas.com.mx">Refaccionaria Arboledas</a> <br>
+             <a class="text-white small" href="politicas">Aviso de Privacidad </a>|
+             <a class="text-white small" href="cookies">Pólitica de Cookies</a>
+         </div>
+         <!-- Copyright -->
      </section>
      <!-- Section: Links  -->
 
-     <!-- Copyright -->
-     <div class="text-center p-3 border-top" style="background-color: #212529">
-         © <?php echo date("Y"); ?> Copyright:
-         <a class="text-white small" href="www.refaccionariaarboledas.com.mx">Refaccionaria Arboledas</a> <br>
-         <a class="text-white small" href="politicas">Aviso de Privacidad </a>|
-         <a class="text-white small" href="cookies">Pólitica de Cookies</a>
-     </div>
-     <!-- Copyright -->
+
  </footer>
  <!-- Footer -->
 

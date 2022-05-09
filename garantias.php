@@ -18,13 +18,13 @@
     <?php require('controller/common/nav_menu.php'); ?>
     <!-- titulo -->
     <div class="container menus rounded">
-      <h2 class="mitr" id="titulo">Refaccionaria Arboledas</h2>
+      <h2 class="mitr" id="titulo">Garantias</h2>
     </div>
 
     <section>
       <div class="container mt-5 mb-3">
         <!-- Marcas -->
-        <div id="item_marcas" class="small row mt-5 mb-3 row-cols-lg-4 row-cols-sm-1 justify-content-center align-items-center">
+        <div id="item_marcas" class="small row mt-5 mb-3 row-cols-lg-4 row-cols-sm-2 justify-content-center align-items-center">
           <!-- /Marcas -->
 
         </div>

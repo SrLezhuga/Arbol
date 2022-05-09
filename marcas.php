@@ -24,7 +24,7 @@
     <section>
       <div class="container">
         <!-- Marcas -->
-        <div id="item_marcas" class="row mt-5 mb-3 row-cols-lg-4 row-cols-sm-1 justify-content-center align-items-center">
+        <div id="item_marcas" class="row mt-5 mb-3 row-cols-lg-4 row-cols-sm-2 justify-content-center align-items-center">
           <!-- /Marcas -->
         </div>
       </div>

@@ -10,7 +10,7 @@ if ($_POST['Rs'] == 'ok') {
     ON tg.marca_garantia = tm.nombre_marca
     AND tg.active = tm.active
     WHERE tg.active = 'Y' ORDER BY tg.marca_garantia ASC");
-  $query1->setFetchMode(PDO::FETCH_ASSOC);
+  $query1->setFetchMode(PDO::FETCH_ASSOC); 
   $query1->execute();
 
   while ($item1 = $query1->fetch()) {
