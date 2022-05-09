@@ -2089,3 +2089,8 @@ figure.effect-goliath:hover p {
 .bg-black {
     background-color: #000000;
 }
+
+.menu-bg-black {
+    background-color: #323232;
+    border-bottom: 3px solid #d41636 !important;
+}

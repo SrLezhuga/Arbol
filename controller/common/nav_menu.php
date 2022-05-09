@@ -95,8 +95,31 @@
                 </button>
             </div>
         </div>
+        <!-- collanse -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="container-fluid">
+                <!--Contacto-->
+                <div class="row border-bottom menu-bg-black">
+                    <div class="col-6 text-start">
+                        <a class="navbar-brand color-white smaller" href="mailto:hola@refaccionariaarboledas.com.mx">
+                            <i class="far fa-envelope"></i> Correo
+                        </a>
+                        <br>
+                        <a class="navbar-brand color-white smaller" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Whatsapp
+                        </a>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a class="navbar-brand color-white smaller" href="tel:3338371280">
+                            <i class="fas fa-phone-alt"></i> INFO: 3338371280
+                        </a>
+                        <br>
+                        <a class="navbar-brand color-white smaller" href="tel:3338371285">
+                            <i class="fas fa-phone-alt"></i> VENTAS: 3338371285
+                        </a>
+                    </div>
+                </div>
+                <!--Portales-->
                 <div class="row g-0 text-center border-bottom">
                     <div class="col-6 text-start">
                         <a class="btn btn-outline-grey mitr rounded" href="https://web.refaccionariaarboledas.com.mx/clientes/wcp.wcplogin.aspx" target="_blank" role="button">
@@ -109,26 +132,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="row border-bottom">
-                    <div class="col-6 text-start">
-                        <a class="navbar-brand color-black smaller" href="mailto:hola@refaccionariaarboledas.com.mx">
-                            <i class="far fa-envelope"></i> Correo
-                        </a>
-                        <br>
-                        <a class="navbar-brand color-black smaller" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank">
-                            <i class="fab fa-whatsapp"></i> Whatsapp
-                        </a>
-                    </div>
-                    <div class="col-6 text-end">
-                        <a class="navbar-brand color-black smaller" href="tel:3338371280">
-                            <i class="fas fa-phone-alt"></i> INFO: 3338371280
-                        </a>
-                        <br>
-                        <a class="navbar-brand color-black smaller" href="tel:3338371285">
-                            <i class="fas fa-phone-alt"></i> VENTAS: 3338371285
-                        </a>
-                    </div>
-                </div>
+                <!--Menús-->
                 <div class="row justify-content-md-center align-items-center">
                     <div class="col-sm-12 cool-link">
                         <a class="nav-link color-black border-bottom px-1 ps-3" href="index">INICIO</a>
@@ -155,6 +159,7 @@
                         <a class="nav-link color-black border-bottom px-1 ps-3" href="contacto">CONTACTO</a>
                     </div>
                 </div>
+                <!--Social-->
                 <div class="row justify-content-center align-items-center">
                     <div class="col-auto">
                         <a class="small text-decoration-none" href="https://api.whatsapp.com/send?phone=523315878534" target="_blank">
