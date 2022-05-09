@@ -59,7 +59,7 @@
     </div>
 
 </fieldset>
-
+<!--
 <script>
     //Main loader
     $(document).ready(function() {
@@ -231,3 +231,4 @@
     }
     
 </script>
+-->

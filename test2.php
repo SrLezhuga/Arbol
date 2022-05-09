@@ -10,43 +10,82 @@ define('SERVICE_URL', 'https://webservice.tecalliance.services/catalog/v1/servic
 
 $client = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
 
+$searchQuery = (!empty($_GET['searchQuery'])) ? $_GET['searchQuery'] : '510';
+
 //Obten listado de marcas en formato Aces/Pies
 $params = array(
-  'perPage' => 0,
-  'includeGenericPartData ' => true,
-  'includeAutoCarePartData  ' => true,
-  'includeTecDocPartData  ' => true,
-  'autoCareBrandFacets' => array('enabled' => true)
-  //'tecDocDataSupplierFacets' => array('enabled' => true)       
+  "lang" => "es-MX",
+  "searchQuery" =>  $searchQuery,
+  "searchQueryType" =>  "freetext",
+  "searchMatchType" =>  "exact",
+  "includeGenericPartData" => 0,
+  "includeTecDocPartData"  => 1,
+  "includeAutoCarePartData" =>  0,
+  "perPage" =>  10,
+  "page" =>  1
 );
 
 try {
   $result = $client->getSearchResults($params);
   if ($result->status === 200) {
-    $output = $result;
-    //mostrar valores	  
-
-  print_r($output);
-
-    //imprime el arreglo en PHP
-    //var_dump($marcas);
-
-    $arr_json = json_decode(json_encode($output), true);
     $marcas = array();
 
-    foreach ($arr_json['autoCareBrandFacets']['counts'] as $t_marcas) {
-      //trae solo los campos que requieres
-      $marcas[] = array(
-        //'count' => $t_marcas['count'],
-        'brandCode' => $t_marcas['brandCode'],
-        'brandName' => $t_marcas['brandName']
+    $output = $result;
+    $count = 1;
+
+    $countmax = $result->maxAllowedPage;
+
+    for ($i = 1; $i < $countmax + 1; $i++) {
+      $params = array(
+        "lang" => "es-MX",
+        "searchQuery" =>  $searchQuery,
+        "searchQueryType" =>  "freetext",
+        "searchMatchType" =>  "exact",
+        "includeGenericPartData" => 1,
+        "includeTecDocPartData"  => 1,
+        "includeAutoCarePartData" =>  1,
+        "perPage" =>  100,
+        "page" =>  $i
       );
+
+      $result = $client->getSearchResults($params);
+      $arr_json = json_decode(json_encode($result), true);
+
+      print_r($result);
+
+      foreach ($arr_json['parts'] as $t_marcas) {
+
+        if (isset($t_marcas['autoCarePart']) && !empty($t_marcas['autoCarePart'])) {
+          $marcas[] = array(
+            'count' => $count++,
+            'dataFormat' => 'autoCarePart',
+            'partNumber' => $t_marcas['autoCarePart']['piesItem']['partNumber'],
+            'brandCode' => $t_marcas['autoCarePart']['piesItem']['brandCode'],
+            'brandName' => $t_marcas['autoCarePart']['piesItem']['brandName'],
+            'partTypeName' => (isset($t_marcas['autoCarePart']['piesItem']['partTypeName'])) ? $t_marcas['autoCarePart']['piesItem']['partTypeName'] : 'Indefinido',
+            'logo' => (isset($t_marcas['autoCarePart']['piesItem']['brandAdditionalInfo']['logoImageURL100x40'])) ? $t_marcas['autoCarePart']['piesItem']['brandAdditionalInfo']['logoImageURL100x40'] : 'assets/media/img/loader/PlaceholderCatalogo.png',
+            'imageURL' => (isset($t_marcas['autoCarePart']['piesItem']['digitalAssets'][0]['imageURL800'])) ? $t_marcas['autoCarePart']['piesItem']['digitalAssets'][0]['imageURL800'] : 'assets/media/img/loader/PlaceholderCatalogo.png'
+
+
+          );
+        } else  if (isset($t_marcas['tecDocPart']) && !empty($t_marcas['tecDocPart'])) {
+          $marcas[] = array(
+            'count' => $count++,
+            'dataFormat' => 'tecDocPart',
+            'partNumber' => $t_marcas['tecDocPart']['articleNumber'],
+            'brandCode' => (isset($t_marcas['tecDocPart']['brandId'])) ? $t_marcas['tecDocPart']['brandId'] : 'Sin brandCode',
+            'brandName' => $t_marcas['tecDocPart']['mfrName'],
+            'partTypeName' => $t_marcas['tecDocPart']['genericArticles']['genericArticleDescription'],
+            'imageURL' => (isset($t_marcas['tecDocPart']['images']['imageURL800'])) ? $t_marcas['tecDocPart']['images']['imageURL800'] : 'assets/media/img/loader/PlaceholderCatalogo.png'
+
+          );
+        }
+      }
     }
 
-      //genera json completo para limpiarlo en https://codebeautify.org/json-to-text-converter
-	  $arr_json = json_encode($marcas);
-	  echo $arr_json;
-	  exit;	
+    $arr_json = json_encode($marcas);
+    echo $arr_json;
+    exit;
 
     exit;
   } else {

@@ -4,8 +4,8 @@
       desactivarBanner();
   });
 
-  //Catalogo
-  function verCatalogo() {
+  //Banner
+  function verBanner() {
 
   }
 
@@ -21,7 +21,6 @@
   }
 
   function activeBanner() {
-      $("#cedis").prop("disabled", false);
       $("#imgPc").prop("disabled", false);
       $("#img_pc").prop("disabled", false);
       $("#btn-guardar-banner").prop("disabled", false);
@@ -34,7 +33,6 @@
       $("input:checkbox[name=CheckBoxBanner]").attr("checked", false);
       $(".Img-PC").attr("src", "assets/media/img/loader/PlaceholderBanner.png");
       $(".Img-MOVIL").attr("src", "assets/media/img/loader/PlaceholderMovil.png");
-      $("#cedis").prop("disabled", true);
       $("#imgPc").prop("disabled", true);
       $("#img_pc").prop("disabled", true);
       $("#btn-guardar-banner").prop("disabled", true);
@@ -45,8 +43,6 @@
 
   function limpiarBanner() {
       $("#formBanner").val('').attr('selected', 'selected');
-      $("#cedis").val('');
-      $("#imgPc").val('');
       $("#img_pc").val('');
       $("#img_movil").val('');
       $("#imgMovil").val('');
@@ -56,7 +52,6 @@
 
   function resetBanner() {
       $("#formBanner").val('').attr('selected', 'selected');
-      $("#cedis").val('');
       $("#imgPc").val('');
       $("#img_pc").val('');
       $("#img_movil").val('');
@@ -67,7 +62,6 @@
   function nuevoBanner() {
       $("#formBanner").val('').attr('selected', 'selected');
       $("#id_slider").val('null');
-      $("#cedis").val('');
       $("#imgPc").val('');
       $("#img_pc").val('');
       $("#img_movil").val('');
@@ -89,7 +83,6 @@
           },
           success: function(data) {
               var obj = JSON.parse(data);
-              console.log(obj);
 
               if (obj.status == "ok") {
 
@@ -98,7 +91,6 @@
                   $(".Img-MOVIL").attr("src", "assets/media/img/banners/" + obj.img_movil);
                   $("#img_movil").val(obj.img_movil);
                   $("#id_slider").val(obj.id_slider);
-                  $("#cedis").val(obj.cedis);
 
                   if (obj.active == 'Y') {
                       $("#CheckBoxBanner").prop("checked", true);
@@ -128,6 +120,7 @@
           Swal.fire("Mensaje de confirmación", "No seleccionaste una imagen", "error");
           return;
       }
+      var condiciones = $("#CheckBoxBanner").is(":checked");
       if (!condiciones) {
           var activo = "N";
       } else {

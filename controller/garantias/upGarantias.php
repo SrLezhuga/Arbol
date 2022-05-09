@@ -5,10 +5,10 @@ $titulo = $_POST['titulo'];
 $informacion = $_POST['informacion'];
 $garantia = $_POST['garantia'];
 $activo = $_POST['activo'];
-$nombre_archivo = $_POST['nombre_archivo'];
+$nombre_archivo = $_POST['PDF_Garantia'];
 
-if (!empty($_FILES['InputFilePDF']['name'])) {
-    $pdf = $_FILES['InputFilePDF']['name'];
+if (!empty($_FILES['File_PDF_Garantia']['name'])) {
+    $pdf = $_FILES['File_PDF_Garantia']['name'];
 } else {
     $pdf = $nombre_archivo;
 }
@@ -27,8 +27,8 @@ $query = $con->prepare($sql);
 
 if ($query->execute()) {
 
-    if (!empty($_FILES['InputFilePDF']['name'])) {
-        move_uploaded_file($_FILES["InputFilePDF"]["tmp_name"], "../../files/garantias/" . $_FILES['InputFilePDF']['name']);
+    if (!empty($_FILES['File_PDF_Garantia']['name'])) {
+        move_uploaded_file($_FILES["File_PDF_Garantia"]["tmp_name"], "../../files/garantias/" . $_FILES['File_PDF_Garantia']['name']);
     }
 
     $data['status'] = 'ok';

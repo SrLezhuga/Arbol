@@ -10,7 +10,7 @@
         </div>
         <div class="col-2">
             <div class="d-grid gap-2">
-                <button class="btn btn-lg btn-secondary" id="btn-crear-catalogo" type="button" onclick="nuevoCatalogoWeb()">Nuevo <i class="fas fa-plus-square"></i></button>
+                <button class="btn btn-lg btn-secondary"  type="button" onclick="nuevoCatalogoWeb()">Nuevo <i class="fas fa-plus-square"></i></button>
             </div>
         </div>
         <div class="col-2">
@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-3">
                     <div class="d-grid gap-2 mb-1">
-                        <button class="btn btn-secondary" id="btn-ver-catalogoWeb" onclick="verCatalogoWeb()" type="button" data-bs-toggle="modal" data-bs-target="#modalCatalogoWeb">Vista Previa <i class="fas fa-eye"></i></button>
+                        <button class="btn btn-secondary" id="btn-ver-contacto" onclick="verContacto()" type="button" data-bs-toggle="modal" data-bs-target="#modalCatalogoWeb">Vista Previa <i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 <div class="col-3">

@@ -14,14 +14,15 @@ $client = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
 $params = array(
 
   "brandCode" => "BBQR",
-  "partNumber" => "1976-1",
+  "partNumber" => "1921-1",
   "includeResults" => 1,
   "includeMatchingBaseVehicles" => 1,
   "perPage" => 100,
   "page" => 1,
   'tecDocDataSupplierFacets' => array('enabled' => true),
-  'autoCareBrandFacets' => array('enabled' => true)
-
+  'autoCareBrandFacets' => array('enabled' => true),
+  'acesAttributeFacets' => array('enabled' => true )
+  
     
 );
 
@@ -31,7 +32,7 @@ try {
     $output = $result;
     //mostrar valores	  
 
-    //print_r($output);
+    print_r($output);
 
 
 
@@ -44,9 +45,14 @@ try {
     foreach ($arr_json['results'] as $t_marcas) {
       //trae solo los campos que requieres
       $marcas[] = array(
-        'vehicle' => $t_marcas['acesApp']['baseVehicleName']
-        //'makeName' => $t_marcas['makeName'],
-        //'modelName' => $t_marcas['modelName'] . ' ' . $t_marcas['subModelName'] . ' ' . $t_marcas['year']
+        'baseVehicleId' => $t_marcas['matchingBaseVehicles']['baseVehicleId'],
+        'year' => $t_marcas['matchingBaseVehicles']['year'],
+        'makeId' => $t_marcas['matchingBaseVehicles']['makeId'],
+        'makeName' => $t_marcas['matchingBaseVehicles']['makeName'],
+        'modelId' => $t_marcas['matchingBaseVehicles']['modelId'],
+        'modelName' => $t_marcas['matchingBaseVehicles']['modelName'],
+        'vehicleTypeId' => $t_marcas['matchingBaseVehicles']['vehicleTypeId'],
+        'vehicleTypeName' => $t_marcas['matchingBaseVehicles']['vehicleTypeName']
 
       );
     }

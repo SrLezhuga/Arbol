@@ -10,7 +10,7 @@
         </div>
         <div class="col-2">
             <div class="d-grid gap-2">
-                <button class="btn btn-lg btn-secondary" id="btn-crear-catalogo" type="button" onclick="nuevoCatalogoWeb()">Nuevo <i class="fas fa-plus-square"></i></button>
+                <button class="btn btn-lg btn-secondary"  type="button" onclick="nuevoCatalogoWeb()">Nuevo <i class="fas fa-plus-square"></i></button>
             </div>
         </div>
         <div class="col-2">

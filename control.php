@@ -20,6 +20,9 @@
   <script type="text/javascript" src="assets/js/banner.js"></script>
   <script type="text/javascript" src="assets/js/avisos.js"></script>
   <script type="text/javascript" src="assets/js/garantias.js"></script>
+  <script type="text/javascript" src="assets/js/sistemas.js"></script>
+  <script type="text/javascript" src="assets/js/productos.js"></script>
+  <script type="text/javascript" src="assets/js/subbanner.js"></script>
 </head>
 
 <body>
@@ -54,41 +57,59 @@
 
             </div>
             <div class="tab-content" id="v-pills-tabContent" style="width: 100%;">
+              <!-- panel catalogo -->
               <div class="tab-pane fade show active" id="v-pills-catalogos" role="tabpanel" aria-labelledby="v-pills-catalogos-tab">
                 <?php include_once('controller/catalogo/config.php'); ?>
               </div>
+              <!-- panel catalogo web -->
               <div class="tab-pane fade" id="v-pills-catalogosWeb" role="tabpanel" aria-labelledby="v-pills-catalogosWeb-tab">
                 <?php include('controller/catalogo/configWeb.php'); ?>
               </div>
+              <!-- panel marcas -->
               <div class="tab-pane fade" id="v-pills-marcas" role="tabpanel" aria-labelledby="v-pills-marcas-tab">
                 <?php include('controller/marcas/config.php'); ?>
               </div>
-              <div class="tab-pane fade" id="v-pills-sistemas" role="tabpanel" aria-labelledby="v-pills-sistemas-tab">...sistemas</div>
-              <div class="tab-pane fade" id="v-pills-productos" role="tabpanel" aria-labelledby="v-pills-productos-tab">...productos</div>
+              <!-- panel sistemas -->
+              <div class="tab-pane fade" id="v-pills-sistemas" role="tabpanel" aria-labelledby="v-pills-sistemas-tab">
+                <?php include('controller/sistemas/config.php'); ?>
+              </div>
+              <!-- panel productos -->
+              <div class="tab-pane fade" id="v-pills-productos" role="tabpanel" aria-labelledby="v-pills-productos-tab">
+                <?php include('controller/productos/config.php'); ?>
+              </div>
+              <!-- panel preguntas -->
               <div class="tab-pane fade" id="v-pills-preguntas" role="tabpanel" aria-labelledby="v-pills-preguntas-tab">
                 <?php include('controller/preguntas/config.php'); ?>
               </div>
+              <!-- panel directorio -->
               <div class="tab-pane fade" id="v-pills-directorio" role="tabpanel" aria-labelledby="v-pills-directorio-tab">
                 <?php include('controller/directorio/config.php'); ?>
               </div>
+              <!-- panel nosotros -->
               <div class="tab-pane fade" id="v-pills-nosotros" role="tabpanel" aria-labelledby="v-pills-nosotros-tab">
                 <?php include('controller/nosotros/config.php'); ?>
               </div>
+              <!-- panel banner -->
               <div class="tab-pane fade" id="v-pills-banners" role="tabpanel" aria-labelledby="v-pills-banners-tab">
                 <?php include('controller/banner/config.php'); ?>
               </div>
+              <!-- panel subbaner -->
               <div class="tab-pane fade" id="v-pills-subbanners" role="tabpanel" aria-labelledby="v-pills-subbanners-tab">
                 <?php include('controller/subbaner/config.php'); ?>
               </div>
+              <!-- panel slider -->
               <div class="tab-pane fade" id="v-pills-slider" role="tabpanel" aria-labelledby="v-pills-slider-tab">
                 <?php include('controller/slider/config.php'); ?>
               </div>
+              <!-- panel avisos -->
               <div class="tab-pane fade" id="v-pills-avisos" role="tabpanel" aria-labelledby="v-pills-avisos-tab">
                 <?php include('controller/avisos/config.php'); ?>
               </div>
+              <!-- panel garantias -->
               <div class="tab-pane fade" id="v-pills-garantias" role="tabpanel" aria-labelledby="v-pills-garantias-tab">
                 <?php include('controller/garantias/config.php'); ?>
               </div>
+              <!-- panel suscripciones -->
               <div class="tab-pane fade" id="v-pills-suscripcion" role="tabpanel" aria-labelledby="v-pills-suscripcion-tab">
                 <?php include('controller/suscripcion/config.php'); ?>
               </div>

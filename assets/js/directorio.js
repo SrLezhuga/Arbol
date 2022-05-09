@@ -4,8 +4,8 @@
         desactivarDirectorio();
     });
 
-    //Catalogo
-    function verCatalogo() {
+    //Directorio
+    function VerDirectorio() {
         $('#modaldireccion_cedisCatalogo').html($("#direccion_cedis").val());
         $('#modalcol_cedisCatalogo').html($("#col_cedis").val() + '<br>' + $("#cp_cedis").val());
         $('#modalImgDirectorio').attr('src', $('.Img-Cedis').attr('src'));

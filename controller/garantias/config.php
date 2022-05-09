@@ -44,10 +44,10 @@
                 <div class="col-12">
                     <div class="file-field">
                         <div class="form-floating mb-1">
-                            <input type="text" class="form-control form-reset" id="nombre_archivo" placeholder="PDF" autocomplete="off">
-                            <label for="nombre_archivo"><i class="fas fa-bookmark"></i> PDF</label>
+                            <input type="text" class="form-control form-reset" id="PDF_Garantia" placeholder="PDF" autocomplete="off">
+                            <label for="PDF_Garantia"><i class="fas fa-bookmark"></i> PDF</label>
                         </div>
-                        <input id="InputFilePDF" type="file">
+                        <input id="File_PDF_Garantia" type="file">
                     </div>
                 </div>
             </div>

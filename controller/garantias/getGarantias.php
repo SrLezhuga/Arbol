@@ -3,11 +3,10 @@ include "../conexion.php";
 
 $garantias = $_POST["Gar"];
 
-$query = $con->prepare("SELECT * FROM tab_garantias WHERE id_garantia = $garantias");
+$query = $con->prepare("SELECT * FROM web_arbol.tab_garantias WHERE id_garantia = $garantias");
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $query->execute();
 $row = $query->fetch();
-
 
 $data = array();
 $data['status'] = 'ok';

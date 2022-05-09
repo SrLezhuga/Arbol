@@ -10,7 +10,7 @@
         </div>
         <div class="col-2">
             <div class="d-grid gap-2">
-                <button class="btn btn-lg btn-secondary" id="btn-crear-catalogo" type="button" onclick="nuevoBanner()">Nuevo <i class="fas fa-plus-square"></i></button>
+                <button class="btn btn-lg btn-secondary"  type="button" onclick="nuevoBanner()">Nuevo <i class="fas fa-plus-square"></i></button>
             </div>
         </div>
         <div class="col-2">
@@ -33,7 +33,7 @@
                     <div class="file-field">
                         <div class="form-floating mb-1">
                             <input type="text" class="form-control form-reset" id="img_pc" placeholder="Imagen" autocomplete="off">
-                            <label for="img_pc"><i class="fas fa-bookmark"></i> Imagen Cedis</label>
+                            <label for="img_pc"><i class="fas fa-bookmark"></i> Imagen PC</label>
                         </div>
                         <input id="imgPc" type="file">
                     </div>
@@ -42,7 +42,7 @@
                     <div class="file-field">
                         <div class="form-floating mb-1">
                             <input type="text" class="form-control form-reset" id="img_movil" placeholder="Imagen" autocomplete="off">
-                            <label for="img_movil"><i class="fas fa-bookmark"></i> Logo Cedis</label>
+                            <label for="img_movil"><i class="fas fa-bookmark"></i> Imagen Movil</label>
                         </div>
                         <input id="imgMovil" type="file">
                     </div>
@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-3">
                     <div class="d-grid gap-2 mb-1">
-                        <button class="btn btn-secondary" id="btn-ver-banner" onclick="verCatalogo()" type="button" data-bs-toggle="modal" data-bs-target="#modalCatalogo">Vista Previa <i class="fas fa-eye"></i></button>
+                        <button class="btn btn-secondary" id="btn-ver-banner" onclick="verBanner()" type="button" data-bs-toggle="modal" data-bs-target="#modalCatalogo">Vista Previa <i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 <div class="col-3">

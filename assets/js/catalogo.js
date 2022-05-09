@@ -21,7 +21,7 @@ function loadCatalogo() {
 function verCatalogo() {
     $('#modalTituloCatalogo').html($("#titulo_catalogo").val());
     $('#modalSubtituloCatalogo').html($("#subtitulo_catalogo").val() + '<br>' + $("#fecha_catalogo").val());
-    $('.modalImgCatalogo').attr('src', $('.Img-Catalogo').attr('src'));
+    $('#modalImgCatalogo').attr('src', $('.Img-Catalogo').attr('src'));
     $('#modalCatalogo').modal({
         show: true
     });

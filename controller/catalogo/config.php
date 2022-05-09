@@ -10,7 +10,7 @@
         </div>
         <div class="col-2">
             <div class="d-grid gap-2">
-                <button class="btn btn-lg btn-secondary" id="btn-crear-catalogo" type="button" onclick="nuevoCatalogo()">Nuevo <i class="fas fa-plus-square"></i></button>
+                <button class="btn btn-lg btn-secondary"  type="button" onclick="nuevoCatalogo()">Nuevo <i class="fas fa-plus-square"></i></button>
             </div>
         </div>
         <div class="col-2">
@@ -122,7 +122,7 @@
                     <div class="justify-content-center align-items-center">
                         <!--Item card -->
                         <div class='cards rounded border align-items-center text-center align-self-center' style="left: 50%; transform: translate(-50%, 0%);">
-                            <img class='rounded modalImgCatalogo' src="">
+                            <img src='' class='rounded' id="modalImgCatalogo" alt="" >
                             <div class='cards-desc rounded'>
                                 <div class='cards-div'>
                                     <h4 class='mitr' id="modalTituloCatalogo"></h4>

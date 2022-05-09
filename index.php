@@ -18,7 +18,7 @@
 
     <!-- loader -->
     <div class="loader-in" id="loader">
-      <img src="assets/media/img/loader/giphy.webp" alt="Proveedores de Refacciones Automotrices por mayoreo">
+      <img src="assets/media/img/loader/giphy.webp" alt="Proveedores de Refacciones Automotrices por mayoreo" >
     </div>
 
     <!-- Nav Menu-->
@@ -32,7 +32,7 @@
           <div class="rounded">
 
             <!-- carusel -->
-            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner" id="carousel-slider">
 
                 <!-- carusel item -->
@@ -42,7 +42,7 @@
                 </div>
                 <!-- carusel item -->
                 <div class="carousel-item" data-bs-interval="5000">
-                  <img src="assets/media/img/banners/cauplas52.png" class="ocultar-banner w-100">
+                  <img src="assets/media/img/banners/cauplas52.png" class="ocultar-banner w-100"> 
                   <img src="assets/media/img/banners/ToyopowerMovil.jpeg" class="ocultar-banner-movil w-100">
 
                 </div>
@@ -66,11 +66,11 @@
                 </div>
               </div>
               <!-- carusel btns -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -261,6 +261,33 @@
     </section>
 
     <section>
+      <div class="container mb-3">
+
+        <div class="row justify-content-center align-items-center">
+          <div class="rounded">
+
+            <!-- carusel 2-->
+            <div id="carouselSubSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner" id="carousel-subslider">
+
+                <!-- carusel item -->
+                <div class="carousel-item active" data-bs-interval="4000">
+                  <img src="assets/media/img/banners/autopar2 1.png" class=" w-100">
+                </div>
+                <!-- carusel item -->
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="assets/media/img/banners/cauplas52.png" class="w-100">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <div class="container-fluid mb-5 mt-5 " style="padding-left: 0px; padding-right: 0px;">
         <div class="justify-content-center align-items-center text-center">
 
@@ -286,6 +313,7 @@
   $(document).ready(function() {
     showSliderMarcas();
     showSlider();
+    showSlider2();
     showAnuncio();
     showLineas();
   });
@@ -363,6 +391,24 @@
       success: function(data) {
         $("#carousel-slider").empty();
         $("#carousel-slider").append(data);
+      }
+    });
+  }
+
+  function showSlider2() {
+    var busqueda = 'ok';
+    $.ajax({
+      url: "controller/index/precarga_subslider.php",
+      type: "post",
+      data: {
+        Rs: busqueda
+      },
+      error: function() {
+        alert("error petición ajax");
+      },
+      success: function(data) {
+        $("#carousel-subslider").empty();
+        $("#carousel-subslider").append(data);
       }
     });
   }

@@ -13,9 +13,8 @@ $client = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
 //Obten listado de marcas en formato Aces/Pies
 $params = array(
 
-  "lang" => "qd",
-  "searchQuery" => "Z"
-
+  "brandCode" => "BBQR",
+  "partNumber" => "1921-1"
 );
 
 
@@ -23,7 +22,7 @@ $params = array(
 
 
 try {
-  $result = $client->getAutoCompleteSuggestions($params);
+  $result = $client->getAutoCarePartDetails($params);
   if ($result->status === 200) {
     $output = $result;
     //mostrar valores	  

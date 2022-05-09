@@ -1,9 +1,9 @@
 <?php
 include "../conexion.php";
 
-$marcas = $_POST["Mar"];
+$marca = $_POST["Mar"];
 
-$query = $con->prepare("SELECT * FROM tab_marcas WHERE id_marca = '$marcas' ORDER BY nombre_marca ASC");
+$query = $con->prepare("SELECT * FROM tab_marcas WHERE id_marca = '$marca' ");
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $query->execute();
 $row = $query->fetch();

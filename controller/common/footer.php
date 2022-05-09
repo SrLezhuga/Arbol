@@ -89,12 +89,12 @@
  </div>
 
  <!-- Carrito top -->
- <div class="car-top car-down" id="arriba">
+ <div class="car-top car-down ocultar-banner" id="arriba">
      <span><img src="assets/media/img/car.png" alt="Proveedores de Refacciones Automotrices por mayoreo"></span>
  </div>
 
  <!-- Btn Social-->
- <center>
+ <center class="ocultar-banner">
      <ul class="social-media-container">
          <li class="social-media whatsapp">
              <i class="fab fa-whatsapp"></i>
@@ -116,9 +116,6 @@
              <i class="fab fa-linkedin-in"></i>
              <a class="small text-decoration-none" href=" https://mx.linkedin.com/company/refaccionaria-arboledas-s.a.-de-c.v." target="_blank">Síguenos en linkedin</a>
          </li>
-
-
-
          <br>
          <li class="social-media black">
              <i class="fas fa-newspaper"></i>
@@ -131,9 +128,8 @@
      </ul>
  </center>
 
-
  <!-- Footer -->
- <footer id="footer" class="text-center text-lg-start text-white small" style="background-color: #002262;  border-top: 3px solid #d41636;">
+ <footer class="text-center text-lg-start text-white small" style="background-color: #002262;  border-top: 3px solid #d41636;">
 
      <!-- Section: Links  -->
      <section class="">

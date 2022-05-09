@@ -18,10 +18,7 @@ $(document).ready(function() {
 
 
 $('#verPromocionesModal').click(function() {
-    //Some code
-
     var myModal = new bootstrap.Modal(document.getElementById('ModalIndex'));
-
     myModal.show();
 
 });
