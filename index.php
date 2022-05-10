@@ -18,7 +18,7 @@
 
     <!-- loader -->
     <div class="loader-in" id="loader">
-      <img src="assets/media/img/loader/giphy.webp" alt="Proveedores de Refacciones Automotrices por mayoreo" >
+      <img src="assets/media/img/loader/giphy.webp" alt="Proveedores de Refacciones Automotrices por mayoreo">
     </div>
 
     <!-- Nav Menu-->
@@ -42,7 +42,7 @@
                 </div>
                 <!-- carusel item -->
                 <div class="carousel-item" data-bs-interval="5000">
-                  <img src="assets/media/img/banners/cauplas52.png" class="ocultar-banner w-100"> 
+                  <img src="assets/media/img/banners/cauplas52.png" class="ocultar-banner w-100">
                   <img src="assets/media/img/banners/ToyopowerMovil.jpeg" class="ocultar-banner-movil w-100">
 
                 </div>
@@ -139,6 +139,22 @@
           </div>
 
         </section>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-3">
+        <div class="justify-content-center align-items-center text-center">
+
+          
+
+          <div class="col-12 text-center">
+            <a class="btn btn-outline-grey mitr rounded" href="encuentra" role="button">
+              <img src="assets/media/img/REFACCION.png" class="img-fluid" onContextMenu='return false;' draggable='false'>
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
 

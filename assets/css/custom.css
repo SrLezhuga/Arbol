@@ -2097,7 +2097,7 @@ figure.effect-goliath:hover p {
 }
 
 #wrapper {
-    min-height: 100vh;
+    /* min-height: 100vh;*/
     position: relative;
 }
 
@@ -2105,7 +2105,7 @@ figure.effect-goliath:hover p {
     bottom: 0;
     left: 0;
     width: 100%;
-    position: relative;
+    /*position: relative;*/
 }
 
 .no-row {
