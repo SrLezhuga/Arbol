@@ -3,7 +3,7 @@ include "../conexion.php";
 
 $retVal = (!empty($_GET['Rs'])) ? $parametro = $_GET['Rs'] : $parametro = '';
 
-$query = $con->prepare("SELECT * FROM tab_sistemas");
+$query = $con->prepare("SELECT * FROM tab_sistemas WHERE activo = 'Y'");
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $query->execute();
 

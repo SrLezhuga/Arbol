@@ -62,7 +62,7 @@
                         <a class="nav-link color-black" href="marcas">MARCAS</a>
                     </div>
                     <div class="col-auto cool-link">
-                        <a class="nav-link color-black" href="garantias">GARANTIAS</a>
+                        <a class="nav-link color-black" href="garantias">GARANTÍAS</a>
                     </div>
                     <div class="col-auto cool-link">
                         <a class="nav-link color-black" href="catalogo">CATÁLOGO</a>
@@ -144,7 +144,7 @@
                         <a class="nav-link color-black border-bottom px-1 ps-3" href="marcas">MARCAS</a>
                     </div>
                     <div class="col-sm-12 cool-link">
-                        <a class="nav-link color-black border-bottom px-1 ps-3" href="garantias">GARANTIAS</a>
+                        <a class="nav-link color-black border-bottom px-1 ps-3" href="garantias">GARANTÍAS</a>
                     </div>
                     <div class="col-sm-12 cool-link">
                         <a class="nav-link color-black border-bottom px-1 ps-3" href="catalogo">CATÁLOGO</a>

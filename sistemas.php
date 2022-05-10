@@ -58,7 +58,7 @@
           </div>
           <!-- TRANSMISION -->
           <div class="col">
-            <button value="TRANSMISION Y EJES" class="btn_sistema border bg-white shadow-lg" type="button">
+            <button value="TRANSMISIÓN Y EJES" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
@@ -82,7 +82,7 @@
           </div>
           <!-- QUIMICOS -->
           <div class="col">
-            <button value="QUIMICOS" class="btn_sistema border bg-white shadow-lg" type="button">
+            <button value="QUÍMICOS" class="btn_sistema border bg-white shadow-lg" type="button">
               <img src="assets/media/img/iconos/IconoQuimicos.png" onContextMenu='return false;' draggable='false' style="height: 100%; width: 100%;">
             </button>
           </div>
@@ -121,7 +121,7 @@
           </div>
           <!-- TRANSMISION -->
           <div class="col">
-            <button value="TRANSMISION Y EJES" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
+            <button value="TRANSMISIÓN Y EJES" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoTransmision.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>
@@ -145,7 +145,7 @@
           </div>
           <!-- QUIMICOS -->
           <div class="col">
-            <button value="QUIMICOS" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
+            <button value="QUÍMICOS" class="btn_sistema border bg-white shadow-lg mini_btn" type="button">
               <img src="assets/media/img/iconos/IconoQuimicos.png" onContextMenu='return false;' draggable='false'>
             </button>
           </div>

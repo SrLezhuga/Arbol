@@ -2,7 +2,7 @@
 include "../conexion.php";
 
 if ($_POST['Rs'] == 'ok') {
-    $query = $con->prepare("SELECT * FROM tab_cedis WHERE activo = 'Y'");
+    $query = $con->prepare("SELECT * FROM web_arbol.tab_cedis WHERE activo = 'Y' ORDER BY cedis ASC ");
     $query->setFetchMode(PDO::FETCH_ASSOC);
     $query->execute();
     $count = 1;

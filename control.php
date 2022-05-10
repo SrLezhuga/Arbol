@@ -11,18 +11,6 @@
 
   <title>REFACCIONARIA ARBOLEDAS | Configuración</title>
 
-  <script type="text/javascript" src="assets/js/catalogo.js"></script>
-  <script type="text/javascript" src="assets/js/catalogoWeb.js"></script>
-  <script type="text/javascript" src="assets/js/marcas.js"></script>
-  <script type="text/javascript" src="assets/js/pregunta.js"></script>
-  <script type="text/javascript" src="assets/js/directorio.js"></script>
-  <script type="text/javascript" src="assets/js/nosotros.js"></script>
-  <script type="text/javascript" src="assets/js/banner.js"></script>
-  <script type="text/javascript" src="assets/js/avisos.js"></script>
-  <script type="text/javascript" src="assets/js/garantias.js"></script>
-  <script type="text/javascript" src="assets/js/sistemas.js"></script>
-  <script type="text/javascript" src="assets/js/productos.js"></script>
-  <script type="text/javascript" src="assets/js/subbanner.js"></script>
 </head>
 
 <body>
@@ -123,5 +111,17 @@
   </div>
 
 </body>
+<script type="text/javascript" src="assets/js/catalogo.js"></script>
+<script type="text/javascript" src="assets/js/catalogoWeb.js"></script>
+<script type="text/javascript" src="assets/js/marcas.js"></script>
+<script type="text/javascript" src="assets/js/pregunta.js"></script>
+<script type="text/javascript" src="assets/js/directorio.js"></script>
+<script type="text/javascript" src="assets/js/nosotros.js"></script>
+<script type="text/javascript" src="assets/js/banner.js"></script>
+<script type="text/javascript" src="assets/js/avisos.js"></script>
+<script type="text/javascript" src="assets/js/garantias.js"></script>
+<script type="text/javascript" src="assets/js/sistemas.js"></script>
+<script type="text/javascript" src="assets/js/productos.js"></script>
+<script type="text/javascript" src="assets/js/subbanner.js"></script>
 
 </html>

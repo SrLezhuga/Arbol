@@ -81,21 +81,31 @@
           <div class="col">
             <div class="bg-body box-crl border shadow-5">
               <h1 class="display-3 item-center">
-                <i class="fas fa-link"></i>
+                <i class="fas fa-chart-line"></i>
               </h1>
             </div>
             <br>
-            <p><b>Compromiso</b></p>
+            <p><b>Proactividad</b></p>
           </div>
           <!-- Espiritu de Servicio -->
           <div class="col">
-            <div class="bg-body box-crl border shadow-6">
+            <div class="bg-body box-crl border shadow-7">
               <h1 class="display-3 item-center">
                 <i class="fas fa-medal"></i>
               </h1>
             </div>
             <br>
             <p><b>Espiritu de Servicio</b></p>
+          </div>
+          <!-- Anhelo de Crecimiento -->
+          <div class="col">
+            <div class="bg-body box-crl border shadow-6">
+              <h1 class="display-3 item-center">
+                <i class="fas fa-seedling"></i>
+              </h1>
+            </div>
+            <br>
+            <p><b>Anhelo de Crecimiento</b></p>
           </div>
         </div>
       </div>
