@@ -20,7 +20,7 @@ if (!empty($_FILES['imgMovil']['name'])) {
 
 $data = array();
 
-$sql = "INSERT INTO web_arbol.tab_slider 
+$sql = "INSERT INTO refaccionaria_arboledas_webtab_slider 
 (id_slider, img_pc, img_movil, active, accion) 
 VALUES ($id_slider, '$imgPc', '$imgMovil', '$activo', null)
             ON DUPLICATE KEY UPDATE 

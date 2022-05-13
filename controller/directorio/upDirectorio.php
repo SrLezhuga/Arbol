@@ -34,7 +34,7 @@ if (!empty($_FILES['imgLogoCedis']['name'])) {
 $data = array();
 
 
-$sql = "INSERT INTO web_arbol.tab_cedis (id_cedis, cedis, direccion_cedis, col_cedis, cp_cedis, mun_cedis, est_cedis, map_cedis, email_cedis, tel_info, tel_ventas, img_cedis, logo_cedis, activo)
+$sql = "INSERT INTO refaccionaria_arboledas_webtab_cedis (id_cedis, cedis, direccion_cedis, col_cedis, cp_cedis, mun_cedis, est_cedis, map_cedis, email_cedis, tel_info, tel_ventas, img_cedis, logo_cedis, activo)
 VALUES  (" . $id_cedis . ",
          '" . $cedis . "',
          '" . $direccion_cedis . "',

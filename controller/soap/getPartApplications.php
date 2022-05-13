@@ -10,8 +10,23 @@ define('SERVICE_URL', 'https://webservice.tecalliance.services/catalog/v1/servic
 
 $client = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
 
-$brandCode = (!empty($_POST['id_make'])) ? $_POST['id_make'] : "BKNH";  //FVCM|VT207.71  BFBQ|210-0170  BCSJ|MX510  BCNB|19211
-$partNumber = (!empty($_POST['id_part'])) ? $_POST['id_part'] : "510";  //FVCM|VT207.71  BFBQ|210-0170  BCSJ|MX510  BCNB|19211
+//piezas
+/*
+BDBL | 638PG      1 arm N modelos
+BCSJ | BD125917   2 arm N modelos
+BCSJ | BD61468    2 arm N modelos
+BCSJ | MX510      1 arm 3 modelos
+BFBQ | 210-0170   3 arm 3 modelos 
+BBDH | 4467       5 arm 1 modelo
+
+BCNB | 19211      N arm N modelos    ***
+FVCM | VT207.71   N arm car - truck N modelos ***
+
+*/
+
+$brandCode = (!empty($_POST['id_make'])) ? $_POST['id_make']  : "BFJG";
+$partNumber = (!empty($_POST['id_part'])) ? $_POST['id_part'] : "SS10200";
+
 $i = 1;
 
 $params1 = array(
@@ -28,67 +43,104 @@ try {
 
     /*******************************************************************/
 
-    $armadoras = array();
-    $modelos   = array();
-
     $arr_armadoras = json_decode(json_encode($result1), true);
+    $tot_1 = $arr_armadoras['makes']['total'];
 
-    foreach ($arr_armadoras['makes']['counts'] as $t_armadoras) {
+    switch ($tot_1) { // abre switch 1 
+      case 0:     // sin armadoras
 
+        echo ("No se encontraron aplicaciones disponibles");
+        break;
 
-      //Identifica modelos
-      $params2 = array(
-        "brandCode" => $brandCode,
-        "partNumber" => $partNumber,
-        "makeIds" => $t_armadoras['makeId'],
-        'modelFacets' => array('enabled' => true, 'page' => 1, 'perPage' => 100)
-      );
+      case 1:     // 1 armadoras
 
-      $result2 = $client->getAutoCarePartApplications($params2);
-      $arr_modelos = json_decode(json_encode($result2), true);
+        echo ("\n" . "-> " . $arr_armadoras['makes']['counts']['makeName'] . "\n");
 
-      if ($result2->models->total <= 1) {
-        $prm0 = $brandCode;
-        $prm1 = $partNumber;
-        $prm2 = $t_armadoras['makeId'];
-        $prm3 = $arr_modelos['models']['counts']['modelId'];
-
-        $r_years = get_years($prm0, $prm1, $prm2, $prm3);
-
-        $armadoras[] = array(
-          'makeId' => $t_armadoras['makeId'],
-          'makeName' => $t_armadoras['makeName'],
-          'modelId' => $arr_modelos['models']['counts']['modelId'],
-          'modelName' => $arr_modelos['models']['counts']['modelName'],
-          'years' => $r_years
-
+        //Identifica modelos
+        $params2 = array(
+          "brandCode" => $brandCode,
+          "partNumber" => $partNumber,
+          "makeIds" => $arr_armadoras['makes']['counts']['makeId'],
+          'modelFacets' => array('enabled' => true, 'page' => 1, 'perPage' => 100)
         );
-      } else {
 
-        foreach ($arr_modelos['models']['counts'] as $t_modelos) {
+        $result2 = $client->getAutoCarePartApplications($params2);
+        $arr_modelos = json_decode(json_encode($result2), true);
+
+        if ($result2->models->total <= 1) {
+
           $prm0 = $brandCode;
           $prm1 = $partNumber;
-          $prm2 = $t_armadoras['makeId'];
-          $prm3 = $t_modelos['modelId'];
-
+          $prm2 = $arr_armadoras['makes']['counts']['makeId'];
+          $prm3 = $arr_modelos['models']['counts']['modelId'];
           $r_years = get_years($prm0, $prm1, $prm2, $prm3);
 
-          $armadoras[] = array(
-            'makeId' => $t_armadoras['makeId'],
-            'makeName' => $t_armadoras['makeName'],
-            'modelId' => $t_modelos['modelId'],
-            'modelName' => $t_modelos['modelName'],
-            'years' => $r_years
+          echo ($arr_modelos['models']['counts']['modelName'] . ":" . $r_years . "\n");
+        } else {
+
+          //abre for modelos
+          foreach ($arr_modelos['models']['counts'] as $t_modelos) {
+
+            $prm0 = $brandCode;
+            $prm1 = $partNumber;
+            $prm2 = $arr_armadoras['makes']['counts']['makeId'];
+            $prm3 = $t_modelos['modelId'];
+            $r_years = get_years($prm0, $prm1, $prm2, $prm3);
+
+            echo ($t_modelos['modelName'] . ":" . $r_years . "\n");
+          }
+          //cierra for modelos
+        } //cierra else 
+
+        break;
+
+      default:  // N armadoras
+
+        //abre for armadoras
+        foreach ($arr_armadoras['makes']['counts'] as $t_armadoras) {
+
+          echo ("\n" . "-> " . $t_armadoras['makeName'] . "\n");
+
+          //Identifica modelos
+          $params2 = array(
+            "brandCode" => $brandCode,
+            "partNumber" => $partNumber,
+            "makeIds" => $t_armadoras['makeId'],
+            'modelFacets' => array('enabled' => true, 'page' => 1, 'perPage' => 100)
           );
-        } //cierra for modelos
 
-      }
-    }    //cierra for armadoras
+          $result2 = $client->getAutoCarePartApplications($params2);
+          $arr_modelos = json_decode(json_encode($result2), true);
 
-    sort($armadoras);
-    echo json_encode($armadoras);
-    //print_r($armadoras);
-    //var_dump($armadoras);
+          if ($result2->models->total <= 1) {
+
+            $prm0 = $brandCode;
+            $prm1 = $partNumber;
+            $prm2 = $t_armadoras['makeId'];
+            $prm3 = $arr_modelos['models']['counts']['modelId'];
+            $r_years = get_years($prm0, $prm1, $prm2, $prm3);
+
+            echo ($arr_modelos['models']['counts']['modelName'] . ":" . $r_years . "\n");
+          } else {
+
+            //abre for modelos
+            foreach ($arr_modelos['models']['counts'] as $t_modelos) {
+
+              $prm0 = $brandCode;
+              $prm1 = $partNumber;
+              $prm2 = $t_armadoras['makeId'];
+              $prm3 = $t_modelos['modelId'];
+              $r_years = get_years($prm0, $prm1, $prm2, $prm3);
+
+              echo ($t_modelos['modelName'] . ":" . $r_years . "\n");
+            }
+            //cierra for modelos
+          } //cierra else 
+        }
+        //cierra for armadoras
+        break;
+    }
+    //abre switch 1 
 
 
     /*******************************************************************/
@@ -103,7 +155,7 @@ try {
 /******************/
 function get_years($prm0, $prm1, $prm2, $prm3)
 {
-  $client3 = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
+  global $client;
   $y_years = array();
 
   $params3 = array(
@@ -114,22 +166,25 @@ function get_years($prm0, $prm1, $prm2, $prm3)
     'yearFacets' => array('enabled' => true, 'page' => 1, 'perPage' => 100)
   );
 
-  $result3 = $client3->getAutoCarePartApplications($params3);
+  $result3 = $client->getAutoCarePartApplications($params3);
   $arr_years = json_decode(json_encode($result3), true);
 
   $x_years = "";
+
   if ($result3->years->total <= 1) {
     $x_years = $arr_years['years']['counts']['year'];
   } else {
 
-
     foreach ($arr_years['years']['counts'] as $t_year) {
-      $x_years = $x_years . strval($t_year['year']) . " ";
+      $y_years[] = array(
+        'year' => $t_year['year']
+      );
     }
 
-    //$x_years = implode(" ",$y_years);
-    //rer mejorar
-    //$x_years = json_encode($y_years);
+    sort($y_years);
+    $y1 = implode(min($y_years));
+    $y2 = implode(max($y_years));
+    $x_years = $y1 . " - " . $y2;
   }
 
   return ($x_years);

@@ -10,7 +10,7 @@ define('SERVICE_URL', 'https://webservice.tecalliance.services/catalog/v1/servic
 
 $client = new SoapClient(WSDL_URL, array('location' => SERVICE_URL));
 
-$idYearFacets =  $_POST['vehicleYear'];
+$idYearFacets = '2010'; //$_POST['vehicleYear'];
 
 //Obten listado de marcas en formato Aces/Pies
 $params = array(

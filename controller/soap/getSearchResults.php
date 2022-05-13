@@ -21,7 +21,7 @@ $params = array(
   "dataFormats" => "autocare",
   //"includeGenericPartData" => 1,
   "includeAutoCarePartData" =>  1,
-  "perPage" =>  100,
+  "perPage" =>  10,
   "page" =>  1
 );
 
@@ -35,49 +35,32 @@ try {
 
     $countmax = $result->maxAllowedPage;
 
-    for ($i = 1; $i < $countmax + 1; $i++) {
-      $params = array(
-        "lang" => "es-MX",
-        "searchQuery" =>  "$searchQuery",
-        "searchQueryType" =>  "freetext",
-        "searchMatchType" =>  "exact",
-        "dataFormats" => "autocare",
-        //"includeGenericPartData" => 1,
-        "includeAutoCarePartData" =>  1,
-        "perPage" =>  100,
-        "page" =>  $i
-      );
+    $arr_json = json_decode(json_encode($result), true);
+    //var_dump($result);
 
-      $result = $client->getSearchResults($params);
-      $arr_json = json_decode(json_encode($result), true);
+    //print_r($result);
 
-      //var_dump($result);
+    foreach ($arr_json['parts'] as $t_marcas) {
 
-      //print_r($result);
-
-      foreach ($arr_json['parts'] as $t_marcas) {
-
-        if (isset($t_marcas['autoCarePart']['piesItem']['digitalAssets']['imageURL800'])) {
-          $img = $t_marcas['autoCarePart']['piesItem']['digitalAssets']['imageURL800'];
-        } else if (isset($t_marcas['autoCarePart']['piesItem']['digitalAssets'][0]['imageURL800'])) {
-          $img = $t_marcas['autoCarePart']['piesItem']['digitalAssets'][0]['imageURL800'];
-        } else if (isset($t_marcas['autoCarePart']['piesItem']['digitalAssets'][1]['imageURL800'])) {
-          $img = $t_marcas['autoCarePart']['piesItem']['digitalAssets'][1]['imageURL800'];
-        } else {
-          $img = 'assets/media/img/loader/PlaceholderCatalogo.png';
-        }
-
-        $marcas[] = array(
-          'count' => $count++,
-          'partNumber' => $t_marcas['autoCarePart']['piesItem']['partNumber'],
-          'brandCode' => $t_marcas['autoCarePart']['piesItem']['brandCode'],
-          'brandName' => $t_marcas['autoCarePart']['piesItem']['brandName'],
-          'logo' => (isset($t_marcas['autoCarePart']['piesItem']['brandAdditionalInfo']['logoImageURL100x40'])) ? $t_marcas['autoCarePart']['piesItem']['brandAdditionalInfo']['logoImageURL100x40'] : 'assets/media/img/loader/PlaceholderLogo.png',
-          'imageURL' => $img
-        );
+      if (isset($t_marcas['autoCarePart']['piesItem']['digitalAssets']['imageURL800'])) {
+        $img = $t_marcas['autoCarePart']['piesItem']['digitalAssets']['imageURL800'];
+      } else if (isset($t_marcas['autoCarePart']['piesItem']['digitalAssets'][0]['imageURL800'])) {
+        $img = $t_marcas['autoCarePart']['piesItem']['digitalAssets'][0]['imageURL800'];
+      } else if (isset($t_marcas['autoCarePart']['piesItem']['digitalAssets'][1]['imageURL800'])) {
+        $img = $t_marcas['autoCarePart']['piesItem']['digitalAssets'][1]['imageURL800'];
+      } else {
+        $img = 'assets/media/img/loader/PlaceholderCatalogo.png';
       }
-    }
 
+      $marcas[] = array(
+        'count' => $count++,
+        'partNumber' => $t_marcas['autoCarePart']['piesItem']['partNumber'],
+        'brandCode' => $t_marcas['autoCarePart']['piesItem']['brandCode'],
+        'brandName' => $t_marcas['autoCarePart']['piesItem']['brandName'],
+        'logo' => (isset($t_marcas['autoCarePart']['piesItem']['brandAdditionalInfo']['logoImageURL100x40'])) ? $t_marcas['autoCarePart']['piesItem']['brandAdditionalInfo']['logoImageURL100x40'] : 'assets/media/img/loader/PlaceholderLogo.png',
+        'imageURL' => $img
+      );
+    }
     $arr_json = json_encode($marcas);
 
     //print_r($marcas);
