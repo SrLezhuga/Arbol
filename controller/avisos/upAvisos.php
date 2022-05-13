@@ -14,7 +14,7 @@ if (!empty($_FILES['imgPromo']['name'])) {
 
 $data = array();
 
-$sql = "INSERT INTO refaccionaria_arboledas_webtab_promo 
+$sql = "INSERT INTO refaccionaria_arboledas_web.tab_promo 
         (id_promo, img_promo, url_promo, active) 
         VALUES ($id_promo, '$imgPromo', '$url_promo', '$activo')
             ON DUPLICATE KEY UPDATE 

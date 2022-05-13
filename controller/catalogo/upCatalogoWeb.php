@@ -16,7 +16,7 @@ if (!empty($_FILES['imgCatalogoWeb']['name'])) {
 
 $data = array();
 
-$sql = 'insert into refaccionaria_arboledas_webtab_catalogo_web (id_catalogo_web, nombre_catalogo_web, img_catalogo_web, info_catalogo_web, url_catalogo_web, active)
+$sql = 'insert into refaccionaria_arboledas_web.tab_catalogo_web (id_catalogo_web, nombre_catalogo_web, img_catalogo_web, info_catalogo_web, url_catalogo_web, active)
 values  (' . $catalogo . ', "' . $titulo . '", "' . $imgCatalogo . '", "' . $informacion . '", "' . $url . '", "' . $activo . '")
 on duplicate key update nombre_catalogo_web = "' . $titulo . '", img_catalogo_web = "' . $imgCatalogo . '", info_catalogo_web = "' . $informacion . '", url_catalogo_web = "' . $url . '", active = "' . $activo . '";';
 

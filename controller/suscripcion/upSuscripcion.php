@@ -13,7 +13,7 @@ $queryValidate->execute();
 $row = $queryValidate->fetch();
 
 if ($row['Validacion'] == 0) {
-    $sql = "INSERT INTO refaccionaria_arboledas_webtab_suscripcion (nom_subcripcion, tel_subcripcion, email_subcripcion)
+    $sql = "INSERT INTO refaccionaria_arboledas_web.tab_suscripcion (nom_subcripcion, tel_subcripcion, email_subcripcion)
     values  ('" . $nombre . "', '" . $telefono . "', '" . $correo . "');";
 
     $query = $con->prepare($sql);

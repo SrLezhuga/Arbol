@@ -25,7 +25,7 @@ if (!empty($_FILES['archivoCatalogo']['name'])) {
 
 $data = array();
 
-$sql = 'insert into refaccionaria_arboledas_webtab_catalogo (id_catalogo, marca_catalogo, titulo_catalogo, subtitulo_catalogo, fecha_catalogo, img_catalogo, archivo_catalogo, activo, etiquetas)
+$sql = 'insert into refaccionaria_arboledas_web.tab_catalogo (id_catalogo, marca_catalogo, titulo_catalogo, subtitulo_catalogo, fecha_catalogo, img_catalogo, archivo_catalogo, activo, etiquetas)
 values  (' . $catalogo . ', "' . $marca . '", "' . $titulo . '", "' . $subtitulo . '", "' . $fecha . '", "' . $imgCatalogo . '", "' . $archivoCatalogo . '", "' . $activo . '", "' . $txt . '")
 on duplicate key update marca_catalogo = "' . $marca . '", titulo_catalogo = "' . $titulo . '", subtitulo_catalogo = "' . $subtitulo . '", fecha_catalogo = ' . $fecha . ', img_catalogo = "' . $imgCatalogo . '", archivo_catalogo = "' . $archivoCatalogo . '", activo = "' . $activo . '", etiquetas = "' . $txt . '";';
 

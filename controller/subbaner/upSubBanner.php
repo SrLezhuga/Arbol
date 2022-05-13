@@ -9,7 +9,7 @@ $imgSubBanner = (!empty($_FILES['imgSubBanner']['name'])) ? $_FILES['imgSubBanne
 
 $data = array();
 
-$sql = "INSERT INTO refaccionaria_arboledas_webtab_subslider (id_subslider, img, active) 
+$sql = "INSERT INTO refaccionaria_arboledas_web.tab_subslider (id_subslider, img, active) 
         VALUES ($id_Subbanner, '$imgSubBanner', '$activo')
         ON DUPLICATE KEY UPDATE 
         img = '" . $imgSubBanner . "',

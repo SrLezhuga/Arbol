@@ -15,7 +15,7 @@ if (!empty($_FILES['File_PDF_Garantia']['name'])) {
 
 $data = array();
 
-$sql = "INSERT INTO refaccionaria_arboledas_webtab_garantias (id_garantia, marca_garantia, nombre_pdf, archivo, active) 
+$sql = "INSERT INTO refaccionaria_arboledas_web.tab_garantias (id_garantia, marca_garantia, nombre_pdf, archivo, active) 
 VALUES (" . $garantia . ", '" . $informacion . "', '" . $titulo . "', '" . $pdf . "', '" . $activo . "')
 ON DUPLICATE KEY UPDATE 
 marca_garantia = '" . $informacion . "', 

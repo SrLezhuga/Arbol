@@ -3,7 +3,7 @@ include "../conexion.php";
 
 $garantias = $_POST["Gar"];
 
-$query = $con->prepare("SELECT * FROM refaccionaria_arboledas_webtab_garantias WHERE id_garantia = $garantias");
+$query = $con->prepare("SELECT * FROM refaccionaria_arboledas_web.tab_garantias WHERE id_garantia = $garantias");
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $query->execute();
 $row = $query->fetch();
