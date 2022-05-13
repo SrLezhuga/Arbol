@@ -8,7 +8,7 @@ $activo = $_POST['activo'];
 
 $data = array();
 
-$sql = 'INSERT INTO web_arbol.tab_preguntas (id_pregunta, pregunta, respuesta, activo)
+$sql = 'INSERT INTO refaccionaria_arboledas_webtab_preguntas (id_pregunta, pregunta, respuesta, activo)
 VALUES  (' . $preguntas . ', "' . $pregunta . '", "' . $respuesta . '", "' . $activo . '")
 on duplicate key update 
 pregunta = "' . $pregunta . '", 

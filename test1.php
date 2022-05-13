@@ -117,6 +117,8 @@
       loadImage(this.value)
     }
   </script>
+
+ 
 </body>
 
 </html>

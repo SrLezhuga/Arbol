@@ -15,7 +15,7 @@ if (!empty($_FILES['imgMarcas']['name'])) {
 
 $data = array();
 
-$sql = 'INSERT INTO web_arbol.tab_marcas (id_marca, nombre_marca, info_marca, img_marca, active) 
+$sql = 'INSERT INTO refaccionaria_arboledas_webtab_marcas (id_marca, nombre_marca, info_marca, img_marca, active) 
 VALUES (' . $marcas . ', "' . $titulo . '", "' . $informacion . '", "' . $imgMarcas . '", "' . $activo . '")
 on duplicate key update 
 nombre_marca = "' . $titulo . '", 

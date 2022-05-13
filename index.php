@@ -146,22 +146,6 @@
       <div class="container mb-3">
         <div class="justify-content-center align-items-center text-center">
 
-          
-
-          <div class="col-12 text-center">
-            <a class="btn btn-outline-grey mitr rounded" href="encuentra" role="button">
-              <img src="assets/media/img/REFACCION.png" class="img-fluid" onContextMenu='return false;' draggable='false'>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container mb-3">
-        <div class="justify-content-center align-items-center text-center">
-
           <h2 class="mitr">¿POR QUÉ ELEGIRNOS?</h2>
           <div class="separator-top"></div>
 

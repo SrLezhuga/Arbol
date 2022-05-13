@@ -15,7 +15,7 @@ if (!empty($_FILES['imgSistema']['name'])) {
 
 $data = array();
 
-$sql = 'INSERT INTO web_arbol.tab_lineas (id_linea, img_linea, nombre_linea, info_linea, active) 
+$sql = 'INSERT INTO refaccionaria_arboledas_webtab_lineas (id_linea, img_linea, nombre_linea, info_linea, active) 
 VALUES (' . $sistemas . ', "' . $imgSistema . '", "' . $titulo . '", "' . $informacion . '",  "' . $activo . '")
 on duplicate key update 
 img_linea = "' . $imgSistema . '", 
