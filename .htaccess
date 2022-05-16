@@ -16,4 +16,5 @@ RewriteRule ^(.*)$ $1.html
 </IfModule>
 
 ErrorDocument 404 https://www.refaccionariaarboledas.com.mx/404
+ErrorDocument 500 https://www.refaccionariaarboledas.com.mx/500
 
