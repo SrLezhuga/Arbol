@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
-php_value max_execution_time 300
+#php_value max_execution_time 300
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -13,6 +13,7 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
 #RewriteRule ^([a-z]+)/?$ $1.html [NC]
 
-ErrorDocument 404 localhost/Arbol/404
-
 </IfModule>
+
+ErrorDocument 404 https://www.refaccionariaarboledas.com.mx/404
+

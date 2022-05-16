@@ -465,7 +465,7 @@ span {
 .loader-in {
     background-color: white;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2097,15 +2097,8 @@ figure.effect-goliath:hover p {
 }
 
 #wrapper {
-    /* min-height: 100vh;*/
+    height: 50vh;
     position: relative;
-}
-
-#footer {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    /*position: relative;*/
 }
 
 .no-row {

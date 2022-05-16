@@ -24,16 +24,12 @@
     <section>
       <div class="container  mt-5 mb-3">
         <div class="row justify-content-center align-items-center text-center">
-
-
           <div class="card bg-light text-dark shadow-lg mb-3 mt-3">
             <div class="card-body">
-
               <div class="row">
                 <div class="col-12">
                   <h2 class="mitr">COOKIES</h2>
                   <div class="separator-top"></div>
-
                   <p class="text-justify">
                     Las cookies son archivos con una pequeña cantidad de datos que se utilizan comúnmente como identificadores únicos anónimos. Estos se envían a su navegador desde los sitios web que visita y se almacenan en la memoria interna de su dispositivo.
                     <br>Este <b>SERVICIO</b> no utiliza estas "cookies" explícitamente. Sin embargo, la aplicación puede utilizar código de terceros y bibliotecas que utilizan "cookies" para recopilar información y mejorar sus servicios. Tiene la opción de aceptar o rechazar estas cookies y saber cuándo se envía una cookie a su dispositivo. Si decide rechazar nuestras cookies, es posible que no pueda utilizar algunas partes de este <b>SERVICIO</b>.
@@ -376,24 +372,13 @@
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
-
-
-
-
-
         </div>
       </div>
     </section>
+    <?php require('controller/common/footer.php'); ?>
   </div>
-
-
-  <?php require('controller/common/footer.php'); ?>
-
 </body>
-
-
 
 </html>

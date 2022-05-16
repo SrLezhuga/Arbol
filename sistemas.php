@@ -23,7 +23,7 @@
     </div>
 
     <section>
-      <div class="container justify-content-center align-items-center text-center mt-5 mb-3 pt-3 pb-3">
+      <div class="container justify-content-center align-items-center text-center mt-5 mb-3 pt-3 pb-3" >
 
         <div class="row mb-2 justify-content-center align-items-center text-center ocultar-sistemas">
           <!-- MOTOR -->
@@ -175,10 +175,10 @@
         </div>
       </div>
     </section>
-
+    <?php require('controller/common/footer.php'); ?>
   </div>
 
-  <?php require('controller/common/footer.php'); ?>
+
 
 </body>
 

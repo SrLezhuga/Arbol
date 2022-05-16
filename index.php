@@ -303,11 +303,15 @@
       </div>
 
     </section>
+ 
+      <?php require('controller/common/footer.php'); ?>
   </div>
 
-  <?php require('controller/common/footer.php'); ?>
+
+
 
 </body>
+
 
 <script>
   $(document).ready(function() {

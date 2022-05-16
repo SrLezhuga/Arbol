@@ -129,7 +129,7 @@
  </center>
 
  <!-- Footer -->
- <footer id="footer" class="text-center text-lg-start text-white small" style="background-color: #002262;  border-top: 3px solid #d41636;">
+ <section class="text-center text-lg-start text-white small" style="background-color: #002262;  border-top: 3px solid #d41636;">
 
      <!-- Section: Links  -->
      <section class="">
@@ -192,7 +192,7 @@
      <!-- Section: Links  -->
 
 
- </footer>
+ </section>
  <!-- Footer -->
 
  <script type="text/javascript" src="assets/js/js_footer.js"></script>

@@ -22,7 +22,7 @@
     </div>
 
     <section>
-      <div class="container mt-5 mb-3">
+      <div class="container mt-5 mb-3" >
         <div class="justify-content-center align-items-center">
           <!-- Preguntas -->
           <div class="accordion" id="accordionPreguntas"></div>
@@ -30,11 +30,8 @@
         </div>
       </div>
     </section>
-
+    <?php require('controller/common/footer.php'); ?>
   </div>
-
-  <?php require('controller/common/footer.php'); ?>
-
 </body>
 
 </html>

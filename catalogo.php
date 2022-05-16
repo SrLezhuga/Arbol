@@ -63,9 +63,10 @@
         </div>
       </div>
     </section>
+    <?php require('controller/common/footer.php'); ?>
   </div>
 
-  <?php require('controller/common/footer.php'); ?>
+
 
 </body>
 
@@ -126,5 +127,4 @@
   function descargarCatalogo(ruta) {
     window.location.href = 'controller/catalogo/download.php?id=' + ruta;
   }
-
 </script>

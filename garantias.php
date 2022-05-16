@@ -22,7 +22,7 @@
     </div>
 
     <section>
-      <div class="container mt-5 mb-3">
+      <div class="container mt-5 mb-3" style="min-height: 105vh;">
         <!-- Marcas -->
         <div id="item_marcas" class="small row mt-5 mb-3 row-cols-lg-4 row-cols-sm-2 justify-content-center align-items-center">
           <!-- /Marcas -->
@@ -30,9 +30,10 @@
         </div>
       </div>
     </section>
+      <?php require('controller/common/footer.php'); ?>
   </div>
 
-  <?php require('controller/common/footer.php'); ?>
+
 
 </body>
 

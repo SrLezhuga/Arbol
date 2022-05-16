@@ -24,20 +24,15 @@
     <section>
       <div class="container mb-3 mt-5">
         <div class="row justify-content-center align-items-center" id="contenedor">
-
           <div id="flex-container" class="testimonials border rounded shadow-lg">
             <div id="left-zone">
               <ul class="list" id="CardCedis"></ul>
             </div>
             <div id="right-zone"></div>
           </div>
-
-
         </div>
       </div>
-
     </section>
-
 
     <section>
       <div class="container mt-5 mb-5">
@@ -130,26 +125,13 @@
                   <button type="button" class="btn btn-lg btn-danger"><i class="fas fa-paper-plane"></i> Enviar</button>
                 </div>
               </div>
-
-
             </div>
           </div>
-
-
-
         </div>
       </div>
-
     </section>
-
-    
-
+    <?php require('controller/common/footer.php'); ?>
   </div>
-
-  <br>
-
-  <?php require('controller/common/footer.php'); ?>
-
 </body>
 
 <script>

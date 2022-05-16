@@ -313,73 +313,68 @@
         </div>
       </div>
     </section>
-
-    <script>
-      $(document).ready(function() {
-        $timelineExpandableTitle = $('.timeline-action border. .title');
-
-        $($timelineExpandableTitle).attr('tabindex', '0');
-
-        // Give timelines ID's
-        $('.timeline').each(function(i, $timeline) {
-          var $timelineActions = $($timeline).find('.timeline-action border.');
-
-          $($timelineActions).each(function(j, $timelineAction) {
-            var $milestoneContent = $($timelineAction).find('.content');
-
-            $($milestoneContent).attr('id', 'timeline-' + i + '-milestone-content-' + j).attr('role', 'region');
-            $($milestoneContent).attr('aria-expanded', $($timelineAction).hasClass('expanded'));
-
-            $($timelineAction).find('.title').attr('aria-controls', 'timeline-' + i + '-milestone-content-' + j);
-          });
-        });
-
-        $($timelineExpandableTitle).click(function() {
-          $(this).parent().toggleClass('is-expanded');
-          $(this).siblings('.content').attr('aria-expanded', $(this).parent().hasClass('is-expanded'));
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function() {
-        var busqueda = 'ok';
-        $.ajax({
-          url: "controller/nosotros/precarga_img.php",
-          type: "post",
-          data: {
-            Rs: busqueda
-          },
-          error: function() {
-            alert("error petición ajax");
-          },
-          success: function(data) {
-            $("#Cedis_ra").append(data);
-          }
-        });
-
-        $.ajax({
-          url: "controller/nosotros/precarga_nosotros.php",
-          type: "post",
-          data: {
-            Rs: busqueda
-          },
-          error: function() {
-            alert("error petición ajax");
-          },
-          success: function(data) {
-            $("#nosotrosInfo").append(data);
-          }
-        });
-      });
-    </script>
-
+    <?php require('controller/common/footer.php'); ?>
   </div>
-
-
-  <?php require('controller/common/footer.php'); ?>
-
 </body>
 
 
+<script>
+  $(document).ready(function() {
+    $timelineExpandableTitle = $('.timeline-action border. .title');
+
+    $($timelineExpandableTitle).attr('tabindex', '0');
+
+    // Give timelines ID's
+    $('.timeline').each(function(i, $timeline) {
+      var $timelineActions = $($timeline).find('.timeline-action border.');
+
+      $($timelineActions).each(function(j, $timelineAction) {
+        var $milestoneContent = $($timelineAction).find('.content');
+
+        $($milestoneContent).attr('id', 'timeline-' + i + '-milestone-content-' + j).attr('role', 'region');
+        $($milestoneContent).attr('aria-expanded', $($timelineAction).hasClass('expanded'));
+
+        $($timelineAction).find('.title').attr('aria-controls', 'timeline-' + i + '-milestone-content-' + j);
+      });
+    });
+
+    $($timelineExpandableTitle).click(function() {
+      $(this).parent().toggleClass('is-expanded');
+      $(this).siblings('.content').attr('aria-expanded', $(this).parent().hasClass('is-expanded'));
+    });
+  });
+</script>
+<script>
+  $(document).ready(function() {
+    var busqueda = 'ok';
+    $.ajax({
+      url: "controller/nosotros/precarga_img.php",
+      type: "post",
+      data: {
+        Rs: busqueda
+      },
+      error: function() {
+        alert("error petición ajax");
+      },
+      success: function(data) {
+        $("#Cedis_ra").append(data);
+      }
+    });
+
+    $.ajax({
+      url: "controller/nosotros/precarga_nosotros.php",
+      type: "post",
+      data: {
+        Rs: busqueda
+      },
+      error: function() {
+        alert("error petición ajax");
+      },
+      success: function(data) {
+        $("#nosotrosInfo").append(data);
+      }
+    });
+  });
+</script>
 
 </html>
